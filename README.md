@@ -67,42 +67,29 @@ En /#vendor incluiremos archivos de librerías externas y que necesitar� nuest
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-
 @import
-  '../abstracts/variables',
-  '../abstracts/functions',
-  '../abstracts/mixins';
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
 
 // 2. Vendors
-
 @import
-  '../vendors/normalize';
-  '../vendors/bootstrap/grid'; 
+  'vendors/normalize',
+  'vendors/bootstrap/grid';
 
-// 3. Base 
-
+// 3. Base stuff
 @import
-  '../base/base',
-  '../base/fonts',
-  '../base/helpers';
+  'base/base',
+  'base/fonts',
+  'base/helpers';
  
-// 4. Layout
-
+// 4. Layout-related sections 
 @import
-  '../layout/header', 
-  '../layout/footer',
-   
+  'layout/header', 
+  'layout/footer';
+  
 // 5. Components
-
 @import 
-  '../components/button',  
-  '../components/table';  
-  '../components/forms';  
-  
-  // 6. Pages
-  
-@import 
-  '../pages/home',  
-  
-
-
+  'components/button',  
+  'components/table', 
+  'components/forms';        
