@@ -1,6 +1,6 @@
-# Theme Dipujaen Sass
+# PlandirNG - SASS 
 
-Proyecto que desarrolla un tema css para los componentes de Prime, que usaremos en Angular.
+Proyecto que desarrolla un tema css para nuestros componentes Prime de Angular, que usaremos en el nuevo Plan Director.
 
 ## Tecnologia
 
@@ -19,17 +19,16 @@ No existe un estándar de organización del proyecto, he optado por organizarlo 
         - source/
             - abstracts/
                  - _functions.scss
-				 - _mixins.css
+		 - _mixins.css
                  - _variables.scss
             - base/
-				 - _base.scss
+		 - _base.scss
                  - _fonts.scss
-				 - _helpers.scss
+		 - _helpers.scss
             - components/
                  - _buttons.scss
-				 - _forms.scss
-				 - _table.scss
-				 
+		 - _forms.scss
+		 - _table.scss				 
             - layout/
                  - _footer.scss
                  - _header.scss
@@ -38,12 +37,10 @@ No existe un estándar de organización del proyecto, he optado por organizarlo 
                  - _home.scss            
             - vendors/
                  - bootstrap/grid.scss
-                 - normalize.scss
-                 
-         
-		 - prime-dipujaen-theme.scss
-         - prime-dipujaen-theme.css
-         - prime-dipujaen-theme.css.map
+                 - normalize.scss       
+		 
+         - PlandirNG.scss
+         - PlandirNG.map
      - js/
      - img/
 
