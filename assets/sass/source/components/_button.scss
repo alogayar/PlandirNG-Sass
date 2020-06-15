@@ -1,72 +1,215 @@
+
 // -----------------------------------------------------------------------------
 // Este fichero contiene todos los estilos relacionados con el componente boton
 // -----------------------------------------------------------------------------
+ 
+body {
+    .ui-button {
+        margin: 0;
+        color: $buttonTextColor;
+        background-color: $buttonBgColor;
+        border: $buttonBorder;
+        font-size: $fontSize;
+        @include transition($buttonTransition);
 
+        &:enabled:hover {
+            background-color: $buttonHoverBgColor;
+            color: $buttonHoverTextColor;
+            border-color: $buttonHoverBorderColor;
+        }
+        &:enabled:focus {
+            outline: $buttonFocusOutline;
+            outline-offset: $buttonFocusOutlineOffset;
+            background-color: $buttonHoverBgColor;
+            color: $buttonHoverTextColor;
+            border-color: $buttonHoverBorderColor;
+        }
 
+        // &:enabled:focus {
+        //     outline: $buttonFocusOutline;
+        //     outline-offset: $buttonFocusOutlineOffset;
+        //     background-color: darken($buttonActiveBgColor, 10%);
+        // }
 
-.ui-button {
-    margin: 0;
-    color: $buttonTextColor;
-    background-color: $buttonBgColor;
-    border: $buttonBorder;
-    font-size: $fontSize;
-    @include transition($buttonTransition);
+        &:enabled:active  {
+            background-color: $buttonActiveBgColor;
+            color: $buttonActiveTextColor;
+            border-color: $buttonActiveBorderColor;
+        }
 
-    &:enabled:hover {
-        background-color: $buttonHoverBgColor;
-        color: $buttonHoverTextColor;
-        border-color: $buttonHoverBorderColor;
-    }
+        &.ui-button-text-only {
+            .ui-button-text {
+                padding: $buttonTextOnlyPadding;
+            }
+        }
 
-    &:enabled:focus {
-        outline: $buttonFocusOutline;
-        outline-offset: $buttonFocusOutlineOffset;
-        background-color: darken($buttonHoverBgColor, 10%);
-    }
+        &.ui-button-text-icon-left {
+            .ui-button-text {
+                padding: $buttonWithLeftIconPadding;
+            }
+        }
 
-    &:enabled:active  {
-        background-color: $buttonActiveBgColor;
-        color: $buttonActiveTextColor;
-        border-color: $buttonActiveBorderColor;
-    }
+        &.ui-button-text-icon-right {
+            .ui-button-text {
+                padding: $buttonWithRightIconPadding;
+            }
+        }
 
-    &.ui-button-text-only {
-        .ui-button-text {
-            padding: $buttonTextOnlyPadding;
+        &.ui-button-icon-only {
+            width: $buttonIconOnlyWidth;
+
+            .ui-button-text {
+                padding: $buttonIconOnlyPadding;
+            }
+        }
+
+        &.ui-button-raised {
+            @include shadow($raisedButtonShadow);
+        }
+
+        &.ui-button-rounded {
+            @include border-radius($roundedButtonBorderRadius);
         }
     }
 
-    &.ui-button-text-icon-left {
-        .ui-button-text {
-            padding: $buttonWithLeftIconPadding;
+    .ui-fluid {
+        .ui-button-icon-only {
+            width: $buttonIconOnlyWidth;
         }
     }
 
-    &.ui-button-text-icon-right {
-        .ui-button-text {
-            padding: $buttonWithRightIconPadding;
+    .ui-button-secondary{
+        margin: 0;
+        color: $secondaryButtonTextColor;
+        background-color: $secondaryButtonBgColor;
+        border: $secondaryButtonBorder;
+        font-size: $fontSize;
+        @include transition($buttonTransition);
+
+        &:enabled:hover {
+            background-color: $secondaryButtonHoverBgColor;
+            color: $secondaryButtonHoverTextColor;
+            border-color: $secondaryButtonHoverBorderColor;
+        }
+
+        &:enabled:focus {
+            background-color: $secondaryButtonHoverBgColor;
+            color: $secondaryButtonHoverTextColor;
+            border-color: $secondaryButtonHoverBorderColor;
+        }
+       
+        &:enabled:active  {
+            background-color: $secondaryButtonActiveBgColor;
+            color: $secondaryButtonActiveTextColor;
+            border-color: $secondaryButtonActiveBorderColor;
+        }
+    }
+    .ui-button-info{
+        margin: 0;
+        color: $infoButtonTextColor;
+        background-color: $infoButtonBgColor;
+        border: $infoButtonBorder;
+        font-size: $fontSize;
+        @include transition($buttonTransition);
+
+        &:enabled:hover {
+            background-color: $infoButtonHoverBgColor;
+            color: $infoButtonHoverTextColor;
+            border-color: $infoButtonHoverBorderColor;
+        }
+
+        &:enabled:focus {
+            background-color: $infoButtonHoverBgColor;
+            color: $infoButtonHoverTextColor;
+            border-color: $infoButtonHoverBorderColor;
+        }
+       
+        &:enabled:active  {
+            background-color: $infoButtonActiveBgColor;
+            color: $infoButtonActiveTextColor;
+            border-color: $infoButtonActiveBorderColor  ;
+        }
+    }
+    .ui-button-success{
+        margin: 0;
+        color: $successButtonTextColor;
+        background-color: $successButtonBgColor;
+        border: $successButtonBorder;
+        font-size: $fontSize;
+        @include transition($buttonTransition);
+
+        &:enabled:hover {
+            background-color: $successButtonHoverBgColor;
+            color: $successButtonHoverTextColor;
+            border-color: $successButtonHoverBorderColor;
+        }
+        
+        &:enabled:focus {
+            background-color: $successButtonHoverBgColor;
+            color: $successButtonHoverTextColor;
+            border-color: $successButtonHoverBorderColor;
+        }       
+       
+        &:enabled:active  {
+            background-color: $successButtonActiveBgColor;
+            color: $successButtonActiveTextColor;
+            border-color: $successButtonActiveBorderColor;
+        }
+    }
+    .ui-button-warning{
+        margin: 0;
+        color: $warningButtonTextColor;
+        background-color: $warningButtonBgColor;
+        border: $warningButtonBorder;
+        font-size: $fontSize;
+        @include transition($buttonTransition);
+
+        &:enabled:hover {
+            background-color: $warningButtonHoverBgColor;
+            color: $warningButtonHoverTextColor;
+            border-color: $warningButtonHoverBorderColor;
+        }
+        
+        &:enabled:focus {
+            background-color: $warningButtonHoverBgColor;
+            color: $warningButtonHoverTextColor;
+            border-color: $warningButtonHoverBorderColor;
+        }
+                       
+        &:enabled:active  {
+            background-color: $warningButtonActiveBgColor;
+            color: $warningButtonActiveTextColor;
+            border-color: $warningButtonActiveBorderColor;
+        }
+    }
+    .ui-button-danger{
+        margin: 0;
+        color: $dangerButtonTextColor;
+        background-color: $dangerButtonBgColor;
+        border: $dangerButtonBorder;
+        font-size: $fontSize;
+        @include transition($buttonTransition);
+
+        &:enabled:hover {
+            background-color: $dangerButtonHoverBgColor;
+            color: $dangerButtonHoverTextColor;
+            border-color: $dangerButtonHoverBorderColor;
+        }
+        &:enabled:focus {
+            background-color: $dangerButtonHoverBgColor;
+            color: $dangerButtonHoverTextColor;
+            border-color: $dangerButtonHoverBorderColor;
+        }                                       
+        &:enabled:active  {
+            background-color: $dangerButtonActiveBgColor;
+            color: $dangerButtonActiveTextColor;
+            border-color: $dangerButtonActiveBorderColor;
         }
     }
 
-    &.ui-button-icon-only {
-        width: $buttonIconOnlyWidth;
 
-        .ui-button-text {
-            padding: $buttonIconOnlyPadding;
-        }
-    }
 
-    &.ui-button-raised {
-        @include shadow($raisedButtonShadow);
-    }
 
-    &.ui-button-rounded {
-        @include border-radius($roundedButtonBorderRadius);
-    }
-}
 
-.ui-fluid {
-    .ui-button-icon-only {
-        width: $buttonIconOnlyWidth;
-    }
+
 }

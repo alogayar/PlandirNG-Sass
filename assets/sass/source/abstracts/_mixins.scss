@@ -2,7 +2,6 @@
 //  Sass mixins de Prime NG
 // -----------------------------------------------------------------------------
 
-
 @mixin icon-override($icon) {    
   &:before {
       content: $icon;

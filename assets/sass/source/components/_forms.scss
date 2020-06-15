@@ -1,7 +1,7 @@
 /* Purchase the Designer API to get full access to the theme engine. */
 
 body {
-    .ui-inputtext {
+    .dpj-inputtext {
         font-size: $fontSize;
         color: $textColor;
         background: $inputBgColor;
@@ -10,11 +10,11 @@ body {
         @include transition($inputTransition);
         @include appearance(none);
 
-        &:enabled:hover:not(.ui-state-error) {
+        &:enabled:hover:not(.dpj-state-error) {
             border-color: $inputHoverBorderColor;
         }
 
-        &:enabled:focus:not(.ui-state-error) {
+        &:enabled:focus:not(.dpj-state-error) {
             @include focused-input();
         }
 
@@ -23,14 +23,14 @@ body {
         }
     }
 
-    .ui-chkbox {
+    .dpj-chkbox {
         display: inline-block;
         vertical-align: middle;
         margin: 0;
         width: $checkboxWidth;
         height: $checkboxHeight;
 
-        .ui-chkbox-box {
+        .dpj-chkbox-box {
             border: $inputBorder;
             background-color: $inputBgColor;
             width: $checkboxWidth;
@@ -39,35 +39,35 @@ body {
             @include border-radius($borderRadius);
             @include transition($checkboxTransition);
 
-            &:not(.ui-state-disabled):hover {
+            &:not(.dpj-state-disabled):hover {
                 border-color: $inputHoverBorderColor;
             }
 
-            &.ui-state-focus {
+            &.dpj-state-focus {
                 border-color: $checkboxFocusBorderColor;
                 background-color: $checkboxFocusBgColor;
                 color: $checkboxFocusTextColor;
             }
 
-            &.ui-state-active {
+            &.dpj-state-active {
                 border-color: $checkboxActiveBorderColor;
                 background-color: $checkboxActiveBgColor;
                 color: $checkboxActiveTextColor;
 
-                &:not(.ui-state-disabled):hover {
+                &:not(.dpj-state-disabled):hover {
                     border-color: $checkboxActiveHoverBorderColor;
                     background-color: $checkboxActiveHoverBgColor;
                     color: $checkboxActiveHoverTextColor;
                 }
 
-                &.ui-state-focus {
+                &.dpj-state-focus {
                     border-color: $checkboxActiveFocusBorderColor;
                     background-color: $checkboxActiveFocusBgColor;
                     color: $checkboxActiveFocusTextColor;
                 }
             }
 
-            .ui-chkbox-icon {
+            .dpj-chkbox-icon {
                 overflow: hidden;
                 position: relative;
                 font-size: $fontSize + 4;
@@ -75,28 +75,28 @@ body {
         }
     }
 
-    .ui-chkbox-label {
+    .dpj-chkbox-label {
         margin: 0 0 0 $inlineSpacing;
     }
 
-    .ui-listbox {
+    .dpj-listbox {
         padding: 0;
         min-width: $inputListMinWidth;
         background: $inputBgColor;
         border: $inputBorder;
 
-        .ui-chkbox {
+        .dpj-chkbox {
             margin: 0 $inlineSpacing 0 0;
         }
 
-        .ui-listbox-header {
+        .dpj-listbox-header {
             padding: $inputListHeaderPaddingTop $inputListHeaderPaddingRight $inputListHeaderPaddingBottom $inputListHeaderPaddingLeft;
             border-bottom: $inputListHeaderBorder;
             color: $inputListHeaderTextColor;
             background-color: $inputListHeaderBgColor;
             margin: $inputListHeaderMargin;
 
-            .ui-listbox-filter-container {
+            .dpj-listbox-filter-container {
                 width: calc(100% - (#{$inputListHeaderPaddingLeft} + #{$inputListHeaderPaddingLeft} + #{$inlineSpacing}));
 
                 input {
@@ -104,7 +104,7 @@ body {
                     padding-right: 2em;
                 }
 
-                .ui-listbox-filter-icon {
+                .dpj-listbox-filter-icon {
                     top: 50%;
                     left: auto;
                     margin-top: -.5em;
@@ -114,8 +114,8 @@ body {
             }
         }
 
-        .ui-listbox-list {
-            .ui-listbox-item {
+        .dpj-listbox-list {
+            .dpj-listbox-item {
                 margin: $inputListItemMargin;
                 padding: $inputListItemPadding;
                 border: $inputListItemBorder;
@@ -123,12 +123,12 @@ body {
                 background-color: $inputListItemBgColor;
                 @include border-radius(0);
 
-                &.ui-state-highlight {
+                &.dpj-state-highlight {
                     color: $inputListItemHighlightTextColor;
                     background-color: $inputListItemHighlightBgColor;
                 }
 
-                .ui-chkbox {
+                .dpj-chkbox {
                     position: static;
                     display: inline-block;
                     vertical-align: middle;
@@ -143,18 +143,18 @@ body {
         }
 
 
-        &:not(.ui-state-disabled) {
-            .ui-listbox-item {
-                &:not(.ui-state-highlight):hover {
+        &:not(.dpj-state-disabled) {
+            .dpj-listbox-item {
+                &:not(.dpj-state-highlight):hover {
                     color: $inputListItemHoverTextColor;
                     background-color: $inputListItemHoverBgColor;
                 }
             }
         }
 
-        &.ui-state-disabled {
-            .ui-chkbox-box {
-                &:not(.ui-state-disabled):not(.ui-state-active):hover {
+        &.dpj-state-disabled {
+            .dpj-chkbox-box {
+                &:not(.dpj-state-disabled):not(.dpj-state-active):hover {
                     border: $inputBorder;
                 }
             }
