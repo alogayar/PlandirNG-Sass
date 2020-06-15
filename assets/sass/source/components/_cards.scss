@@ -1,3 +1,8 @@
+
+// -----------------------------------------------------------------------------
+// Este fichero contiene todos los estilos relacionados con el componente card
+// -----------------------------------------------------------------------------
+
 body {
     .ui-card {
         background-color:$primaryTextColor;
@@ -6,7 +11,7 @@ body {
     }
     
     .ui-card-header img {
-        width: 50%;
+        width: 25%;
     }
     
     .ui-card-body {
