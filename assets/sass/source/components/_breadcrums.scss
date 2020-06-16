@@ -1,0 +1,42 @@
+/** Breadcrumb **/
+body .ui-breadcrumb {
+  background-color: #c8c8c8;
+  border: 1px solid $primaryColor;
+  padding: 0.571em 1em;
+  @include border-radius($breadcrumBorderRadius);
+
+  ul {
+    margin-top: 10px;
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    list-style: none;
+    border: 1px solid #8EA22D;
+  }
+
+  ul li .ui-menuitem-link {
+    display: inline-block;
+    vertical-align: top;
+    color: #333333;
+    padding: 0;
+    margin: 0;
+    @include transition($breadcrumTransition);
+
+    &:focus {
+      outline: 0 none;
+      outline-offset: 0;
+      @include shadow($breadcrumShadow);
+    }
+  }
+  ul li.ui-breadcrumb-chevron {
+    margin: 0 0.5em 0 0.5em;
+    color: #848484;
+  }
+  ul li:first-child a {
+    color: #848484;
+    margin: 0;
+  }
+  ul li .ui-menuitem-icon {
+    color: #848484;
+  }
+}
