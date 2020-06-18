@@ -33,6 +33,12 @@ body {
   .ui-widget-content{
     font-weight: normal;
   }
+
+  .fa, .fas, .fab  {
+    padding-right: $paddingRightFawesome;
+  }
+
+
   
  
 }
