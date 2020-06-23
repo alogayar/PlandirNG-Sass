@@ -1,7 +1,6 @@
 @charset "UTF-8";
  
 // 1. Configuration and helpers
-<<<<<<< HEAD
 @import              
   'abstracts/variables',      
   'abstracts/functions',                        
@@ -20,46 +19,19 @@
   'base/helpers';    
    
 // 4. Layout-related sections     
-=======
-@import               
-  'abstracts/variables',     
-  'abstracts/functions',                       
-  'abstracts/mixins';      
-                                 
-// 2. Vendors        
-@import           
-  'vendors/normalize',          
-  'vendors/bootstrap/grid';               
-         
-    
-// 3. Base stuff             
-@import         
-  'base/base',            
-  'base/fonts',                
-  'base/helpers';          
-     
-// 4. Layout-related sections    
->>>>>>> 188ecec645d81414ed17fe1cde8fe61c5eb45900
 @import 
   'layout/header',       
   'layout/footer';   
               
 // 5. Components 
 @import    
-<<<<<<< HEAD
   'components/button', 
   'components/cards',  
   'components/tabs', 
-  'components/breadcrums';   
+  'components/breadcrums', 
+  'components/inputs';
 
   // 6. Pages 
 @import    
-'pages/acceso';     
-=======
-  'components/button',  
-  'components/cards',
-  'components/tabs', 
-  'components/breadcrums',
-  'components/inputs';
-  
->>>>>>> 188ecec645d81414ed17fe1cde8fe61c5eb45900
+  'pages/acceso';     
+ 

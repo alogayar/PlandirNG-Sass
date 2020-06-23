@@ -21,16 +21,13 @@ body {
         }
         
       }
-<<<<<<< HEAD
       li.ui-state-active {
         background-color: $primaryDarkColor;
         color: $primaryTextColor;
       }
-=======
 
       
       li.ui-state-active,
->>>>>>> 188ecec645d81414ed17fe1cde8fe61c5eb45900
       li.ui-tabview-selected a,
       li.ui-state-disabled a,
       li.ui-state-processing a {
@@ -40,7 +37,6 @@ body {
       }
     }
 
-<<<<<<< HEAD
   .ui-tabview .ui-tabview-nav li .ui-tabview-right-icon {
     margin-left: 0.25em;
     vertical-align: middle;
@@ -175,7 +171,6 @@ body {
   .ui-tabmenu .ui-menuitem-text {
     vertical-align: middle;
   }
-=======
     .ui-tabview-panel {
       background: none;
       background-color: #fff;
@@ -205,7 +200,6 @@ body {
       font-weight: bold;
       cursor: pointer;
     }
->>>>>>> 188ecec645d81414ed17fe1cde8fe61c5eb45900
 
     .ui-tabview-nav li a,
     .ui-tabview.ui-tabview-collapsible .ui-tabview-nav li.ui-tabview-selected a {
