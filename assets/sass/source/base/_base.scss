@@ -33,6 +33,17 @@ body {
   .ui-widget-content{
     font-weight: normal;
   }
+  .pi {
+    font-size: $sizeIcons;
+    font-family: primeicons;    
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+  }
   
  
 }

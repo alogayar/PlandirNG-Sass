@@ -20,6 +20,10 @@ body {
           color: #fff;
         }
       }
+      li.ui-state-active {
+        background-color: $primaryDarkColor;
+        color: $primaryTextColor;
+      }
       li.ui-tabview-selected a,
       li.ui-state-disabled a,
       li.ui-state-processing a {
@@ -59,8 +63,13 @@ body {
   }
 
   .ui-tabview .ui-tabview-nav li .ui-tabview-close {
-    margin: 0.5em 0.3em 0 0;
+    vertical-align: middle;
     cursor: pointer;
+    // color: #4D4D4D;
+    // margin: 1.3em 0.5em 0 0;
+    // vertical-align: middle;
+    // font-weight: bold;
+    // font-size: 0.75em;
   }
 
   /* per orientation settings */

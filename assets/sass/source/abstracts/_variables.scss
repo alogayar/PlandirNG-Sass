@@ -17,18 +17,29 @@ $primaryDarken: darken($primaryColor, 20%);
 $grisCorporativoColor:#4D4D4D;
 $azulCorporativoColor:#286090;
 
+$baseUrlAssets: "../../src/assets/";
+$carpetaImages: "img/";
+
+
+
+
+
 
 // ========================================================================================
 // Estilos Globales
 // ========================================================================================
 
 //Global
-$fontFamily:"Open Sans","Helvetica Neue",sans-serif;
+//$fontFamily:"Open Sans","Helvetica Neue",sans-serif;
+$fontFamily: "Poppins", sans-serif;
 $fontSize:14px;
 $textColor:#333333;
 $textSecondaryColor:lighten($textColor,25%);
 $borderRadius:3px;
 $transitionDuration:.3s;
+
+//iconos Primeicons
+$sizeIcons: 1em;
 
 //highlight
 $highlightBgColor:$primaryColor;
