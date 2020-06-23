@@ -19,40 +19,28 @@ body {
           text-decoration: none;
           color: #fff;
         }
+        
       }
+<<<<<<< HEAD
       li.ui-state-active {
         background-color: $primaryDarkColor;
         color: $primaryTextColor;
       }
+=======
+
+      
+      li.ui-state-active,
+>>>>>>> 188ecec645d81414ed17fe1cde8fe61c5eb45900
       li.ui-tabview-selected a,
       li.ui-state-disabled a,
       li.ui-state-processing a {
         cursor: text;
         background-color: $primaryDarkColor;
-        color: $primaryTextColor;
+        color: $primaryTextColor;        
       }
     }
-  }
 
-  .ui-tabview .ui-tabview-nav li a,
-  .ui-tabview.ui-tabview-collapsible .ui-tabview-nav li.ui-tabview-selected a {
-    cursor: pointer;
-  }
-
-  .ui-tabview .ui-tabview-panel {
-    background: none;
-    background-color: #fff;
-    padding: 1em 1em;
-    border: 1px solid $primaryColor;
-    color: #333333;
-    font-size: 14px;
-  }
-
-  .ui-tabview .ui-tabview-nav li .ui-tabview-left-icon {
-    margin-right: 0.25em;
-    vertical-align: middle;
-  }
-
+<<<<<<< HEAD
   .ui-tabview .ui-tabview-nav li .ui-tabview-right-icon {
     margin-left: 0.25em;
     vertical-align: middle;
@@ -187,8 +175,41 @@ body {
   .ui-tabmenu .ui-menuitem-text {
     vertical-align: middle;
   }
+=======
+    .ui-tabview-panel {
+      background: none;
+      background-color: #fff;
+      padding: 1em 1em;
+      border: 1px solid $primaryColor;
+      color: #333333;
+      font-size: 14px;
+    }
+  
+    .ui-tabview-nav li .ui-tabview-left-icon {
+      margin-right: 0.25em;
+      vertical-align: middle;
+    }
+  
+    .ui-tabview-nav li .ui-tabview-right-icon {
+      margin-left: 0.25em;
+      vertical-align: middle;
+    }
+  
+    .ui-tabview-title {
+      vertical-align: middle;
+    }
+  
+    .ui-tabview-nav li .ui-tabview-close {
+      margin: 1.3em 0.7em 0 0;
+      font-size: 11px;      
+      font-weight: bold;
+      cursor: pointer;
+    }
+>>>>>>> 188ecec645d81414ed17fe1cde8fe61c5eb45900
 
-  .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-disabled a {
-    cursor: default;
+    .ui-tabview-nav li a,
+    .ui-tabview.ui-tabview-collapsible .ui-tabview-nav li.ui-tabview-selected a {
+      cursor: pointer;
+    }
   }
 }

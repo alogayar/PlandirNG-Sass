@@ -25,6 +25,10 @@ $carpetaImages: "img/";
 
 
 
+
+
+
+
 // ========================================================================================
 // Estilos Globales
 // ========================================================================================
@@ -38,8 +42,13 @@ $textSecondaryColor:lighten($textColor,25%);
 $borderRadius:3px;
 $transitionDuration:.3s;
 
+<<<<<<< HEAD
 //iconos Primeicons
 $sizeIcons: 1em;
+=======
+//FontAwesome
+$paddingRightFawesome:5px;
+>>>>>>> 188ecec645d81414ed17fe1cde8fe61c5eb45900
 
 //highlight
 $highlightBgColor:$primaryColor;
@@ -170,3 +179,62 @@ $breadcrumBorderRadius: 4px;
 // ========================================================================================
 // Personalizacion de las card
 // ========================================================================================
+
+
+//tabview
+$tabsNavBorder:0 none;
+$tabsNavBgColor:transparent;
+$tabHeaderSpacing: 2px;
+//panel common (e.g. accordion, panel, tabview)
+$panelHeaderBorder:1px solid 
+#c8c8c8;
+$panelHeaderBgColor:
+#f4f4f4;
+$panelHeaderTextColor:
+#333333;
+$panelHeaderIconColor:
+#848484;
+$panelHeaderIconHoverColor:
+#333333;
+$panelHeaderIconTransition:color $transitionDuration, background-color $transitionDuration, box-shadow $transitionDuration;
+$panelHeaderFontWeight:700;
+$panelHeaderPadding:0.571em 1em;
+$panelContentBorder:1px solid 
+#c8c8c8;
+$panelContentBgColor:
+#ffffff;
+$panelContentTextColor:$textColor;
+$panelContentPadding:0.571em 1em;
+$panelFooterBorder:1px solid 
+#c8c8c8;
+$panelFooterBgColor:
+#ffffff;
+$panelFooterTextColor:$textColor;
+$panelFooterPadding:0.571em 1em;
+$panelHeaderHoverBgColor:
+#dbdbdb;
+$panelHeaderHoverBorder:1px solid 
+#dbdbdb;
+$panelHeaderHoverTextColor:
+#333333;
+$panelHeaderHoverIconColor:
+#333333;
+$panelHeaderActiveBgColor:$primaryColor;
+$panelHeaderActiveBorder:1px solid $primaryColor;
+$panelHeaderActiveTextColor:
+#ffffff;
+$panelHeaderActiveIconColor:
+#ffffff;
+$panelHeaderActiveHoverBgColor:$primaryDarkerColor;
+$panelHeaderActiveHoverBorder:1px solid $primaryDarkerColor;
+$panelHeaderActiveHoverTextColor:
+#ffffff;
+$panelHeaderActiveHoverIconColor:
+#ffffff;
+$panelHeaderTransition: background-color $transitionDuration, box-shadow $transitionDuration;
+
+$maskBgColor:rgba(0, 0, 0, 0.4);        //dialog mask
+$inlineSpacing:.5em;                      //spacing between inline elements
+$chipsItemMargin:0 .286em 0 0;            //autocomplete and chips token spacing
+$dataIconColor:$textSecondaryColor;       //icon color of a data such as treetoggler, table expander
+$dataIconHoverColor:$textColor;           //hover icon color of a data such as treetoggler, table expander
