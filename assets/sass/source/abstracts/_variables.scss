@@ -42,13 +42,8 @@ $textSecondaryColor:lighten($textColor,25%);
 $borderRadius:3px;
 $transitionDuration:.3s;
 
-<<<<<<< HEAD
 //iconos Primeicons
 $sizeIcons: 1em;
-=======
-//FontAwesome
-$paddingRightFawesome:5px;
->>>>>>> 188ecec645d81414ed17fe1cde8fe61c5eb45900
 
 //highlight
 $highlightBgColor:$primaryColor;
@@ -192,7 +187,7 @@ $panelHeaderBgColor:
 #f4f4f4;
 $panelHeaderTextColor:
 #333333;
-$panelHeaderIconColor:
+$panelHeaderIconColor: 
 #848484;
 $panelHeaderIconHoverColor:
 #333333;
