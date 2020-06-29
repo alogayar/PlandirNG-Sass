@@ -1,18 +1,18 @@
-@charset "UTF-8";
+  @charset "UTF-8"; 
  
 // 1. Configuration and helpers
 @import                                   
-  'abstracts/variables',          
-  'abstracts/functions',                                                                               
+  'abstracts/variables',            
+  'abstracts/functions',                                                                                     
   'abstracts/mixins';           
-                                    
+                                                     
 // 2. Vendors                    
-@import                                          
+@import                                                          
   'vendors/normalize',                    
   'vendors/bootstrap/grid';                         
-            
-  
-// 3. Base stuff           
+               
+                                         
+// 3. Base stuff                
 @import    
   'base/base',      
   //'base/fonts',           
@@ -21,12 +21,12 @@
 // 4. Layout-related sections     
 @import 
   'layout/header',       
-  'layout/footer';   
-              
-// 5. Components 
+  'layout/footer';    
+                   
+// 5. Components  
 @import    
-  'components/button', 
-  'components/cards',  
+  'components/button',                
+  'components/cards',   
   'components/tabs', 
   'components/breadcrums', 
   'components/inputs';
