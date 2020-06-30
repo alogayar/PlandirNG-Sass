@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-//  Sass mixins de Prime NG
+//  Sass mixins de PlandirNG
 // -----------------------------------------------------------------------------
 
 @mixin icon-override($icon) {    
@@ -24,11 +24,24 @@
   }
 }
 
+@mixin flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
 @mixin appearance($val) {
   -webkit-appearance: $val;
   -moz-appearance: $val;
   appearance: $val;
 }
+
+@mixin box-sizing($val) {
+  -webkit-box-sizing: $val;
+  -moz-box-sizing: $val;
+  box-sizing: $val;
+}
+
 
 @mixin transition($transition...) {
   -moz-transition:    $transition;
@@ -44,7 +57,7 @@
 }
 
 @mixin disabled-input() {
-border-color: $inputDisabledBorderColor;
+  border-color: $inputDisabledBorderColor;
   background-color: $inputDisabledBgColor;
   color: $inputDisabledTextColor;
   cursor: default !important;
@@ -126,4 +139,4 @@ filter: alpha(opacity=$opacity-ie);
   -o-transform: scale($deg);
   -ms-transform: scale($deg);
   transform: scale($deg);
-}
+} 
