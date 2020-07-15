@@ -7,42 +7,42 @@
   'abstracts/mixins';           
                                                          
 // 2. Vendors                      
-@import                                                              
+@import                                                                   
   'vendors/normalize',                                    
   'vendors/bootstrap/grid';                                                  
                  
                                                                               
 // 3. Base stuff                                         
-@import              
+@import               
   'base/base',                
-  //'base/fonts',               
+  //'base/fonts',                        
   'base/helpers';         
        
 // 4. Layout-related sections                 
 @import     
-  'layout/header',               
+  'layout/header',                       
   'layout/footer',                     
   'layout/grid';         
                         
-// 5. Components                         
+// 5. Components                                               
 @import        
 'components/accordion',     
 'components/button',                     
 'components/calendar', 
-'components/cards',         
+'components/cards',             
 'components/dataview',
 'components/inputs',
 'components/listbox', 
 'components/menus',
 'components/messages',
 'components/panels',
-'components/table',    
+'components/table',         
 'components/tabs',                
 'components/dropdowns'; 
 
  
   // 6. Pages 
-//@import    
-  //'pages/acceso';     
+@import    
+  'pages/acceso';         
  
         
