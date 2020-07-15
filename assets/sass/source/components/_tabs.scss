@@ -3,7 +3,7 @@ body {
     padding: 0.25em;
     .ui-tabview-nav {
       margin: 0;
-      li {
+      li {        
         list-style: none;
         float: left;
         position: relative;
@@ -12,7 +12,7 @@ body {
         white-space: nowrap;
         background-color: $primaryColor;
         display: block;
-        font-size: 14px;
+        font-size: 13px;
         a {
           float: left;
           padding: 0.5em 1em;
@@ -22,8 +22,8 @@ body {
         
       }
       li.ui-state-active {
-        background-color: $primaryDarkColor;
-        color: $primaryTextColor;
+        // background-color: $primaryDarkColor;
+        // color: $primaryTextColor;
       }
 
       
@@ -31,9 +31,9 @@ body {
       li.ui-tabview-selected a,
       li.ui-state-disabled a,
       li.ui-state-processing a {
-        cursor: text;
-        background-color: $primaryDarkColor;
-        color: $primaryTextColor;        
+        // cursor: text;
+        // background-color: $primaryDarkColor;
+        // color: $primaryTextColor;        
       }
     }
 

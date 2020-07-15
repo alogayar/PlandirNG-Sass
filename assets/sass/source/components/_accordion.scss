@@ -1,20 +1,25 @@
-
-
 .ui-accordion {
-  width: 100%;
+  width: 100%;    
 
-  .ui-state-default {
-    font-size: 30px;
+  .ui-state-active {        
+    border: 0;
+    background-color: #eaeaea;
+    @include shadow($cardShadow);
+    span {
+     color:$primaryDarkColor;
+    }
   }
-  .ui-state-active {
-    font-size: 30px;
-  }
-
+  
   .ui-accordion-header {
     cursor: pointer;
     position: relative;
-    margin-top: 1px;
-    border: 1px solid $primaryColor;    
+    margin-top: 1px;    
+    transition: all 200ms;    
+    
+    &:hover {      
+      color:$primaryDarkColor;
+      background-color: #eaeaea;
+    }   
 
     a {
       color: $primaryColor;
@@ -22,6 +27,10 @@
       line-height: 1rem;
       display: block;
       padding: 0.5em;
+      &:hover {
+        text-decoration: none;
+        //color: #fff;
+      }
     }
   }
 

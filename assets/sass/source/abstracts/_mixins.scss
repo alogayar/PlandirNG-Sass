@@ -30,6 +30,7 @@
   display: flex;
 }
 
+
 @mixin appearance($val) {
   -webkit-appearance: $val;
   -moz-appearance: $val;
@@ -40,6 +41,10 @@
   -webkit-box-sizing: $val;
   -moz-box-sizing: $val;
   box-sizing: $val;
+}
+
+@mixin linear-gradient($val) {
+  background: linear-gradient(180deg, $val 0%, darken($val,10%) 100%);  
 }
 
 
@@ -55,6 +60,18 @@
   outline: 0 none;
   @include shadow($inputFocusShadow);
 }
+
+@mixin hover-input() {
+  outline: 0 none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: $primaryColor;
+}
+
+%state-highlight {
+  background-color: $highlightBgColor;
+  color:$primaryTextColor;           
+}
+ 
 
 @mixin disabled-input() {
   border-color: $inputDisabledBorderColor;

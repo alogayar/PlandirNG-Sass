@@ -2,45 +2,47 @@
  
 // 1. Configuration and helpers
 @import                                   
-  'abstracts/variables',            
-  'abstracts/functions',                                                                                         
+  'abstracts/variables',                         
+  'abstracts/functions',                                                                                              
   'abstracts/mixins';           
-                                                     
-// 2. Vendors                    
-@import                                                          
-  'vendors/normalize',                     
-  'vendors/bootstrap/grid';                                
+                                                         
+// 2. Vendors                      
+@import                                                              
+  'vendors/normalize',                                    
+  'vendors/bootstrap/grid';                                                  
                  
-                                         
-// 3. Base stuff                 
+                                                                              
+// 3. Base stuff                                         
+@import              
+  'base/base',                
+  //'base/fonts',               
+  'base/helpers';         
+       
+// 4. Layout-related sections                 
+@import     
+  'layout/header',               
+  'layout/footer',                     
+  'layout/grid';         
+                        
+// 5. Components                         
 @import        
-  'base/base',
-  //'base/fonts',             
-  'base/helpers';    
-    
-// 4. Layout-related sections      
-@import  
-  'layout/header',       
-  'layout/footer';    
-                   
-// 5. Components  
-@import      
-'components/accordion',
-'components/breadcrums', 
-'components/button',                
-'components/calendar',
-'components/cards',   
+'components/accordion',     
+'components/button',                     
+'components/calendar', 
+'components/cards',         
 'components/dataview',
 'components/inputs',
-'components/listbox',
+'components/listbox', 
 'components/menus',
 'components/messages',
 'components/panels',
-'components/table',
-'components/tabs';
+'components/table',    
+'components/tabs',                
+'components/dropdowns'; 
 
-
+ 
   // 6. Pages 
 //@import    
   //'pages/acceso';     
  
+        

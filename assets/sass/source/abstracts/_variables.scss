@@ -3,37 +3,30 @@
 // Esquema de colores principales
 // ========================================================================================
 
-// $primaryColor:#698e02;
-// $secondaryColor: #4d4d4d;
-// $terciaryColor:#286090;
-
 $primaryColor:#8EA22D;
-$primaryDarkColor:#4d4d4d;
-$primaryDarkerColor:#005b9f;
+
+$primaryBgColor : #ffffff;
 $primaryTextColor:#ffffff;
 
-$primaryDarken: darken($primaryColor, 20%);
 
-$grisCorporativoColor:#4D4D4D;
+
+$primaryDarkColor:#757575;
+$primaryDarkerColor:#005b9f;
+
+/* Color primario para los bordes de los componentes */
+$primaryColorBorde: #a6a6a6;
+
+$grisCorporativoColor:#757575;
 $azulCorporativoColor:#286090;
 
 $baseUrlAssets: "../../src/assets/";
-$carpetaImages: "img/";
-
-
-
-
-
-
-
-
+$carpetaImages: "img/"; 
 
 
 // ========================================================================================
 // Estilos Globales
 // ========================================================================================
 
-//Global
 //$fontFamily:"Open Sans","Helvetica Neue",sans-serif;
 $fontFamily: "Poppins", sans-serif;
 $fontSize:14px;
@@ -48,6 +41,10 @@ $sizeIcons: 1em;
 //highlight
 $highlightBgColor:$primaryColor;
 $highlightColorText:$primaryTextColor;
+
+$inputFocusBorderColor: $primaryColor;
+$inputFocusShadow:  inset 0 0 0 0.2em $primaryColor;
+
 
 // ========================================================================================
 // Personalizacion de los botones
@@ -89,20 +86,20 @@ $secondaryButtonBgColor:#f4f4f4;
 $secondaryButtonBorder:1px solid #f4f4f4;
 $secondaryButtonTextColor:#333333;
 // hover
-$secondaryButtonHoverBgColor:#c8c8c8;
-$secondaryButtonHoverTextColor:#333333;
-$secondaryButtonHoverBorderColor:#c8c8c8;
+$secondaryButtonHoverBgColor:#8EA22D;
+$secondaryButtonHoverTextColor:#f5f5f5;
+$secondaryButtonHoverBorderColor:#8EA22D;
 // active
 $secondaryButtonActiveBgColor:#a0a0a0;
-$secondaryButtonActiveTextColor:#333333;
+$secondaryButtonActiveTextColor:#f5f5f5;
 $secondaryButtonActiveBorderColor:#a0a0a0;
 
 //=====================
 // Boton Info
 //=====================
 
-$infoButtonBgColor:#007ad9;
-$infoButtonBorder:1px solid #007ad9;
+$infoButtonBgColor:#516e86;
+$infoButtonBorder:1px solid #516e86;
 $infoButtonTextColor:#ffffff;
 //hover
 $infoButtonHoverBgColor:#116fbf;
@@ -113,47 +110,47 @@ $infoButtonActiveBgColor:#005b9f;
 $infoButtonActiveTextColor:#ffffff;
 $infoButtonActiveBorderColor:#005b9f;
 //=====================
-// Boton Info
+// Boton Success
 //=====================
-$successButtonBgColor:#34A835;
-$successButtonBorder:1px solid #34A835;
+$successButtonBgColor:#7da87b;
+$successButtonBorder:1px solid #7da87b;
 $successButtonTextColor:#ffffff;
 //hover
 $successButtonHoverBgColor:#107D11;
 $successButtonHoverTextColor:#ffffff;
 $successButtonHoverBorderColor:#107D11;
 //active
-$successButtonActiveBgColor:#0C6B0D;
-$successButtonActiveTextColor:#ffffff;
-$successButtonActiveBorderColor:#0C6B0D;
+// $successButtonActiveBgColor:#0C6B0D;
+ $successButtonActiveTextColor:#ffffff;
+// $successButtonActiveBorderColor:#0C6B0D;
 //=====================
 // Boton Warning
 //=====================
-$warningButtonBgColor:#ffba01;
-$warningButtonBorder:1px solid #ffba01;
-$warningButtonTextColor:#333333;
+$warningButtonBgColor:#eed624;
+$warningButtonBorder:1px solid #eed624;
+$warningButtonTextColor:#4b4a4a;
 //hover
 $warningButtonHoverBgColor:#ED990B;
-$warningButtonHoverTextColor:#333333;
+$warningButtonHoverTextColor:#444444;
 $warningButtonHoverBorderColor:#ED990B;
 //active
-$warningButtonActiveBgColor:#D38B10;
-$warningButtonActiveTextColor:#333333;
-$warningButtonActiveBorderColor:#D38B10;
+$warningButtonActiveBgColor:#c6b422;
+$warningButtonActiveTextColor:#ffffff;
+$warningButtonActiveBorderColor:#c6b422;
 //=====================
 // Boton Danger
 //=====================
-$dangerButtonBgColor:#e91224;
-$dangerButtonBorder:1px solid #e91224;
+$dangerButtonBgColor:#d15319;
+$dangerButtonBorder:1px solid #d15319;
 $dangerButtonTextColor:#ffffff;
 //hover
-$dangerButtonHoverBgColor:#c01120;
+$dangerButtonHoverBgColor:#960713;
 $dangerButtonHoverTextColor:#ffffff;
 $dangerButtonHoverBorderColor:#c01120;
 //active
-$dangerButtonActiveBgColor:#a90000;
+$dangerButtonActiveBgColor:#960713;
 $dangerButtonActiveTextColor:#ffffff;
-$dangerButtonActiveBorderColor:#a90000;
+$dangerButtonActiveBorderColor:#960713;
 
 
 // ========================================================================================
@@ -233,3 +230,40 @@ $inlineSpacing:.5em;                      //spacing between inline elements
 $chipsItemMargin:0 .286em 0 0;            //autocomplete and chips token spacing
 $dataIconColor:$textSecondaryColor;       //icon color of a data such as treetoggler, table expander
 $dataIconHoverColor:$textColor;           //hover icon color of a data such as treetoggler, table expander
+
+
+// ========================================================================================
+// Personalizacion de las cards
+// ========================================================================================
+
+$DropdowmMinWidth: 14.5em;
+$DropdowmBgColor: #ffffff;
+$DropdowmTransition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+$DropdowmHoverBorderColor: $primaryColor;
+$DropdowmItemsMaxHeigth: 200px;
+$DropdowmItemsColorHover: #eaeaea;
+$DropdowmItemsColorHighlight: #ffffff;
+$DropdowmItemsBgColorHighlight: $primaryColor;
+
+
+// ========================================================================================
+// Personalizacion de las DropDowns
+// ========================================================================================
+
+$DropdowmMinWidth: 14.5em;
+$DropdowmBgColor: #ffffff;
+$DropdowmTransition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+$DropdowmHoverBorderColor: $primaryColor;
+$DropdowmItemsMaxHeigth: 200px;
+$DropdowmItemsColorHover: #eaeaea;
+$DropdowmItemsColorHighlight: #ffffff;
+$DropdowmItemsBgColorHighlight: $primaryColor;
+
+// ========================================================================================
+// Personalizacion de las Listbox
+// ========================================================================================
+
+
+$ListboxMinWidth: 15em; 
+$ListboxBgColor: $primaryBgColor;
+$ListboxPaddingElementos: .25em;

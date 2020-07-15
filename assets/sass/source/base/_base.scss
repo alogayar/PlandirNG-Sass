@@ -24,6 +24,10 @@ html {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline:none;
+}
+
 body {
   .ui-widget,
   .ui-widget .ui-widget {
@@ -43,6 +47,13 @@ body {
     line-height: 1;
     display: inline-block;
     -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color:$primaryColor;
+    &:hover {
+      color: $primaryDarkColor;
+    }
   }
   
  

@@ -1,5 +1,12 @@
 .ui-dataview {
-    position: relative;
+    position: relative;    
+
+    .ui-dataview-header {
+        border: 1px solid #c8c8c8;
+        color:#333;
+    }
+
+
 }
 
 .ui-dataview .ui-paginator {
@@ -19,9 +26,7 @@
 	padding: .5em .75em;
 }
 
-.ui-dataview .ui-dataview-header {
-    border-bottom: 0 none;
-}
+
 
 .ui-dataview .ui-dataview-footer {
     border-top: 0 none;
