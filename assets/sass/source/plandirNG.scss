@@ -1,18 +1,22 @@
   @charset "UTF-8"; 
  
 // 1. Configuration and helpers
+@import                                                                   
+  'vendors/normalize';
+  
+  //Para no tener que compilar en cada cambio todo Bootstrap, uso el CDN en el index.html
+
+  //'vendors/bootstrap/bootstrap-grid',
+  //'vendors/bootstrap/bootstrap';                                                    
+                 
 @import                                   
   'abstracts/variables',                         
   'abstracts/functions',                                                                                              
   'abstracts/mixins';           
                                                          
-// 2. Vendors                      
-@import                                                                   
-  'vendors/normalize',                                    
-  'vendors/bootstrap/grid';                                                  
-                 
-                                                                              
-// 3. Base stuff                                         
+// 2. Vendors                       
+                                                                                
+// 3. Base stuff                                          
 @import               
   'base/base',                
   //'base/fonts',                        
@@ -23,10 +27,11 @@
   'layout/header',                                          
   'layout/footer',                     
   'layout/grid';         
-                        
+                          
 // 5. Components                                               
 @import        
-'components/accordion',                                                
+'components/accordion',   
+'components/breadcrums',                                             
 'components/button',                     
 'components/calendar',   
 'components/cards',                          
@@ -43,6 +48,9 @@
             
   // 6. Pages 
 @import    
-  'pages/acceso';                         
+  'pages/acceso';  
+
+
+
  
                               

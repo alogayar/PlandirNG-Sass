@@ -1,43 +1,39 @@
-
 // ------------------------------------------------------------------------------------
 // Este fichero contiene todos los estilos del componente migas de pan
 // ------------------------------------------------------------------------------------
 
-body .ui-breadcrumb {
-  background-color: $primaryTextColor;
-  border: 1px solid $primaryColor;
-  font-size: 13px;
-  padding: 0.571em 1em;
-  @include border-radius($breadcrumBorderRadius);
 
-  ul li .ui-menuitem-link {
-    display: inline-block;
-    vertical-align: top;
-    color: #333333;
-    padding: 0;
-    margin: 0;
-    @include transition($breadcrumTransition);
+body {
+  .ui-breadcrumb {
+      background-color: $panelContentBgColor;
+      border: $panelContentBorder;
+      padding: $panelContentPadding;
 
-    &:focus {
-      outline: 0 none;
-      outline-offset: 0;
-      font-weight: bold;
-      color:$primaryColor;
-    
-      //@include shadow($breadcrumShadow);
-    }
-    
-  }
-  ul li.ui-breadcrumb-chevron {
-    margin: 0 0.5em 0 0.5em;
-    color: $primaryColor;
-  }
-  ul li:first-child a {
-    color: $primaryColor;
-    margin: 0;
-  }
-  ul li .ui-menuitem-icon {
-    color: $primaryColor;
-    font-weight: bold;
+      ul {
+          li {
+              float: none;
+              display: inline-block;
+              vertical-align: middle;
+
+              .ui-menuitem-link {
+                  color: $panelContentTextColor;
+                  margin: 0;
+                  float: none;
+              }
+
+              &.ui-breadcrumb-chevron {
+                  margin: 0 $inlineSpacing 0 $inlineSpacing;
+                  color: $textSecondaryColor;
+              }
+
+              &:first-child {
+                  a {
+                      color: $textSecondaryColor;
+                      margin: 0;
+                      font-size: $fontSize + 4;
+                  }
+              }
+          }
+      }
   }
 }
