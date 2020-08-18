@@ -21,11 +21,10 @@ body {
         }
         
       }
-      li.ui-state-active {
-        // background-color: $primaryDarkColor;
-        // color: $primaryTextColor;
+      li.ui-state-active:hover {
+         background-color: $primaryColor !important;
+         border-color: $primaryColor !important;         
       }
-
       
       li.ui-state-active,
       li.ui-tabview-selected a,
