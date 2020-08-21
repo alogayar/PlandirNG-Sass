@@ -1,6 +1,6 @@
 # PlandirNG - SASS 
 
-Proyecto que desarrolla un tema css para nuestros componentes Prime de Angular, que usaremos en el nuevo Plan Director.
+Proyecto que desarrolla un template css para nuestros componentes Prime de Angular, que usaremos en el nuevo Plan Director.
 
 ## Tecnologia
 
@@ -12,31 +12,41 @@ El echo de tener una buena estructuración en nuestros estilos nos hará la vida
 No existe un estándar de organización del proyecto, he optado por organizarlo de la siguiente forma : 
 
 - assets/
-    - sass/
-        - dist/css/			
-            - style.min.css
-            - style.min.css.map
+    - sass/        
         - source/
             - abstracts/
                  - _functions.scss
-		 - _mixins.css
+		             - _mixins.css
                  - _variables.scss
             - base/
-		 - _base.scss
+		             - _base.scss
                  - _fonts.scss
-		 - _helpers.scss
+		             - _helpers.scss
             - components/
-                 - _buttons.scss
-		 - _forms.scss
-		 - _table.scss				 
+                 - _accordion
+                 - _breadcrums
+                 - _button
+                 - _calendar
+                 - _cards                         
+                 - _dataview
+                 - _inputs
+                 - _listbox
+                 - _menus
+                 - _messages           
+                 - _panels                       
+                 - _table       
+                 - _tabs              
+                 - _dropdowns
+                 - _menus
             - layout/
                  - _footer.scss
                  - _header.scss
                  - _grid.scss             
             - pages/
+                 - _acceso.scss            
                  - _home.scss            
             - vendors/
-                 - bootstrap/grid.scss
+                 - bootstrap/
                  - normalize.scss       
 		 
          - PlandirNG.scss
@@ -59,7 +69,7 @@ En /#vendor incluiremos archivos de librerías externas y que necesitar� nuest
 
 ## Fichero principal
 
-#prime-dipujaen-theme.scss
+#PlandirNG.scss
 
 @charset "UTF-8";
 
