@@ -2,28 +2,32 @@
 // Estilos definidos para la pagina de login
 // -----------------------------------------------------------------------------
 
-@media (max-width: 575.98px) {
-  .layout-login {
-  }
-}
+// @media (max-width: 575.98px) {
+//   .layout-login {
+//     min-width: 575px;
+//   }
+// }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .layout-login {
-  }
-}
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 576px) and (max-width: 767.98px) {
+//   .layout-login {
+//     min-width: 576px;
+//   }
+// }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .layout-login {
-  }
-}
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 768px) and (max-width: 991.98px) {
+//   .layout-login {
+//     min-width: 768px;
+//   }
+// }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .layout-login {
-  }
-}
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 992px) and (max-width: 1199.98px) {
+//   .layout-login {
+//     min-width: 992px;
+//   }
+// }
 
 /* Mixins propios para el login */
 /*---------------------------------------------------------------------*/
@@ -75,6 +79,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   .layout-principal {
     width: 100%;
@@ -101,12 +109,13 @@ body {
 
     .layout-login {
       width: 100%;
+      min-width: 600px;
       //opacity: 0.8;
       height: 50%;
       background-color: #fff;
       @include shadow($loginBoxShadow);
       position: relative;
-      top: 30%;
+      top: 20%;
       .fila-logo {
         @include flex();
         height: 100%;

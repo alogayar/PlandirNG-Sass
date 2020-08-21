@@ -1,0 +1,34 @@
+body {
+  .ui-fieldset {
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .ui-fieldset-legend {
+    padding: 0.5em 1em;
+    font-size: 14px;
+    color: $primaryColor;
+    width: auto;
+  }
+}
+
+.p-fieldset-legend > a,
+.p-fieldset-legend > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-fieldset-toggleable .p-fieldset-legend a {
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-fieldset-legend-text {
+  line-height: 1;
+}
