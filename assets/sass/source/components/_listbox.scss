@@ -1,0 +1,57 @@
+.ui-listbox {
+    padding: 0;
+    min-width: $ListboxMinWidth;
+    background: $ListboxBgColor;    
+    border: 1px solid $primaryColorBorde !important;
+
+    &.ui-inputtext {
+        padding: 0;
+    }
+    
+    .ui-listbox-list-wrapper {
+        overflow:auto;        
+    }
+    
+    .ui-listbox-list {
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;        
+    }
+
+    .ui-listbox-item {
+        padding: $ListboxPaddingElementos;
+        border: 0 none;
+        cursor: pointer;
+        font-weight: normal;
+        margin-bottom: 1px;
+
+        &:not(.ui-state-highlight):not(.ui-state-disabled):hover{            
+            @include hover-input()
+        }
+        
+        &:focus {            
+            @include focused-input();
+        }
+
+        &.ui-state-highlight {
+            @extend %state-highlight;
+        }
+
+        &>span {            
+            vertical-align: middle;
+            margin:1em;
+        }
+
+        
+        
+    }
+
+    
+    
+
+    
+
+    
+
+
+}

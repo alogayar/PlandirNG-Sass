@@ -1,0 +1,73 @@
+.ui-accordion {
+  width: 100%;    
+
+  .ui-state-active {        
+    border: 0;
+    background-color: #eaeaea;
+    @include shadow($cardShadow);
+    span {
+     color:$primaryDarkColor;
+    }
+  }
+  
+  .ui-accordion-header {
+    cursor: pointer;
+    position: relative;
+    margin-top: 1px;    
+    transition: all 200ms;    
+    
+    &:hover {      
+      color:$primaryDarkColor;
+      background-color: #eaeaea;
+    }   
+
+    a {
+      color: $primaryColor;
+      font-size: 14px;
+      line-height: 1rem;
+      display: block;
+      padding: 0.5em;
+      &:hover {
+        text-decoration: none;
+        //color: #fff;
+      }
+    }
+  }
+
+  .ui-accordion-toggle-icon,
+  .ui-accordion-header-text {
+    vertical-align: middle;
+  }
+
+  .ui-accordion-header.ui-state-disabled {
+    cursor: default;
+    a {
+      cursor: default;
+    }
+  }
+
+  .ui-accordion-content-wrapper-overflown {
+    overflow: hidden;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    padding: 1em;
+    border-top: 0;
+    overflow: visible;
+  }
+}
+
+.ui-rtl {
+  .ui-accordion {
+    .ui-accordion-header a {
+      padding: 0.5em 2em 0.5em 0.5em;
+    }
+    .ui-accordion-toggle-icon {
+      left: initial;
+      right: 0.5em;
+    }
+    .ui-accordion-toggle-icon.pi-caret-right:before {
+      content: "\e904";
+    }
+  }
+}

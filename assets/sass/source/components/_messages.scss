@@ -1,0 +1,75 @@
+.ui-messages {
+    border: none;
+    margin: .5em 0;
+    padding: 1em 1em 1em .5em;
+    position: relative;
+    justify-items: center;
+    background-color: $primaryColor;
+    color:$primaryTextColor;
+    @include flex;
+    @include border-radius(5px);
+    @include linear-gradient(lighten($buttonBgColor, 1%));
+
+}
+
+.ui-messages-success {    
+    @include linear-gradient($buttonBgColor);
+}
+.ui-messages-warn {
+    color: $warningButtonTextColor;
+    @include linear-gradient($warningButtonBgColor);
+}
+.ui-messages-info {
+    color: $infoButtonTextColor;
+    @include linear-gradient($infoButtonBgColor);
+}
+.ui-messages-error {
+    color: $dangerButtonTextColor;
+    @include linear-gradient($dangerButtonBgColor);
+}
+
+.ui-messages .ui-messages-icon {
+    display:inline-block;
+    padding: 0 0 0 5px;
+    margin: auto 0;
+    vertical-align: middle;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ui-messages .ui-messages-summary {
+    font-weight: 500;
+    margin-left: .25em;
+}
+
+.ui-messages .ui-messages-detail {
+    font-weight: 100;
+    font-size: $fontSize - 1;
+    margin-left: .25em;
+}
+
+.ui-messages ul {
+    margin: 0;
+    padding: 0 0 0 5px;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+}
+
+.ui-messages ul > li {
+    padding: .25em;
+}
+
+.ui-messages.ui-messages-noicon ul {
+    margin: 0 1.5em 0 0;
+}
+
+.ui-messages .ui-messages-close {
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

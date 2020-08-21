@@ -1,0 +1,255 @@
+ // ========================================================================================
+// Esquema de colores principales
+// ========================================================================================
+
+$primaryColor: #8ea22d;
+
+$primaryBgColor: #ffffff;
+$primaryTextColor: #ffffff;
+
+$primaryDarkColor: #757575;
+$primaryDarkerColor: #005b9f;
+
+/* Color primario para los bordes de los componentes */
+$primaryColorBorde: #a6a6a6;
+
+$grisCorporativoColor: #757575;
+$azulCorporativoColor: #286090;
+
+$baseUrlAssets: "../../src/assets/";
+$carpetaImages: "img/";
+
+// ========================================================================================
+// Estilos Globales
+// ========================================================================================
+
+//$fontFamily:"Open Sans","Helvetica Neue",sans-serif;
+$fontFamily: "Poppins", sans-serif;
+$fontSize: 14px;
+$textColor: #333333;
+$textSecondaryColor: lighten($textColor, 25%);
+$borderRadius: 3px;
+$transitionDuration: 0.3s;
+
+//iconos Primeicons
+$sizeIcons: 1em;
+
+//highlight
+$highlightBgColor: $primaryColor;
+$highlightColorText: $primaryTextColor;
+
+$inputFocusBorderColor: $primaryColor;
+$inputFocusShadow: inset 0 0 0 0.2em $primaryColor;
+
+// ========================================================================================
+// Estilos para la pagina de login /pages/acceso
+// ========================================================================================
+
+//Colores para el login
+$verdeCorporativo: rgb(105, 142, 2);
+$loginBoxShadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.2);
+
+
+
+
+// ========================================================================================
+// Personalizacion de los botones
+// ========================================================================================
+
+//=====================
+// Boton principal
+//=====================
+$buttonTextOnlyPadding: 0.429em 1em;
+$buttonWithLeftIconPadding: 0.429em 1em 0.429em 2em;
+$buttonWithRightIconPadding: 0.429em 2em 0.429em 1em;
+$buttonIconOnlyPadding: 0.429em;
+$buttonIconOnlyWidth: 2.143em;
+$buttonBgColor: $primaryColor;
+$buttonBorder: 1px solid $primaryColor;
+$buttonTextColor: $primaryTextColor;
+$buttonTransition: background-color $transitionDuration;
+$raisedButtonShadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+$roundedButtonBorderRadius: 15px;
+$disabledOpacity: 0.5;
+
+// hover
+$buttonHoverBgColor: $grisCorporativoColor;
+$buttonHoverTextColor: $primaryTextColor; //blanco
+$buttonHoverBorderColor: $grisCorporativoColor;
+// active
+$buttonActiveBgColor: $azulCorporativoColor;
+$buttonActiveTextColor: $primaryTextColor;
+$buttonActiveBorderColor: $azulCorporativoColor;
+// focus
+$buttonFocusBorderColor: $azulCorporativoColor;
+$buttonFocusOutline: 0 none;
+$buttonFocusOutlineOffset: 0px;
+
+//=====================
+// Boton Secundario
+//=====================
+$secondaryButtonBgColor: #f4f4f4;
+$secondaryButtonBorder: 1px solid #f4f4f4;
+$secondaryButtonTextColor: #333333;
+// hover
+$secondaryButtonHoverBgColor: #8ea22d;
+$secondaryButtonHoverTextColor: #f5f5f5;
+$secondaryButtonHoverBorderColor: #8ea22d;
+// active
+$secondaryButtonActiveBgColor: #a0a0a0;
+$secondaryButtonActiveTextColor: #f5f5f5;
+$secondaryButtonActiveBorderColor: #a0a0a0;
+
+//=====================
+// Boton Info
+//=====================
+
+$infoButtonBgColor: #516e86;
+$infoButtonBorder: 1px solid #516e86;
+$infoButtonTextColor: #ffffff;
+//hover
+$infoButtonHoverBgColor: #116fbf;
+$infoButtonHoverTextColor: #ffffff;
+$infoButtonHoverBorderColor: #116fbf;
+//active
+$infoButtonActiveBgColor: #005b9f;
+$infoButtonActiveTextColor: #ffffff;
+$infoButtonActiveBorderColor: #005b9f;
+//=====================
+// Boton Success
+//=====================
+$successButtonBgColor: #7da87b;
+$successButtonBorder: 1px solid #7da87b;
+$successButtonTextColor: #ffffff;
+//hover
+$successButtonHoverBgColor: #107d11;
+$successButtonHoverTextColor: #ffffff;
+$successButtonHoverBorderColor: #107d11;
+//active
+// $successButtonActiveBgColor:#0C6B0D;
+$successButtonActiveTextColor: #ffffff;
+// $successButtonActiveBorderColor:#0C6B0D;
+//=====================
+// Boton Warning
+//=====================
+$warningButtonBgColor: #eed624;
+$warningButtonBorder: 1px solid #eed624;
+$warningButtonTextColor: #4b4a4a;
+//hover
+$warningButtonHoverBgColor: #ed990b;
+$warningButtonHoverTextColor: #444444;
+$warningButtonHoverBorderColor: #ed990b;
+//active
+$warningButtonActiveBgColor: #c6b422;
+$warningButtonActiveTextColor: #ffffff;
+$warningButtonActiveBorderColor: #c6b422;
+//=====================
+// Boton Danger
+//=====================
+$dangerButtonBgColor: #d15319;
+$dangerButtonBorder: 1px solid #d15319;
+$dangerButtonTextColor: #ffffff;
+//hover
+$dangerButtonHoverBgColor: #960713;
+$dangerButtonHoverTextColor: #ffffff;
+$dangerButtonHoverBorderColor: #c01120;
+//active
+$dangerButtonActiveBgColor: #960713;
+$dangerButtonActiveTextColor: #ffffff;
+$dangerButtonActiveBorderColor: #960713;
+
+// ========================================================================================
+// Personalizacion de las card
+// ========================================================================================
+
+$cardShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+  0 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+// ========================================================================================
+// Personalizacion de las card
+// ========================================================================================
+$breadcrumTransition: box-shadow 0.3s;
+$breadcrumShadow: 0 0 0 0.2em $primaryColor;
+$breadcrumBgColor: #ebebeb;
+$breadcrumBorderRadius: 4px;
+
+// ========================================================================================
+// Personalizacion de las card
+// ========================================================================================
+
+//tabview
+$tabsNavBorder: 0 none;
+$tabsNavBgColor: transparent;
+$tabHeaderSpacing: 2px;
+//panel common (e.g. accordion, panel, tabview)
+$panelHeaderBorder: 1px solid #c8c8c8;
+$panelHeaderBgColor: #f4f4f4;
+$panelHeaderTextColor: #333333;
+$panelHeaderIconColor: #848484;
+$panelHeaderIconHoverColor: #333333;
+$panelHeaderIconTransition: color $transitionDuration,
+  background-color $transitionDuration, box-shadow $transitionDuration;
+$panelHeaderFontWeight: 700;
+$panelHeaderPadding: 0.571em 1em;
+$panelContentBorder: 1px solid #c8c8c8;
+$panelContentBgColor: #ffffff;
+$panelContentTextColor: $textColor;
+$panelContentPadding: 0.571em 1em;
+$panelFooterBorder: 1px solid #c8c8c8;
+$panelFooterBgColor: #ffffff;
+$panelFooterTextColor: $textColor;
+$panelFooterPadding: 0.571em 1em;
+$panelHeaderHoverBgColor: #dbdbdb;
+$panelHeaderHoverBorder: 1px solid #dbdbdb;
+$panelHeaderHoverTextColor: #333333;
+$panelHeaderHoverIconColor: #333333;
+$panelHeaderActiveBgColor: $primaryColor;
+$panelHeaderActiveBorder: 1px solid $primaryColor;
+$panelHeaderActiveTextColor: #ffffff;
+$panelHeaderActiveIconColor: #ffffff;
+$panelHeaderActiveHoverBgColor: $primaryDarkerColor;
+$panelHeaderActiveHoverBorder: 1px solid $primaryDarkerColor;
+$panelHeaderActiveHoverTextColor: #ffffff;
+$panelHeaderActiveHoverIconColor: #ffffff;
+$panelHeaderTransition: background-color $transitionDuration,
+  box-shadow $transitionDuration;
+
+$maskBgColor: rgba(0, 0, 0, 0.4); //dialog mask
+$inlineSpacing: 0.5em; //spacing between inline elements
+$chipsItemMargin: 0 0.286em 0 0; //autocomplete and chips token spacing
+$dataIconColor: $textSecondaryColor; //icon color of a data such as treetoggler, table expander
+$dataIconHoverColor: $textColor; //hover icon color of a data such as treetoggler, table expander
+
+// ========================================================================================
+// Personalizacion de las cards
+// ========================================================================================
+
+$DropdowmMinWidth: 14.5em;
+$DropdowmBgColor: #ffffff;
+$DropdowmTransition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+$DropdowmHoverBorderColor: $primaryColor;
+$DropdowmItemsMaxHeigth: 200px;
+$DropdowmItemsColorHover: #eaeaea;
+$DropdowmItemsColorHighlight: #ffffff;
+$DropdowmItemsBgColorHighlight: $primaryColor;
+
+// ========================================================================================
+// Personalizacion de las DropDowns
+// ========================================================================================
+
+$DropdowmMinWidth: 14.5em;
+$DropdowmBgColor: #ffffff;
+$DropdowmTransition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+$DropdowmHoverBorderColor: $primaryColor;
+$DropdowmItemsMaxHeigth: 200px;
+$DropdowmItemsColorHover: #eaeaea;
+$DropdowmItemsColorHighlight: #ffffff;
+$DropdowmItemsBgColorHighlight: $primaryColor;
+
+// ========================================================================================
+// Personalizacion de las Listbox
+// ========================================================================================
+
+$ListboxMinWidth: 15em;
+$ListboxBgColor: $primaryBgColor;
+$ListboxPaddingElementos: 0.25em;
