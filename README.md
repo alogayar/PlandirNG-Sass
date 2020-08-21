@@ -16,12 +16,12 @@ No existe un estándar de organización del proyecto, he optado por organizarlo 
         - source/
             - abstracts/
                  - _functions.scss
-		             - _mixins.css
+		       - _mixins.css
                  - _variables.scss
             - base/
-		             - _base.scss
+		       - _base.scss
                  - _fonts.scss
-		             - _helpers.scss
+		       - _helpers.scss
             - components/
                  - _accordion
                  - _breadcrums
