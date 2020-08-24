@@ -1,4 +1,4 @@
- // ========================================================================================
+// ========================================================================================
 // Esquema de colores principales
 // ========================================================================================
 
@@ -48,9 +48,6 @@ $inputFocusShadow: inset 0 0 0 0.2em $primaryColor;
 //Colores para el login
 $verdeCorporativo: rgb(105, 142, 2);
 $loginBoxShadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.2);
-
-
-
 
 // ========================================================================================
 // Personalizacion de los botones
@@ -253,3 +250,61 @@ $DropdowmItemsBgColorHighlight: $primaryColor;
 $ListboxMinWidth: 15em;
 $ListboxBgColor: $primaryBgColor;
 $ListboxPaddingElementos: 0.25em;
+
+// ========================================================================================
+// Personalizacion de los Menus
+// ========================================================================================
+
+//menu (e.g. menu, menubar, tieredmenu)
+$menuBgColor: #ffffff;
+$menuBorder: 1px solid #c8c8c8;
+$menuPadding: 0;
+$menuTextColor: $textColor;
+$menuitemPadding: 0.714em 0.857em;
+$menuitemMargin: 0;
+$menuitemTextColor: #333333;
+$menuitemIconColor: #333333;
+$menuitemHoverTextColor: #333333;
+$menuitemHoverIconColor: #333333;
+$menuitemHoverBgColor: #e5e5e5;
+$menuitemActiveTextColor: #333333;
+$menuitemActiveIconColor: #333333;
+$menuitemActiveBgColor: #eaeaea;
+$menuitemRouterLinkActiveTextColor: $primaryColor;
+$menuitemRouterLinkActiveIconColor: $primaryColor;
+$submenuHeaderMargin: 0;
+
+$submenuColorHeader: #f1f1f1;
+$overlayMenuBorder: 1px solid #c8c8c8;
+$overlayMenuShadow: 0 0px 3px 0 rgba(0, 0, 0, 0.16);
+$menuitemFocusShadow: 0 0 0 0.1em $primaryColorBorde;
+
+// ========================================================================================
+// Personalizacion de las tablas
+// ========================================================================================
+
+//table
+$tableCaptionFontWeight: 700;
+$tableSummaryFontWeight: 700;
+$tableHeaderCellPadding: 0.571em 0.857em;
+$tableHeaderCellBgColor: #f4f4f4;
+$tableHeaderCellTextColor: $textColor;
+$tableHeaderCellFontWeight: 700;
+$tableHeaderCellBorder: 1px solid #c8c8c8;
+$tableHeaderCellHoverBgColor: #e0e0e0;
+$tableHeaderCellHoverTextColor: #333333;
+$tableHeaderCellIconColor: $textSecondaryColor;
+$tableHeaderCellHoverIconColor: #333333;
+$tableBodyRowBgColor: #ffffff;
+$tableBodyRowTextColor: $textColor;
+$tableBodyRowEvenBgColor: #f9f9f9;
+$tableBodyRowHoverBgColor: #eaeaea;
+$tableBodyRowHoverTextColor: #333333;
+$tableBodyCellBorder: 1px solid #c8c8c8;
+$tableBodyCellPadding: 0.571em 0.857em;
+$tableFooterCellPadding: 0.571em 0.857em;
+$tableFooterCellBgColor: #ffffff;
+$tableFooterCellTextColor: $textColor;
+$tableFooterCellFontWeight: 700;
+$tableFooterCellBorder: 1px solid #c8c8c8;
+$tableResizerHelperBgColor: $primaryColor;
