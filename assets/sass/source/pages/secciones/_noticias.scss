@@ -1,17 +1,39 @@
 #noticias {
-  padding: 10px 0;
-  display: block;
-  box-sizing: border-box;
-  //border: 1px solid red;
+  .row.principal {
+    display: block;
+    .bordeVerde {
+      border: 5px solid $primaryColor;
+    }
 
-  .primera-fila {
+    div.seccion-noticias {
 
-  }
-  .segunda-fila {
+      .primera-fila {
+        display: flex;
+        justify-items: flex-start;
+        align-items: flex-start;
+        .imagen-principal {
+          a {
+            text-decoration: none;
+            p {
+              padding: 0 !important;
+              margin: 0 !important;
+            }
+
+            
+          }
+        }
+      }
+      .segunda-fila {
+        a {
+          
+        }
+        p {
+          padding: 0;
+          line-height: 1em;
+        }
+      }
+
       
+    }
   }
-
-
-
-    
 }
