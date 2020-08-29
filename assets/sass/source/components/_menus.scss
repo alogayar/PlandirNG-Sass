@@ -43,5 +43,37 @@ body {
     }
     
   }
+  .ui-contextmenu {
+    background-color: $contextMenuBgColor;
+    border: $contextMenuBorder;
+    width: $contextMenuWidth;
+    padding: $contextMenuPadding;    
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .ui-menuitem {
+      position: relative;
+      &:hover {        
+        background-color: $contextMenuItemHoverBgColor;
+        color: $contextMenuItemHoverTextColor;
+      }
+    }
+    .ui-menuitem-link {
+      font-size: $contextMenuItemFontSize;
+      font-weight: $contextMenuItemFontweight;
+      padding: .25em;
+      display: block;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .ui-menuitem-text {
+      vertical-align: middle;
+    }
+  }
+  
   
 }

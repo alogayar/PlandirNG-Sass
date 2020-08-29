@@ -56,7 +56,7 @@ $loginBoxShadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.2);
 //=====================
 // Boton principal
 //=====================
-$buttonTextOnlyPadding: 0.429em 1em;
+$buttonTextOnlyPadding: 0.3em .5em; //0.429em 1em;
 $buttonWithLeftIconPadding: 0.429em 1em 0.429em 2em;
 $buttonWithRightIconPadding: 0.429em 2em 0.429em 1em;
 $buttonIconOnlyPadding: 0.429em;
@@ -180,9 +180,10 @@ $tabsNavBgColor: transparent;
 $tabHeaderSpacing: 2px;
 //panel common (e.g. accordion, panel, tabview)
 $panelHeaderBorder: 1px solid #c8c8c8;
-$panelHeaderBgColor: #f4f4f4;
-$panelHeaderTextColor: #333333;
-$panelHeaderIconColor: #848484;
+$panelHeaderBgColor: #6E6E6E;
+$panelHeaderTextColor: #FFFFFF;
+
+$panelHeaderIconColor: #ffffff;
 $panelHeaderIconHoverColor: #333333;
 $panelHeaderIconTransition: color $transitionDuration,
   background-color $transitionDuration, box-shadow $transitionDuration;
@@ -279,25 +280,38 @@ $overlayMenuBorder: 1px solid #c8c8c8;
 $overlayMenuShadow: 0 0px 3px 0 rgba(0, 0, 0, 0.16);
 $menuitemFocusShadow: 0 0 0 0.1em $primaryColorBorde;
 
+$contextMenuBgColor: #ffffff;
+$contextMenuBorder: 1px solid #c8c8c8;
+$contextMenuItemFontSize: 13px;
+$contextMenuItemFontweight:500;
+$contextMenuItemHoverBgColor: #eaeaea;
+$contextMenuItemHoverTextColor: $primaryColor;
+$contextMenuWidth: 12.5em;
+$contextMenuPadding: .25em;
+
 // ========================================================================================
 // Personalizacion de las tablas
 // ========================================================================================
 
 //table
 $tableCaptionFontWeight: 700;
+$tableCaptionBgColor: #f4f4f4;
+$tableCaptionTextColor: #333333;
 $tableSummaryFontWeight: 700;
 $tableHeaderCellPadding: 0.571em 0.857em;
 $tableHeaderCellBgColor: #f4f4f4;
 $tableHeaderCellTextColor: $textColor;
 $tableHeaderCellFontWeight: 700;
+$tableHeaderCellFontSize: 14px;
 $tableHeaderCellBorder: 1px solid #c8c8c8;
 $tableHeaderCellHoverBgColor: #e0e0e0;
 $tableHeaderCellHoverTextColor: #333333;
 $tableHeaderCellIconColor: $textSecondaryColor;
 $tableHeaderCellHoverIconColor: #333333;
 $tableBodyRowBgColor: #ffffff;
+$tableBodyCellfontSize: 14px;
 $tableBodyRowTextColor: $textColor;
-$tableBodyRowEvenBgColor: #f9f9f9;
+$tableBodyRowEvenBgColor: #f4f4f4;
 $tableBodyRowHoverBgColor: #eaeaea;
 $tableBodyRowHoverTextColor: #333333;
 $tableBodyCellBorder: 1px solid #c8c8c8;
@@ -308,3 +322,10 @@ $tableFooterCellTextColor: $textColor;
 $tableFooterCellFontWeight: 700;
 $tableFooterCellBorder: 1px solid #c8c8c8;
 $tableResizerHelperBgColor: $primaryColor;
+
+
+// ========================================================================================
+// Personalizacion de los toast
+// ========================================================================================
+
+$toastWidth: 20em;

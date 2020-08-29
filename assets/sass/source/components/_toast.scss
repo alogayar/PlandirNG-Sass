@@ -1,0 +1,92 @@
+$toastShadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+$toastMessageMargin: 0 0 1em 0;
+
+body {
+  .ui-toast {
+    position: fixed;
+    width: $toastWidth;
+
+    //Main container element positioned at the top right of the screen.
+    .ui-toast-top-right {
+    //   top: 80px;
+    //   right: 20px;
+    }
+    //Main container element positioned at the top right of the screen.
+    .ui-toast-top-left {
+    }
+    //Main container element positioned at the top right of the screen.
+    .ui-toast-bottom-right {
+    }
+    //Main container element positioned at the top right of the screen.
+    .ui-toast-bottom-left {
+    }
+    //Main container element positioned at the top center of the screen.
+    .ui-toast-top-center {
+    }
+    //Main container element positioned at the bottom center of the screen.
+    .ui-toast-bottom-center {
+    }
+    //Main container element positioned at the center of the screen.
+    .ui-toast-center {
+    }
+    //Element of a message.
+    .ui-toast-message {
+      position: relative;
+      display: block;
+      margin-bottom: 0.75em;
+      overflow: hidden;
+      background-color: #c9d097;
+      color: #333;      
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    }
+    //Element of an info message.
+    .ui-toast-message-info {
+        
+    }
+    //Element of an success message.
+    .ui-toast-message-success {
+      @include linear-gradient(#c9d097);
+      color: $buttonTextColor;
+    }
+    //Element of an warn message.
+    .ui-toast-message-warn {
+    }
+    //Element of an error message.
+    .ui-toast-message-error {
+    }
+    .ui-toast-message-content {
+      padding: 0.5em 2em;
+    }
+    .ui-toast-icon {
+      position: absolute;
+      display: inline-block;
+      left: 0.5em;
+      top: 0.25em;
+      padding: 0;
+      font-size: 2em;
+      border: 1px solid red;
+    }
+    //Content element of a message element.
+    .ui-toast-close-icon {
+      position: absolute;
+      top: 0.25em;
+      right: 0.25em;
+      cursor: pointer;
+      display: inline-block;
+      border: 1px solid red;
+    }
+    //Icon to close a message.
+    .ui-toast-message-text-content {
+      padding: 0 0 0.25em 0;
+      margin-left: 2.5em;
+      .ui-toast-summary {
+        font-weight: bold;
+        padding: 0 0 0.5em 0;
+        display: block;
+      }
+      .ui-toast-detail {
+      }
+    }
+    //Content element of the message text.
+  }
+}

@@ -40,7 +40,7 @@ body {
 
           .ui-tabview-close {
             color: $panelHeaderIconColor;
-            margin: 0 $inlineSpacing 0 -1 * $inlineSpacing;
+            margin: 0 $inlineSpacing + 0.3 0 -1 * $inlineSpacing + 0.3;
           }
 
           &:not(.ui-state-active):not(.ui-state-disabled):hover {
@@ -165,12 +165,15 @@ body {
       background-color: $panelHeaderBgColor;
       color: $panelHeaderTextColor;
     }
+    .ui-panel-titlebar-icon {
+      color: $panelHeaderIconColor;
+    }
     //Content of panel.
     .ui-panel-content {
       padding: $panelHeaderPadding;
       border: $panelHeaderBorder;
       background-color: #ffffff;
-      color: $panelHeaderTextColor;
+      color: $panelContentTextColor;
       border-top: 0 none;
       font-size: 13px;
     }
