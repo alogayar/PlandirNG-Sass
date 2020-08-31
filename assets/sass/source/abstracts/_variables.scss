@@ -24,7 +24,7 @@ $carpetaImages: "img/";
 // ========================================================================================
 
 //$fontFamily:"Open Sans","Helvetica Neue",sans-serif;
-$fontFamily: "Poppins", sans-serif;
+$fontFamily: "myriad-pro";
 $fontSize: 14px;
 $textColor: #333333;
 $textSecondaryColor: lighten($textColor, 25%);
@@ -295,8 +295,8 @@ $contextMenuPadding: .25em;
 
 //table
 $tableCaptionFontWeight: 700;
-$tableCaptionBgColor: #f4f4f4;
-$tableCaptionTextColor: #333333;
+$tableCaptionBgColor: #6e6e6e;
+$tableCaptionTextColor: #f4f4f4;
 $tableSummaryFontWeight: 700;
 $tableHeaderCellPadding: 0.571em 0.857em;
 $tableHeaderCellBgColor: #f4f4f4;
@@ -329,3 +329,9 @@ $tableResizerHelperBgColor: $primaryColor;
 // ========================================================================================
 
 $toastWidth: 20em;
+
+
+// ========================================================================================
+// Personalizacion de las SECCIONES - NOTICIAS
+// ========================================================================================
+
