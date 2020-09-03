@@ -12,7 +12,7 @@
 // 2. Vendors    
 // 3. Base stuff                       
 @import "base/base",
-    "base/fonts",   
+    "base/fonts",    
     "base/helpers";                   
     
 // 4. Layout-related sections               
@@ -26,9 +26,9 @@
   "components/tabs", "components/dropdowns", "components/toast",
   "components/fieldset";                                  
       
-// 6. Pages
+// 6. Pages 
   @import "pages/acceso"; 
- 
+    
 // 7. Secciones                               
 @import "pages/secciones/noticias";
-                                      
+                                           

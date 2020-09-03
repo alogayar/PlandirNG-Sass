@@ -3,10 +3,8 @@
 // ========================================================================================
 
 $primaryColor: #8ea22d;
-
 $primaryBgColor: #ffffff;
 $primaryTextColor: #ffffff;
-
 $primaryDarkColor: #757575;
 $primaryDarkerColor: #005b9f;
 
@@ -16,15 +14,22 @@ $primaryColorBorde: #a6a6a6;
 $grisCorporativoColor: #757575;
 $azulCorporativoColor: #286090;
 
-$baseUrlAssets: "../../src/assets/";
-$carpetaImages: "img/";
+// ========================================================================================
+// Variables para los Assets - CDN
+// ========================================================================================
+$baseUrlCDN: "http://cdn.dipujaen.es/";
+$baseUrlAssets: $baseUrlCDN + 'assets/';
+$carpetaImages: 'img/';
+$carpetaFonts: 'fonts/';
+$baseUrlImages: $baseUrlAssets + $carpetaImages;
+$baseUrlFonts:  $baseUrlAssets + $carpetaFonts;
 
 // ========================================================================================
 // Estilos Globales
 // ========================================================================================
 
 //$fontFamily:"Open Sans","Helvetica Neue",sans-serif;
-$fontFamily: "myriad-pro";
+$fontFamily: "MyriadPro-Regular";
 $fontSize: 14px;
 $textColor: #333333;
 $textSecondaryColor: lighten($textColor, 25%);
