@@ -18,18 +18,19 @@ $azulCorporativoColor: #286090;
 // Variables para los Assets - CDN
 // ========================================================================================
 $baseUrlCDN: "http://cdn.dipujaen.es/";
-$baseUrlAssets: $baseUrlCDN + 'assets/';
-$carpetaImages: 'img/';
-$carpetaFonts: 'fonts/';
+$baseUrlAssets: $baseUrlCDN + "assets/";
+$carpetaImages: "img/";
+$carpetaFonts: "fonts/";
 $baseUrlImages: $baseUrlAssets + $carpetaImages;
-$baseUrlFonts:  $baseUrlAssets + $carpetaFonts;
+$baseUrlFonts: $baseUrlAssets + $carpetaFonts;
 
 // ========================================================================================
 // Estilos Globales
 // ========================================================================================
 
-//$fontFamily:"Open Sans","Helvetica Neue",sans-serif;
-$fontFamily: "MyriadPro-Regular";
+//$fontFamily:"Open Sans";
+//$fontFamily: "MyriadPro-Regular";
+$fontFamily: "MyriadProRegular";
 $fontSize: 14px;
 $textColor: #333333;
 $textSecondaryColor: lighten($textColor, 25%);
@@ -61,7 +62,7 @@ $loginBoxShadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.2);
 //=====================
 // Boton principal
 //=====================
-$buttonTextOnlyPadding: 0.3em .5em; //0.429em 1em;
+$buttonTextOnlyPadding: 0.3em 0.5em; //0.429em 1em;
 $buttonWithLeftIconPadding: 0.429em 1em 0.429em 2em;
 $buttonWithRightIconPadding: 0.429em 2em 0.429em 1em;
 $buttonIconOnlyPadding: 0.429em;
@@ -185,8 +186,8 @@ $tabsNavBgColor: transparent;
 $tabHeaderSpacing: 2px;
 //panel common (e.g. accordion, panel, tabview)
 $panelHeaderBorder: 1px solid #c8c8c8;
-$panelHeaderBgColor: #6E6E6E;
-$panelHeaderTextColor: #FFFFFF;
+$panelHeaderBgColor: #6e6e6e;
+$panelHeaderTextColor: #ffffff;
 
 $panelHeaderIconColor: #ffffff;
 $panelHeaderIconHoverColor: #333333;
@@ -288,11 +289,11 @@ $menuitemFocusShadow: 0 0 0 0.1em $primaryColorBorde;
 $contextMenuBgColor: #ffffff;
 $contextMenuBorder: 1px solid #c8c8c8;
 $contextMenuItemFontSize: 13px;
-$contextMenuItemFontweight:500;
+$contextMenuItemFontweight: 500;
 $contextMenuItemHoverBgColor: #eaeaea;
 $contextMenuItemHoverTextColor: $primaryColor;
 $contextMenuWidth: 12.5em;
-$contextMenuPadding: .25em;
+$contextMenuPadding: 0.25em;
 
 // ========================================================================================
 // Personalizacion de las tablas
@@ -328,15 +329,12 @@ $tableFooterCellFontWeight: 700;
 $tableFooterCellBorder: 1px solid #c8c8c8;
 $tableResizerHelperBgColor: $primaryColor;
 
-
 // ========================================================================================
 // Personalizacion de los toast
 // ========================================================================================
 
 $toastWidth: 20em;
 
-
 // ========================================================================================
 // Personalizacion de las SECCIONES - NOTICIAS
 // ========================================================================================
-
