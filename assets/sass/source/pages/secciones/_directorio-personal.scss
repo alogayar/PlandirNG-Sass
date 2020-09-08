@@ -1,0 +1,35 @@
+body {
+  .container-directorio-personal {
+    div.row {
+        margin-bottom:20px;        
+    }
+    div.busqueda{
+      justify-content: flex-end;
+      margin-bottom: 30px;            
+      width:100%;
+    }
+   
+  }
+
+  img {
+    width: 110px;
+    height: 110px;
+  }
+
+  ul.perfil-usuario {
+    font-size: 14px;    
+    font-weight: normal;
+    color: #333333;
+    & > li > strong {
+      padding-right: 5px;
+      font-weight: 700;
+      font-size: 15px;
+      color: #333333;
+    }
+    & > li > i.fa {
+      padding-right: 7px;
+      color: #333333;
+    }
+  }
+
+}

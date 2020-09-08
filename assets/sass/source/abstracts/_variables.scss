@@ -36,7 +36,7 @@ $textColor: #333333;
 $textSecondaryColor: lighten($textColor, 25%);
 $borderRadius: 3px;
 $transitionDuration: 0.3s;
-
+ 
 //iconos Primeicons
 $sizeIcons: 1em;
 
@@ -46,6 +46,7 @@ $highlightColorText: $primaryTextColor;
 
 $inputFocusBorderColor: $primaryColor;
 $inputFocusShadow: inset 0 0 0 0.2em $primaryColor;
+$inputBgColor:#ffffff;
 
 // ========================================================================================
 // Estilos para la pagina de login /pages/acceso
@@ -228,21 +229,16 @@ $dataIconHoverColor: $textColor; //hover icon color of a data such as treetoggle
 // Personalizacion de las cards
 // ========================================================================================
 
-$DropdowmMinWidth: 14.5em;
-$DropdowmBgColor: #ffffff;
-$DropdowmTransition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
-$DropdowmHoverBorderColor: $primaryColor;
-$DropdowmItemsMaxHeigth: 200px;
-$DropdowmItemsColorHover: #eaeaea;
-$DropdowmItemsColorHighlight: #ffffff;
-$DropdowmItemsBgColorHighlight: $primaryColor;
+
 
 // ========================================================================================
 // Personalizacion de las DropDowns
 // ========================================================================================
 
-$DropdowmMinWidth: 14.5em;
-$DropdowmBgColor: #ffffff;
+
+$DropdowmMinWidth: 13.5em;
+$DropdowmBgColor: #eaeaea;
+$DropdowmColor: #333333;
 $DropdowmTransition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
 $DropdowmHoverBorderColor: $primaryColor;
 $DropdowmItemsMaxHeigth: 200px;
@@ -328,12 +324,35 @@ $tableFooterCellTextColor: $textColor;
 $tableFooterCellFontWeight: 700;
 $tableFooterCellBorder: 1px solid #c8c8c8;
 $tableResizerHelperBgColor: $primaryColor;
+$tableRowBgColorSelected: #DBDDC3;
 
 // ========================================================================================
 // Personalizacion de los toast
 // ========================================================================================
 
 $toastWidth: 20em;
+
+// ========================================================================================
+// Personalizacion de los checkbox
+// ========================================================================================
+
+
+
+$checkboxWidth:20px;
+$checkboxHeight:20px;
+$checkboxActiveBorderColor:$primaryColor;
+$checkboxActiveBgColor:$primaryColor;
+$checkboxActiveTextColor:$primaryTextColor;
+$checkboxActiveHoverBgColor:$primaryDarkerColor;
+$checkboxActiveHoverTextColor:$primaryTextColor;
+$checkboxActiveHoverBorderColor:$primaryDarkerColor;
+$checkboxActiveFocusBgColor:$primaryDarkerColor;
+$checkboxActiveFocusTextColor:$primaryTextColor;
+$checkboxActiveFocusBorderColor:$primaryDarkerColor;
+$checkboxFocusBgColor:$inputBgColor;
+$checkboxFocusTextColor:$primaryColor;
+$checkboxFocusBorderColor:$primaryColor;
+$checkboxTransition:background-color $transitionDuration, border-color $transitionDuration;
 
 // ========================================================================================
 // Personalizacion de las SECCIONES - NOTICIAS
