@@ -1,5 +1,5 @@
 body {
-  .container-directorio-personal {
+  .container-directorio-personal { 
     div.row {
         margin-bottom:20px;        
     }
@@ -9,12 +9,12 @@ body {
       width:100%;
     }
    
+    img {
+      width: 110px;
+      height: 110px;
+    }
   }
 
-  img {
-    width: 110px;
-    height: 110px;
-  }
 
   ul.perfil-usuario {
     font-size: 14px;    

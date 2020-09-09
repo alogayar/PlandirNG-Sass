@@ -16,8 +16,6 @@ html {
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
 
- /* Purchase the Designer API to get full access to the theme engine. */
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -25,21 +23,25 @@ html {
 }
 
 *:focus {
-  outline:none;
+  outline: none;
 }
 
 body {
+  .p-component,
   .ui-widget,
   .ui-widget .ui-widget {
-      font-family: $fontFamily;
-      text-decoration: none;
+    font-family: $fontFamily;
+    text-decoration: none;
   }
-  .ui-widget-content{
+  .ui-widget-content {
     font-weight: normal;
+  }
+  .ui-widget-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
   }
   .pi {
     font-size: $sizeIcons;
-    font-family: primeicons;    
+    font-family: primeicons;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -50,11 +52,9 @@ body {
   }
 
   a {
-    color:$primaryColor;
+    color: $primaryColor;
     &:hover {
       color: $primaryDarkColor;
     }
   }
-  
- 
 }

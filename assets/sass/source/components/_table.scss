@@ -90,45 +90,5 @@ body {
     table-layout: fixed;
   }
 
-  .ui-chkbox {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 14px;
-    .ui-helper-hidden-accessible {
-      border: 0;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-    .ui-chkbox-box {
-      line-height: 1.125em;
-      border: 1px solid #a6a6a6;
-      background-color: #ffffff;
-      text-align: center;
-      width: 20px;
-      height: 20px;
-      border-radius: 3px;
-      transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;      
-    }
-    .ui-chkbox-box.ui-state-focus {
-      outline: 0 none;
-      outline-offset: 0;
-      box-shadow: 0 0 0 0.2em $primaryColor;
-      border-color: red;
-    }
-    .ui-chkbox-box.ui-state-active:not(.ui-state-disabled):hover {
-      border-color: #005b9f;
-      background-color: #005b9f;
-      color: #ffffff;
-    }
-  }
+  
 }
