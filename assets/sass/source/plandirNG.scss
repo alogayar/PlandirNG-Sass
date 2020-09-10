@@ -9,13 +9,13 @@
 
 @import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
 
-// 2. Vendors
+// 2. Vendors 
 // 3. Base stuff
 @import "base/base", "base/fonts", "base/helpers";
-
+ 
 // 4. Layout-related sections 
-@import "layout/header", "layout/footer", "layout/grid";
-
+@import "layout/header", "layout/footer", "layout/grid";   
+    
 // 5. Components
 @import "components/accordion", "components/breadcrums", "components/button", 
   "components/calendar", "components/cards", "components/dataview",
@@ -27,6 +27,6 @@
   @import "pages/acceso";
  
 // 7. Secciones
-@import "pages/secciones/noticias", "pages/secciones/directorio-personal";
-
-                                               
+@import "pages/secciones/noticias", "pages/secciones/directorio-personal";  
+ 
+                                                       

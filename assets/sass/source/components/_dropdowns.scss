@@ -4,8 +4,7 @@ body {
     display: inline-flex;
     position: relative;
     cursor: pointer;
-    min-width: $DropdowmMinWidth;
-    background: $DropdowmBgColor;
+    min-width: $DropdowmMinWidth;    
     color: $DropdowmColor;
     border: 1px solid #a6a6a6;
     @include transition($DropdowmTransition);
@@ -45,6 +44,7 @@ body {
       border-top: none;
       border-bottom: none;
       cursor: pointer;
+      background: $DropdowmBgColor;
       width: 1.5em;
       height: 100%;
       position: absolute;
@@ -66,7 +66,7 @@ body {
       overflow: hidden;
       font-weight: normal;
       width: 100%;
-      padding-right: 2.5em;
+      padding-right: 2.9em;
       font-weight: normal;
     }
 
@@ -107,7 +107,7 @@ body {
       text-align: left;
       border-radius: 0;
 
-      @include transition(background-color 300ms);
+      @include transition(background-color 0.2s);
       &:not(.ui-state-highlight):hover {
         background-color: $DropdowmItemsColorHover;
         color: $primaryColor;
