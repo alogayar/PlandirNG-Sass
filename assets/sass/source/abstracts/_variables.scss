@@ -13,6 +13,26 @@ $primaryColorBorde: #a6a6a6;
 
 $grisCorporativoColor: #757575;
 $azulCorporativoColor: #286090;
+$danger-dark: #e6294b;
+$light: #e9edf2;
+$themecolor: #398bf7;
+$danger: #ef5350;
+$light-text: #a6b7bf;
+
+$warning: #ffb22b;
+$primary: #745af2;
+$info: #398bf7; 
+$inverse: #2f3d4a;
+$secondary: #cccccc;
+$muted: #99abb4;
+$dark: #263238;
+$light: #e9edf2;
+$extra-light: #ebf3f5;
+$purple: #7460ee;
+$blue: #02bec9;
+$megna: #56c0d8;
+$bglight:rgba(0, 0, 0, 0.02);
+
 
 // ========================================================================================
 // Variables para los Assets - CDN
@@ -36,18 +56,19 @@ $textColor: #333333;
 $textSecondaryColor: lighten($textColor, 25%);
 $borderRadius: 3px;
 $transitionDuration: 0.3s;
- 
+
 //iconos Primeicons
 $sizeIcons: 1em;
 
 //highlight
 $highlightBgColor: $primaryColor;
 $highlightColorText: $primaryTextColor;
+$border: rgba(120, 130, 140, 0.13);
 
 $inputFocusBorderColor: $primaryColor;
 $inputFocusShadow: inset 0 0 0 0.2em $primaryColor;
-$inputBgColor:#ffffff;
-
+$inputBgColor: #ffffff;
+$dark-transparent: rgba(0, 0, 0, 0.05);
 // ========================================================================================
 // Estilos para la pagina de login /pages/acceso
 // ========================================================================================
@@ -122,6 +143,7 @@ $infoButtonActiveBorderColor: #005b9f;
 //=====================
 // Boton Success
 //=====================
+$success: #7da87b;
 $successButtonBgColor: #7da87b;
 $successButtonBorder: 1px solid #7da87b;
 $successButtonTextColor: #ffffff;
@@ -229,12 +251,9 @@ $dataIconHoverColor: $textColor; //hover icon color of a data such as treetoggle
 // Personalizacion de las cards
 // ========================================================================================
 
-
-
 // ========================================================================================
 // Personalizacion de las DropDowns
 // ========================================================================================
-
 
 $DropdowmMinWidth: 13.5em;
 $DropdowmBgColor: #eaeaea;
@@ -324,7 +343,7 @@ $tableFooterCellTextColor: $textColor;
 $tableFooterCellFontWeight: 700;
 $tableFooterCellBorder: 1px solid #c8c8c8;
 $tableResizerHelperBgColor: $primaryColor;
-$tableRowBgColorSelected: #DBDDC3;
+$tableRowBgColorSelected: #dbddc3;
 
 // ========================================================================================
 // Personalizacion de los toast
@@ -336,23 +355,22 @@ $toastWidth: 20em;
 // Personalizacion de los checkbox
 // ========================================================================================
 
-
-
-$checkboxWidth:20px;
-$checkboxHeight:20px;
-$checkboxActiveBorderColor:$primaryColor;
-$checkboxActiveBgColor:$primaryColor;
-$checkboxActiveTextColor:$primaryTextColor;
-$checkboxActiveHoverBgColor:$primaryDarkerColor;
-$checkboxActiveHoverTextColor:$primaryTextColor;
-$checkboxActiveHoverBorderColor:$primaryDarkerColor;
-$checkboxActiveFocusBgColor:$primaryDarkerColor;
-$checkboxActiveFocusTextColor:$primaryTextColor;
-$checkboxActiveFocusBorderColor:$primaryDarkerColor;
-$checkboxFocusBgColor:$inputBgColor;
-$checkboxFocusTextColor:$primaryColor;
-$checkboxFocusBorderColor:$primaryColor;
-$checkboxTransition:background-color $transitionDuration, border-color $transitionDuration;
+$checkboxWidth: 20px;
+$checkboxHeight: 20px;
+$checkboxActiveBorderColor: $primaryColor;
+$checkboxActiveBgColor: $primaryColor;
+$checkboxActiveTextColor: $primaryTextColor;
+$checkboxActiveHoverBgColor: $primaryDarkerColor;
+$checkboxActiveHoverTextColor: $primaryTextColor;
+$checkboxActiveHoverBorderColor: $primaryDarkerColor;
+$checkboxActiveFocusBgColor: $primaryDarkerColor;
+$checkboxActiveFocusTextColor: $primaryTextColor;
+$checkboxActiveFocusBorderColor: $primaryDarkerColor;
+$checkboxFocusBgColor: $inputBgColor;
+$checkboxFocusTextColor: $primaryColor;
+$checkboxFocusBorderColor: $primaryColor;
+$checkboxTransition: background-color $transitionDuration,
+  border-color $transitionDuration;
 
 // ========================================================================================
 // Personalizacion de las SECCIONES - NOTICIAS
