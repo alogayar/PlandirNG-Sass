@@ -39,11 +39,13 @@
 /* Datepicker */
 .ui-datepicker {
   width: auto;
-  padding: 0.2em;
+  padding: 0.85em !important;  
   position: absolute;
+  background-color: #fff;
 
   .ui-state-highlight {
-    color: #fff;
+    color: #fff; 
+    padding: 0.3em;
   }
   .ui-datepicker-inline {
     display: inline-block;
@@ -61,6 +63,7 @@
   .ui-datepicker-header {
     position: relative;
     padding: 0.5em 0;
+    background-color: #dbdbdb;
   }
   .ui-datepicker-prev,
   .ui-datepicker-next {
