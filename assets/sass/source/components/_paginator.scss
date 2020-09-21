@@ -1,0 +1,53 @@
+body {
+  .ui-paginator {
+    background-color: #f4f4f4;
+    border: 1px solid #c8c8c8;
+    padding: 0;
+
+    .ui-paginator-first,
+    .ui-paginator-prev,
+    .ui-paginator-next,
+    .ui-paginator-last {
+      color: #848484;
+      height: 2.286em;
+      min-width: 2.286em;
+      border: 0 none;
+      line-height: 2.286em;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+      @include transition(box-shadow 0.2s);
+      @include border-radius(0);
+      &:hover:not(.ui-state-disabled) {
+          color:#000;
+          background-color: #eaeaea;
+      }
+    }
+    .ui-paginator-pages {
+      vertical-align: top;
+      display: inline-block;
+      padding: 1.5px;
+      .ui-paginator-page {
+        color: #848484;
+        height: 2.286em;
+        min-width: 2.286em;
+        border: 0 none;
+        line-height: 2.286em;
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        @include transition(box-shadow 0.2s);
+        @include border-radius(0);
+        &:hover {            
+            background-color:#eaeaea;
+            color: #000;
+        }
+
+        &.ui-state-active {
+          background-color: $primaryColor;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
