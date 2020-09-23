@@ -5,88 +5,83 @@ body {
   .ui-toast {
     position: fixed;
     width: $toastWidth;
+    
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    z-index: 999;
 
-    //Main container element positioned at the top right of the screen.
-    .ui-toast-top-right {
-    //   top: 80px;
-    //   right: 20px;
-    }
-    //Main container element positioned at the top right of the screen.
-    .ui-toast-top-left {
-    }
-    //Main container element positioned at the top right of the screen.
-    .ui-toast-bottom-right {
-    }
-    //Main container element positioned at the top right of the screen.
-    .ui-toast-bottom-left {
-    }
-    //Main container element positioned at the top center of the screen.
-    .ui-toast-top-center {
-    }
-    //Main container element positioned at the bottom center of the screen.
-    .ui-toast-bottom-center {
-    }
-    //Main container element positioned at the center of the screen.
-    .ui-toast-center {
-    }
-    //Element of a message.
     .ui-toast-message {
       position: relative;
       display: block;
       margin-bottom: 0.75em;
       overflow: hidden;
-      background-color: #c9d097;
-      color: #333;      
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+
+      .ui-toast-message-content {
+        padding: 0.5em 2em;
+
+        .ui-toast-close-icon {
+          position: absolute;
+          top: 0.25em;
+          right: 0.25em;
+          cursor: pointer;
+          display: inline-block;
+          color: #000;
+          text-shadow: 0 1px 0 #fff;
+          opacity: 0.5;
+        }
+        .ui-toast-icon {
+          position: absolute;
+          display: inline-block;
+          left: 0.5em;
+          top: 0.25em;
+        }
+
+        .ui-toast-message-text-content {
+          padding: 0 0 0.25em 0;
+          margin-left: 0 !important;
+          
+          
+          .ui-toast-summary {
+            font-weight: bold;
+            padding: 0 0 0.5em 0;
+            display: block;
+            text-align: center; 
+          }
+          .ui-toast-detail {
+            letter-spacing: 0.5px;
+            font-weight: lighter;
+            padding-top: 10px;
+          }
+        }
+      }
     }
+
     //Element of an info message.
     .ui-toast-message-info {
-        
+      color: #0c5460;
+      background-color: #d1ecf1;
+      border-color: #bee5eb;
     }
     //Element of an success message.
     .ui-toast-message-success {
-      @include linear-gradient(#c9d097);
-      color: $buttonTextColor;
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
     }
     //Element of an warn message.
     .ui-toast-message-warn {
+      color: #856404;
+      background-color: #fff3cd;
+      border-color: #ffeeba;
     }
     //Element of an error message.
     .ui-toast-message-error {
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
     }
-    .ui-toast-message-content {
-      padding: 0.5em 2em;
-    }
-    .ui-toast-icon {
-      position: absolute;
-      display: inline-block;
-      left: 0.5em;
-      top: 0.25em;
-      padding: 0;
-      font-size: 2em;
-      border: 1px solid red;
-    }
-    //Content element of a message element.
-    .ui-toast-close-icon {
-      position: absolute;
-      top: 0.25em;
-      right: 0.25em;
-      cursor: pointer;
-      display: inline-block;
-      border: 1px solid red;
-    }
-    //Icon to close a message.
-    .ui-toast-message-text-content {
-      padding: 0 0 0.25em 0;
-      margin-left: 2.5em;
-      .ui-toast-summary {
-        font-weight: bold;
-        padding: 0 0 0.5em 0;
-        display: block;
-      }
-      .ui-toast-detail {
-      }
-    }
-    //Content element of the message text.
   }
 }
