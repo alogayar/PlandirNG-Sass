@@ -1,0 +1,47 @@
+#sidebarnav .ui-tieredmenu {  
+  
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  ul {
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      list-style: none;
+      margin: .125em 8px .125em 0;
+      a {        
+        padding: 8px 35px 8px 15px;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        &.active,
+        &:hover {
+          color: $themecolor;
+          i {
+            color: $themecolor;
+          }
+        }
+        &.active {
+          font-weight: 500;
+          color: $dark;
+        }
+        span.ui-menuitem-icon {
+          width: 20px;
+          font-size: 20px;
+          display: inline-block;
+          vertical-align: middle;
+          color: #555f6d;
+        }
+        span.ui-menuitem-text {
+          font-family: "Montserrat", sans-serif !important;
+          color: #687384;
+          padding: 8px 8px 8px 15px;
+          display: inline-block;
+          font-size: 0.8em;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
