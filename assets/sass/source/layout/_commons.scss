@@ -9,3 +9,32 @@
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);                
     }
 }
+
+.badge {
+    right: -2px;
+    top: 15px;
+    margin-right: 5px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px; 
+    padding: 2px 7px;
+    position: absolute;
+    display: inline-block;
+    min-width: 10px;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+  }
+  .bg-green {
+    background: #8ea22d !important;
+    border: 1px solid #8ea22d !important;
+  }
+
+  .message-center {
+      a {
+          border: 1px solid red;
+      }
+  }
+  

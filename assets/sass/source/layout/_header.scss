@@ -49,6 +49,22 @@
     .navbar-nav > .nav-item.show {
       background: $dark-transparent;
     }
+    .navbar-nav > * > .nav-item > .nav-link {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 17px;
+        line-height: 54px;
+      }
+      .navbar-nav > * > .nav-item > span {
+        line-height: 65px;
+        font-size: 24px;
+        font-weight: 500;
+        color: $white;
+        padding: 0 10px;
+      }
+      .navbar-nav > * > .nav-item.show {
+        background: $dark-transparent;
+      }
   }
   .profile-pic {
     width: 30px;
