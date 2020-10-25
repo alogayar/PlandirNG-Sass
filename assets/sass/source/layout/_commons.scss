@@ -2,39 +2,89 @@
  Estilos globales del layout que usaremos en todas las pgainas 
  ============================================================== */
 
- .fix-header {
-    .topbar {
-        position: fixed;
-        width: 100%;
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);                
+.fix-header {
+  .topbar {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Notificaciones header */
+
+.badge {
+  right: -2px;
+  top: 15px;
+  margin-right: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  padding: 2px 7px;
+  position: absolute;
+  display: inline-block;
+  min-width: 10px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+.bg-green {
+  background: #8ea22d !important;
+  border: 1px solid #8ea22d !important;
+}
+
+.logo-dipu-round {
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  background: url("http://plandirng.dipujaen.es/dcdn/adminpro/assets/images/logo40.png")
+    center;
+  background-repeat: no-repeat;
+}
+li.all-notificaciones {
+  strong {
+    font-size: 14px;
+    padding-right: 8px;
+  }
+}
+.message-center {
+  font-family: "MyriadProRegular";
+  a {
+    .mail-contnet > h5 {
+      font-size: 15px;
+    }
+    &:hover {
+        background: #eaeaea !important;
+    }
+  }
+}
+
+/* Fin Notificaciones header */
+
+/* Perfil de Usuario */
+.topbar ul.dropdown-user li a:hover {
+  background: #eaeaea !important;
+  color: #67757c !important;
+  text-decoration: none;
+}
+
+/* Fin Perfil de Usuario */
+
+.mailbox .message-center a .update-ut-codigo {
+    font-size:12px;    
+    position: absolute;
+    top: 17%;
+    right: 11px;
+    display:none;     
+}
+
+.mailbox .message-center a:hover {    
+    .update-ut-codigo:hover {
+        display: block;
     }
 }
 
-.badge {
-    right: -2px;
-    top: 15px;
-    margin-right: 5px;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 13px; 
-    padding: 2px 7px;
-    position: absolute;
-    display: inline-block;
-    min-width: 10px;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    border-radius: 10px;
-  }
-  .bg-green {
-    background: #8ea22d !important;
-    border: 1px solid #8ea22d !important;
-  }
 
-  .message-center {
-      a {
-          border: 1px solid red;
-      }
-  }
-  
