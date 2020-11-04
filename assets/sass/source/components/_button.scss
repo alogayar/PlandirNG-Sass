@@ -1,3 +1,6 @@
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
 // -----------------------------------------------------------------------------
 // Este fichero contiene todos los estilos relacionados con el componente boton
 // -----------------------------------------------------------------------------
@@ -12,7 +15,7 @@
 
 body {
   .ui-button {
-    @extend %button;
+    @extend %button;//mixin
     @include linear-gradient($buttonBgColor);
     border: $buttonBorder;
     @include transition($buttonTransition);
@@ -20,23 +23,20 @@ body {
     &:enabled:hover {
       @include linear-gradient(darken($buttonBgColor, 5%));
       color: $buttonHoverTextColor;
-      border-color: darken($buttonBgColor, 5%);      
+      border-color: darken($buttonBgColor, 5%);
     }
     &:enabled:focus {
-    
-
       outline: $buttonFocusOutline;
       outline-offset: $buttonFocusOutlineOffset;
       @include linear-gradient(darken($buttonBgColor, 10%));
       color: $buttonHoverTextColor;
-      border-color: darken($buttonBgColor, 10%);      
+      border-color: darken($buttonBgColor, 10%);
     }
 
     &:enabled:active {
       @include linear-gradient(darken($buttonActiveBgColor, 1%));
       color: $buttonActiveTextColor;
       border-color: darken($buttonActiveBgColor, 1%);
-      
     }
 
     &.ui-button-text-only {
@@ -80,6 +80,9 @@ body {
     }
   }
 
+  
+
+  /*----------------------------------------------------------------------------------*/
   .ui-button-secondary {
     @extend %button;
     color: $secondaryButtonTextColor;
@@ -88,17 +91,17 @@ body {
     @include transition($buttonTransition);
 
     &:enabled:hover {
-      @include linear-gradient(darken($secondaryButtonBgColor, 10%));
-      color: $secondaryButtonTextColor;
-      border-color: darken($secondaryButtonBgColor, 10%);
+      @include linear-gradient(darken($secondaryButtonHoverBgColor, 10%));
+      color: $secondaryButtonHoverTextColor;
+      border-color: darken($secondaryButtonHoverBorderColor, 10%);
     }
 
     &:enabled:focus {
       outline: $buttonFocusOutline;
       outline-offset: $buttonFocusOutlineOffset;
-      @include linear-gradient(darken($secondaryButtonBgColor, 30%));
-      color: $secondaryButtonTextColor;
-      border-color: darken($secondaryButtonBgColor, 30%);
+      @include linear-gradient(darken($secondaryButtonFocusBgColor, 30%));
+      color: $secondaryButtonFocusTextColor;
+      border-color: darken($secondaryButtonFocusBorderColor, 30%);
     }
 
     &:enabled:active {
@@ -107,6 +110,9 @@ body {
       border-color: darken($secondaryButtonActiveBgColor, 10%);
     }
   }
+
+  
+  /*----------------------------------------------------------------------------------*/
   .ui-button-info {
     @extend %button;
     color: $infoButtonTextColor;
@@ -115,7 +121,7 @@ body {
     @include transition($buttonTransition);
 
     &:enabled:hover {
-      @include linear-gradient(darken($infoButtonBgColor, 5%));
+      @include linear-gradient(darken($infoButtonHoverBgColor, 5%));
       color: $infoButtonHoverTextColor;
       border-color: darken($infoButtonBgColor, 5%);
     }
@@ -134,6 +140,28 @@ body {
       border-color: darken($infoButtonHoverBgColor, 5%);
     }
   }
+
+  //=====================
+  // Boton Success
+  //=====================
+  $success: #7da87b;
+  $successButtonBgColor: #7da87b;
+  $successButtonBorder: 1px solid #7da87b;
+  $successButtonTextColor: $blanco;
+
+  $successButtonBgColor: #107d11;
+  $successButtonTextColor: $blanco;
+  $successButtonBorderColor: #107d11;
+  //hover
+  $successButtonHoverBgColor: $successButtonBgColor;
+  $successButtonHoverTextColor: $successButtonTextColor;
+  $successButtonHoverBorderColor: $successButtonBorderColor;
+  //active
+  $successButtonActiveBgColor: $successButtonBgColor;
+  $successButtonActiveTextColor: $successButtonTextColor;
+  $successButtonActiveBorderColor: $successButtonBorderColor;
+
+  /*----------------------------------------------------------------------------------*/
   .ui-button-success {
     @extend %button;
     color: $successButtonTextColor;
@@ -156,11 +184,29 @@ body {
     }
 
     &:enabled:active {
-      @include linear-gradient(darken($successButtonHoverBgColor, 5%));
+      @include linear-gradient(darken($successButtonActiveBgColor, 5%));
       color: $successButtonActiveTextColor;
-      border-color: darken($successButtonHoverBgColor, 5%);
+      border-color: darken($successButtonActiveBorderColor, 5%);
     }
   }
+
+  //=====================
+  // Boton Warning
+  //=====================
+  $warningButtonBgColor: #eed624;
+  $warningButtonBorder: 1px solid #eed624;
+  $warningButtonTextColor: #4b4a4a;
+  //hover
+  $warningButtonHoverBgColor: #ed990b;
+  $warningButtonHoverTextColor: #444444;
+  $warningButtonHoverBorderColor: #ed990b;
+  //active
+  $warningButtonActiveBgColor: #c6b422;
+  $warningButtonActiveTextColor: $blanco;
+  $warningButtonActiveBorderColor: #c6b422;
+
+  /*----------------------------------------------------------------------------------*/
+
   .ui-button-warning {
     @extend %button;
     color: $warningButtonTextColor;
@@ -188,6 +234,23 @@ body {
       border-color: darken($warningButtonActiveBgColor, 5%);
     }
   }
+
+  //=====================
+  // Boton Danger
+  //=====================
+  $dangerButtonBgColor: #d15319;
+  $dangerButtonBorder: 1px solid #d15319;
+  $dangerButtonTextColor: $blanco;
+  //hover
+  $dangerButtonHoverBgColor: #960713;
+  $dangerButtonHoverTextColor: $blanco;
+  $dangerButtonHoverBorderColor: #c01120;
+  //active
+  $dangerButtonActiveBgColor: #960713;
+  $dangerButtonActiveTextColor: $blanco;
+  $dangerButtonActiveBorderColor: #960713;
+
+  /*----------------------------------------------------------------------------------*/
   .ui-button-danger {
     @extend %button;
     color: $dangerButtonTextColor;

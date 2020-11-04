@@ -1,3 +1,11 @@
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
+
+//=====================
+// Calendario
+//=====================
+
 .ui-calendar {
   position: relative;
   display: inline-block;
@@ -19,7 +27,6 @@
 }
 
 /* Fluid */
-
 .ui-fluid .ui-calendar {
   width: 100%;
 }
@@ -41,10 +48,10 @@
   width: auto;
   padding: 0.85em !important;  
   position: absolute;
-  background-color: #fff;
+  background-color: $colorDefectoFondo;
 
   .ui-state-highlight {
-    color: #fff; 
+    color: $blanco; 
     padding: 0.3em;
   }
   .ui-datepicker-inline {
@@ -63,7 +70,7 @@
   .ui-datepicker-header {
     position: relative;
     padding: 0.5em 0;
-    background-color: #eaeaea;
+    background-color: $colorLigeroFondo;
   }
   .ui-datepicker-prev,
   .ui-datepicker-next {
@@ -168,13 +175,13 @@
 }
 
 .ui-datepicker-today {
-  background-color: $primaryColor;
-  color: #fff;
+  background-color: $verdeCorporativo;
+  color: $blanco;
 }
 
 .ui-datepicker-prev,
 .ui-datepicker-next {
-  color: $primaryColor;
+  color: $verdeCorporativo;
 }
 
 /* Month Picker */

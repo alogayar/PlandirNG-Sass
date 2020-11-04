@@ -28,7 +28,7 @@ body {
       user-select: none;
       &:hover {
         background-color: $menuitemHoverBgColor;
-        color: $primaryColor;
+        color: $verdeCorporativo;
         box-shadow: $overlayMenuShadow;
       }
       &:focus {
@@ -88,7 +88,7 @@ body {
             transition: background-color 0.2s;
             &:hover {
               background-color: #E0E0E0;
-              color: $primaryColor;
+              color: $verdeCorporativo;
             }
           }
         }
@@ -97,7 +97,7 @@ body {
         color: #fff;
         transition: color 0.2s;
         &:hover {
-          color: $primaryColor;
+          color: $verdeCorporativo;
           background-color: $tableCaptionBgColor;
           box-shadow: none;
         }

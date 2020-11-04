@@ -110,7 +110,7 @@ body {
       @include transition(background-color 0.2s);
       &:not(.ui-state-highlight):hover {
         background-color: $DropdowmItemsColorHover;
-        color: $primaryColor;
+        color: $verdeCorporativo;
       }
     }
     .ui-state-highlight {

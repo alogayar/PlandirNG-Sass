@@ -7,8 +7,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
-@import url(http://plandirng.dipujaen.es/dcdn/adminpro/main/scss/icons/themify-icons/themify-icons.css);
-@import url(http://plandirng.dipujaen.es/dcdn/adminpro/main/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css);
+@import url(http://plandirng.dipujaen.es/dcdn/plandir/main/scss/icons/themify-icons/themify-icons.css);
+@import url(http://plandirng.dipujaen.es/dcdn/plandir/main/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -345,7 +345,19 @@ template {
   display: none;
 }
 
+/*
+@autor: NOVA0011 - Alberto Ogayar
+*/
 /* Color primario para los bordes de los componentes */
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
+/* Mixin estilos comunes para botones */
+/*--------------------------------------*/
+/*--------------------------------------*/
 .ui-listbox .ui-listbox-item.ui-state-highlight {
   background-color: #8ea22d;
   color: #ffffff;
@@ -359,12 +371,6 @@ html {
           box-sizing: border-box;
 }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -407,6 +413,42 @@ body a {
 
 body a:hover {
   color: #757575;
+}
+
+body .botones-fila {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .botones-fila .ui-button {
+  margin-right: 7px !important;
+  padding: 0 !important;
+}
+
+body .botones-columna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .botones-columna .ui-button {
+  margin-bottom: 7px !important;
+  padding: 0 !important;
 }
 
 @font-face {
@@ -489,6 +531,10 @@ body a:hover {
   color: #8ea22d;
 }
 
+.navbar-nav > * > .nav-item > .nav-link > i {
+  color: #8ea22d;
+}
+
 /*******************
  Header
 *******************/
@@ -549,6 +595,25 @@ body a:hover {
   background: rgba(0, 0, 0, 0.05);
 }
 
+.topbar .top-navbar .navbar-nav > * > .nav-item > .nav-link {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 17px;
+  line-height: 54px;
+}
+
+.topbar .top-navbar .navbar-nav > * > .nav-item > span {
+  line-height: 65px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.topbar .top-navbar .navbar-nav > * > .nav-item.show {
+  background: rgba(0, 0, 0, 0.05);
+}
+
 .topbar .profile-pic {
   width: 30px;
   border-radius: 100%;
@@ -565,6 +630,9 @@ body a:hover {
   padding: 7px 1.5rem;
 }
 
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
 .p-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1268,11 +1336,124 @@ body a:hover {
 /*============================================================== 
  Estilos globales del layout que usaremos en todas las pgainas 
  ============================================================== */
+@media (min-width: 768px) {
+  .navbar-header {
+    width: 180px !important;
+  }
+}
+
 .fix-header .topbar {
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Notificaciones header */
+.badge {
+  right: -2px;
+  top: 15px;
+  margin-right: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  padding: 2px 7px;
+  position: absolute;
+  display: inline-block;
+  min-width: 10px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.bg-green {
+  background: #8ea22d !important;
+  border: 1px solid #8ea22d !important;
+}
+
+.logo-dipu-round {
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  background: url("http://plandirng.dipujaen.es/dcdn/plandir/assets/images/logo40.png") center;
+  background-repeat: no-repeat;
+}
+
+li.all-notificaciones strong {
+  font-size: 14px;
+  padding-right: 8px;
+}
+
+.message-center {
+  font-family: "MyriadProRegular";
+}
+
+.message-center a .mail-contnet > h5 {
+  font-size: 15px;
+}
+
+.message-center a:hover {
+  background: #eaeaea !important;
+}
+
+/* Fin Notificaciones header */
+/* Perfil de Usuario */
+.topbar ul.dropdown-user li a:hover {
+  background: #eaeaea !important;
+  color: #67757c !important;
+  text-decoration: none;
+}
+
+/* Fin Perfil de Usuario */
+.mailbox .message-center a .update-ut-codigo {
+  font-size: 12px;
+  position: absolute;
+  top: 17%;
+  right: 11px;
+  display: none;
+}
+
+.mailbox .message-center a:hover .update-ut-codigo:hover {
+  display: block;
+}
+
+/*Tablas modulo Comunica */
+.table.table-comunica {
+  border: 0 !important;
+}
+
+.table-comunica {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  text-align: left;
+  border: 0px !important;
+  color: #67757c;
+}
+
+.table-comunica thead {
+  background-color: #FFFFEC;
+  border-bottom: 2px solid #8ea22d;
+}
+
+.table-comunica thead th {
+  font-weight: 600 !important;
+  padding: 0.75rem;
+  vertical-align: bottom;
+}
+
+.table-comunica thead td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #e9ecef;
+}
+
+.table-comunica .ui-button-text-only .ui-button-text {
+  padding: 0.2em 0.4em !important;
 }
 
 #sidebarnav .ui-tieredmenu {
@@ -1328,6 +1509,9 @@ body a:hover {
   font-weight: 400;
 }
 
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
 .ui-accordion {
   width: 100%;
 }
@@ -1340,7 +1524,7 @@ body a:hover {
 }
 
 .ui-accordion .ui-state-active span {
-  color: #757575;
+  color: #67757c;
 }
 
 .ui-accordion .ui-accordion-header {
@@ -1352,7 +1536,7 @@ body a:hover {
 }
 
 .ui-accordion .ui-accordion-header:hover {
-  color: #757575;
+  color: #67757c;
   background-color: #eaeaea;
 }
 
@@ -1404,6 +1588,9 @@ body a:hover {
   content: "\e904";
 }
 
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
 body .ui-breadcrumb {
   background-color: #ffffff;
 }
@@ -1491,10 +1678,10 @@ body .ui-breadcrumb ul li a {
   display: block;
   font-size: 12px;
   line-height: 40px;
-  color: #757575;
+  color: #67757c;
   padding: 0px 15px 0px 25px;
   text-decoration: none;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #ddd;
   white-space: nowrap;
   overflow: hidden;
@@ -1502,12 +1689,23 @@ body .ui-breadcrumb ul li a {
   transition: 0.3s ease;
 }
 
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
 body .ui-button, body .ui-button-secondary, body .ui-button-info, body .ui-button-success, body .ui-button-warning, body .ui-button-danger {
   margin: 0;
   padding: 0 5px;
   border-radius: 5px;
   color: #ffffff;
   font-size: 14px;
+}
+
+body {
+  /*----------------------------------------------------------------------------------*/
+  /*----------------------------------------------------------------------------------*/
+  /*----------------------------------------------------------------------------------*/
+  /*----------------------------------------------------------------------------------*/
+  /*----------------------------------------------------------------------------------*/
 }
 
 body .ui-button {
@@ -1535,10 +1733,10 @@ body .ui-button:enabled:focus {
 }
 
 body .ui-button:enabled:active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#275d8c), to(#1c4364));
-  background: linear-gradient(180deg, #275d8c 0%, #1c4364 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00589a), to(#003b67));
+  background: linear-gradient(180deg, #00589a 0%, #003b67 100%);
   color: #ffffff;
-  border-color: #275d8c;
+  border-color: #00589a;
 }
 
 body .ui-button.ui-button-text-only .ui-button-text {
@@ -1632,26 +1830,26 @@ body .ui-button-info:enabled:focus {
 }
 
 body .ui-button-info:enabled:active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0f61a8), to(#0b4679));
-  background: linear-gradient(180deg, #0f61a8 0%, #0b4679 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#476176), to(#344756));
+  background: linear-gradient(180deg, #476176 0%, #344756 100%);
   color: #ffffff;
-  border-color: #0f61a8;
+  border-color: #476176;
 }
 
 body .ui-button-success {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#7da87b), to(#62915f));
-  background: linear-gradient(180deg, #7da87b 0%, #62915f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#107d11), to(#0a500b));
+  background: linear-gradient(180deg, #107d11 0%, #0a500b 100%);
   border: 1px solid #7da87b;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
 
 body .ui-button-success:enabled:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6e9e6c), to(#578155));
-  background: linear-gradient(180deg, #6e9e6c 0%, #578155 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d660e), to(#073908));
+  background: linear-gradient(180deg, #0d660e 0%, #073908 100%);
   color: #ffffff;
-  border-color: #6e9e6c;
+  border-color: #0d660e;
 }
 
 body .ui-button-success:enabled:focus {
@@ -1734,6 +1932,9 @@ body .ui-button-danger:enabled:active {
   border-color: #7e0610;
 }
 
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
 .ui-calendar {
   position: relative;
   display: inline-block;
@@ -1777,12 +1978,12 @@ body .ui-button-danger:enabled:active {
   width: auto;
   padding: 0.85em !important;
   position: absolute;
-  background-color: #fff;
+  background-color: #ffffff;
   /* Header */
 }
 
 .ui-datepicker .ui-state-highlight {
-  color: #fff;
+  color: #ffffff;
   padding: 0.3em;
 }
 
@@ -1916,7 +2117,7 @@ body .ui-button-danger:enabled:active {
 
 .ui-datepicker-today {
   background-color: #8ea22d;
-  color: #fff;
+  color: #ffffff;
 }
 
 .ui-datepicker-prev,
@@ -2619,6 +2820,9 @@ body .ui-table .ui-table-caption .ui-menuitem-link:hover {
           box-shadow: none;
 }
 
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
 .ui-messages {
   border: none;
   margin: .5em 0;
@@ -2641,21 +2845,21 @@ body .ui-table .ui-table-caption .ui-menuitem-link:hover {
 }
 
 .ui-messages-warn {
-  color: #4b4a4a;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eed624), to(#cfb810));
-  background: linear-gradient(180deg, #eed624 0%, #cfb810 100%);
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffb22b), to(#f79d00));
+  background: linear-gradient(180deg, #ffb22b 0%, #f79d00 100%);
 }
 
 .ui-messages-info {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#516e86), to(#3e5466));
-  background: linear-gradient(180deg, #516e86 0%, #3e5466 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#398bf7), to(#0a6ff3));
+  background: linear-gradient(180deg, #398bf7 0%, #0a6ff3 100%);
 }
 
 .ui-messages-error {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d15319), to(#a34114));
-  background: linear-gradient(180deg, #d15319 0%, #a34114 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ef5350), to(#eb2521));
+  background: linear-gradient(180deg, #ef5350 0%, #eb2521 100%);
 }
 
 .ui-messages .ui-messages-icon {
@@ -2885,6 +3089,24 @@ body .ui-panel-title {
   vertical-align: middle;
   font-weight: 600;
   font-size: 13px;
+}
+
+.container-fluid .ui-tabview.ui-tabview-top .ui-tabview-nav {
+  margin-bottom: -1px;
+  position: fixed;
+  top: 35px;
+  z-index: 60;
+}
+
+.container-fluid .ui-tabview.ui-tabview-top .ui-tabview-nav li,
+.container-fluid body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li,
+.container-fluid body .ui-tabview.ui-tabview-left .ui-tabview-nav li,
+.container-fluid body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
+  border: 1px solid #c8c8c8;
+  background-color: #6e6e6e;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+  border-bottom: 0;
 }
 
 body .ui-table {
@@ -3258,7 +3480,7 @@ body .ui-dropdown .ui-dropdown-label {
   overflow: hidden;
   font-weight: normal;
   width: 100%;
-  padding-right: 2.9em;
+  padding-right: 4em;
   font-weight: normal;
 }
 
@@ -3369,7 +3591,12 @@ body .ui-fluid p-dropdown {
 
 body .ui-toast {
   position: fixed;
-  width: 20em;
+  width: 23em;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  z-index: 999;
 }
 
 body .ui-toast .ui-toast-message {
@@ -3377,50 +3604,72 @@ body .ui-toast .ui-toast-message {
   display: block;
   margin-bottom: 0.75em;
   overflow: hidden;
-  background-color: #c9d097;
-  color: #333;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-body .ui-toast .ui-toast-message-success {
-  background: -webkit-gradient(linear, left top, left bottom, from(#c9d097), to(#b7c074));
-  background: linear-gradient(180deg, #c9d097 0%, #b7c074 100%);
-  color: #ffffff;
-}
-
-body .ui-toast .ui-toast-message-content {
+body .ui-toast .ui-toast-message .ui-toast-message-content {
   padding: 0.5em 2em;
 }
 
-body .ui-toast .ui-toast-icon {
-  position: absolute;
-  display: inline-block;
-  left: 0.5em;
-  top: 0.25em;
-  padding: 0;
-  font-size: 2em;
-  border: 1px solid red;
-}
-
-body .ui-toast .ui-toast-close-icon {
+body .ui-toast .ui-toast-message .ui-toast-message-content .ui-toast-close-icon {
   position: absolute;
   top: 0.25em;
   right: 0.25em;
   cursor: pointer;
   display: inline-block;
-  border: 1px solid red;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
 }
 
-body .ui-toast .ui-toast-message-text-content {
+body .ui-toast .ui-toast-message .ui-toast-message-content .ui-toast-icon {
+  position: absolute;
+  display: inline-block;
+  left: 0.5em;
+  top: 0.25em;
+}
+
+body .ui-toast .ui-toast-message .ui-toast-message-content .ui-toast-message-text-content {
   padding: 0 0 0.25em 0;
-  margin-left: 2.5em;
+  margin-left: 0 !important;
 }
 
-body .ui-toast .ui-toast-message-text-content .ui-toast-summary {
+body .ui-toast .ui-toast-message .ui-toast-message-content .ui-toast-message-text-content .ui-toast-summary {
   font-weight: bold;
   padding: 0 0 0.5em 0;
   display: block;
+  text-align: center;
+}
+
+body .ui-toast .ui-toast-message .ui-toast-message-content .ui-toast-message-text-content .ui-toast-detail {
+  letter-spacing: 0.5px;
+  font-weight: lighter;
+  padding-top: 10px;
+}
+
+body .ui-toast .ui-toast-message-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+body .ui-toast .ui-toast-message-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+body .ui-toast .ui-toast-message-warn {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+body .ui-toast .ui-toast-message-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
 }
 
 body .ui-fieldset {
@@ -3636,7 +3885,6 @@ body .ui-paginator .ui-paginator-last:hover:not(.ui-state-disabled) {
 body .ui-paginator .ui-paginator-pages {
   vertical-align: top;
   display: inline-block;
-  padding: 1.5px;
 }
 
 body .ui-paginator .ui-paginator-pages .ui-paginator-page {
@@ -3723,6 +3971,7 @@ body .layout-principal {
   width: 100%;
   height: 100%;
   background-color: #fff;
+  font-family: "MyriadProRegular", sans-serif;
 }
 
 body .layout-principal .layout-palacio-dipu {
@@ -3826,7 +4075,7 @@ body .layout-principal .layout-login .fila-logo .box-ldap .texto-ldap .texto p {
 }
 
 body .layout-principal .layout-login .fila-logo .box-ldap .texto-ldap .texto span {
-  color: #698e02;
+  color: #8ea22d;
   letter-spacing: 2px;
 }
 
@@ -3862,9 +4111,9 @@ body .layout-principal .layout-login .fila-logo .box-ldap .formulario-ldap .ui-b
 
 body .layout-principal .layout-login .fila-logo .box-ldap .formulario-ldap .ui-inputtext {
   padding: 5px;
-  border: 1px solid #698e02;
-  -webkit-box-shadow: 0 0 0 0.1rem rgba(105, 142, 2, 0.25);
-          box-shadow: 0 0 0 0.1rem rgba(105, 142, 2, 0.25);
+  border: 1px solid #8ea22d;
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(142, 162, 45, 0.25);
+          box-shadow: 0 0 0 0.1rem rgba(142, 162, 45, 0.25);
 }
 
 body .layout-principal .layout-login .fila-logo .box-ldap .formulario-ldap .ui-inputtext:enabled:focus:not(.ui-state-error) {

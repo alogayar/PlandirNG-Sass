@@ -88,6 +88,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #fff;
+    font-family: "MyriadProRegular", sans-serif;
 
     .layout-palacio-dipu {
       margin: 0;
@@ -123,9 +124,8 @@ body {
           height: 100%;
         }
         .logo-dipu {
-          width: 100px !important;
-          
-          background-color: $verdeCorporativo;
+          width: 100px !important;          
+          background-color: $verdeLogoDiputacion;
           padding: 0 20px;
           .logo {
             background: asset($baseUrlAssets, $carpetaImages, "logo.png")

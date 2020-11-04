@@ -2,6 +2,12 @@
  Estilos globales del layout que usaremos en todas las pgainas 
  ============================================================== */
 
+@media (min-width: 768px) {
+  .navbar-header {
+    width: 180px !important;
+  }
+}
+
 .fix-header {
   .topbar {
     position: fixed;
@@ -40,7 +46,7 @@
   padding: 0;
   height: 50px;
   width: 50px;
-  background: url("http://plandirng.dipujaen.es/dcdn/adminpro/assets/images/logo40.png")
+  background: url("http://plandirng.dipujaen.es/dcdn/plandir/assets/images/logo40.png")
     center;
   background-repeat: no-repeat;
 }
@@ -57,7 +63,7 @@ li.all-notificaciones {
       font-size: 15px;
     }
     &:hover {
-        background: #eaeaea !important;
+      background: #eaeaea !important;
     }
   }
 }
@@ -74,17 +80,46 @@ li.all-notificaciones {
 /* Fin Perfil de Usuario */
 
 .mailbox .message-center a .update-ut-codigo {
-    font-size:12px;    
-    position: absolute;
-    top: 17%;
-    right: 11px;
-    display:none;     
+  font-size: 12px;
+  position: absolute;
+  top: 17%;
+  right: 11px;
+  display: none;
 }
 
-.mailbox .message-center a:hover {    
-    .update-ut-codigo:hover {
-        display: block;
+.mailbox .message-center a:hover {
+  .update-ut-codigo:hover {
+    display: block;
+  }
+}
+
+/*Tablas modulo Comunica */
+.table.table-comunica {
+  border: 0 !important;
+}
+.table-comunica {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  text-align: left;
+  border: 0px !important;
+  color: $colorTexto;
+
+  thead {
+    background-color: #FFFFEC;
+    border-bottom: 2px solid $verdeCorporativo;
+    th {
+      font-weight: 600 !important;
+      padding: 0.75rem;
+      vertical-align: bottom;
     }
+    td {
+      padding: 0.75rem;
+      vertical-align: top;
+      border-top: 1px solid #e9ecef;
+    }
+  }
+  .ui-button-text-only .ui-button-text {
+    padding: 0.2em 0.4em !important;
+  }
 }
-
-

@@ -1,27 +1,41 @@
+/*
+@autor: NOVA0011 - Alberto Ogayar
+*/
+
 // ========================================================================================
-// Esquema de colores principales
+// Esquema de colores principales para Plandir
 // ========================================================================================
 
-$primaryColor: #8ea22d;
-$primaryBgColor: #ffffff;
-$primaryTextColor: #ffffff;
+$verdeCorporativo: #8ea22d;
+$azulCorporativo: #005b9f;
+$verdeLogoDiputacion: #698e02;
+
+$colorDefectoFondo: #ffffff;
+$colorLigeroFondo: #eaeaea;
+$colorTextoBlanco: #ffffff;
+
+$colorTexto: #67757c;
+
+$blanco: #ffffff;
+$gris: #67757c;
+$info: #398bf7;
+$warning: #ffb22b;
+$danger: #ef5350;
+
 $primaryDarkColor: #757575;
 $primaryDarkerColor: #005b9f;
 
 /* Color primario para los bordes de los componentes */
-$primaryColorBorde: #a6a6a6;
+$colorDefectoBorde: #a6a6a6;
 
 $grisCorporativoColor: #757575;
 $azulCorporativoColor: #286090;
 $danger-dark: #e6294b;
 $light: #e9edf2;
 $themecolor: #398bf7;
-$danger: #ef5350;
 $light-text: #a6b7bf;
 $white: #ffffff;
-$warning: #ffb22b;
 $primary: #745af2;
-$info: #398bf7; 
 $inverse: #2f3d4a;
 $secondary: #cccccc;
 $muted: #99abb4;
@@ -31,8 +45,8 @@ $extra-light: #ebf3f5;
 $purple: #7460ee;
 $blue: #02bec9;
 $megna: #56c0d8;
-$bglight:rgba(0, 0, 0, 0.02);
-
+$bglight: rgba(0, 0, 0, 0.02);
+$negro: #000;
 
 // ========================================================================================
 // Variables para los Assets - CDN
@@ -56,17 +70,17 @@ $textColor: #333333;
 $textSecondaryColor: lighten($textColor, 25%);
 $borderRadius: 3px;
 $transitionDuration: 0.3s;
-
+$disabledOpacity: 0.5;
 //iconos Primeicons
 $sizeIcons: 1em;
 
 //highlight
-$highlightBgColor: $primaryColor;
-$highlightColorText: $primaryTextColor;
+$highlightBgColor: $verdeCorporativo;
+$highlightColorText: $colorTextoBlanco;
 $border: rgba(120, 130, 140, 0.13);
 
-$inputFocusBorderColor: $primaryColor;
-$inputFocusShadow: inset 0 0 0 0.2em $primaryColor;
+$inputFocusBorderColor: $verdeCorporativo;
+$inputFocusShadow: inset 0 0 0 0.2em $verdeCorporativo;
 $inputBgColor: #ffffff;
 $dark-transparent: rgba(0, 0, 0, 0.05);
 // ========================================================================================
@@ -74,7 +88,6 @@ $dark-transparent: rgba(0, 0, 0, 0.05);
 // ========================================================================================
 
 //Colores para el login
-$verdeCorporativo: rgb(105, 142, 2);
 $loginBoxShadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.2);
 
 // ========================================================================================
@@ -89,24 +102,30 @@ $buttonWithLeftIconPadding: 0.429em 1em 0.429em 2em;
 $buttonWithRightIconPadding: 0.429em 2em 0.429em 1em;
 $buttonIconOnlyPadding: 0.429em;
 $buttonIconOnlyWidth: 2.143em;
-$buttonBgColor: $primaryColor;
-$buttonBorder: 1px solid $primaryColor;
-$buttonTextColor: $primaryTextColor;
+$buttonBgColor: $verdeCorporativo;
+$buttonBorder: 1px solid $verdeCorporativo;
+$buttonTextColor: $blanco;
 $buttonTransition: background-color $transitionDuration;
 $raisedButtonShadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
 $roundedButtonBorderRadius: 15px;
-$disabledOpacity: 0.5;
 
-// hover
-$buttonHoverBgColor: $grisCorporativoColor;
-$buttonHoverTextColor: $primaryTextColor; //blanco
-$buttonHoverBorderColor: $grisCorporativoColor;
-// active
-$buttonActiveBgColor: $azulCorporativoColor;
-$buttonActiveTextColor: $primaryTextColor;
-$buttonActiveBorderColor: $azulCorporativoColor;
-// focus
-$buttonFocusBorderColor: $azulCorporativoColor;
+//=========================
+// Boton principal - HOVER
+//=========================
+
+$buttonHoverBgColor: $gris;
+$buttonHoverTextColor: $blanco;
+$buttonHoverBorderColor: $gris;
+//=========================
+// Boton principal - ACTIVE
+//=========================
+$buttonActiveBgColor: $azulCorporativo;
+$buttonActiveTextColor: $blanco;
+$buttonActiveBorderColor: $azulCorporativo;
+//=========================
+// Boton principal - FOCUS
+//=========================
+$buttonFocusBorderColor: $azulCorporativo;
 $buttonFocusOutline: 0 none;
 $buttonFocusOutlineOffset: 0px;
 
@@ -117,9 +136,15 @@ $secondaryButtonBgColor: #f4f4f4;
 $secondaryButtonBorder: 1px solid #f4f4f4;
 $secondaryButtonTextColor: #333333;
 // hover
-$secondaryButtonHoverBgColor: #8ea22d;
-$secondaryButtonHoverTextColor: #f5f5f5;
-$secondaryButtonHoverBorderColor: #8ea22d;
+$secondaryButtonHoverBgColor: $secondaryButtonBgColor;
+$secondaryButtonHoverTextColor: $secondaryButtonTextColor;
+$secondaryButtonHoverBorderColor: $secondaryButtonBgColor;
+
+// focus
+$secondaryButtonFocusBgColor: $secondaryButtonBgColor;
+$secondaryButtonFocusTextColor: $secondaryButtonTextColor;
+$secondaryButtonFocusBorderColor: $secondaryButtonBgColor;
+
 // active
 $secondaryButtonActiveBgColor: #a0a0a0;
 $secondaryButtonActiveTextColor: #f5f5f5;
@@ -131,58 +156,15 @@ $secondaryButtonActiveBorderColor: #a0a0a0;
 
 $infoButtonBgColor: #516e86;
 $infoButtonBorder: 1px solid #516e86;
-$infoButtonTextColor: #ffffff;
+$infoButtonTextColor: $blanco;
 //hover
-$infoButtonHoverBgColor: #116fbf;
-$infoButtonHoverTextColor: #ffffff;
-$infoButtonHoverBorderColor: #116fbf;
+$infoButtonHoverBgColor: $infoButtonBgColor;
+$infoButtonHoverTextColor: $blanco;
+$infoButtonHoverBorderColor: $infoButtonBgColor;
 //active
 $infoButtonActiveBgColor: #005b9f;
-$infoButtonActiveTextColor: #ffffff;
+$infoButtonActiveTextColor: $blanco;
 $infoButtonActiveBorderColor: #005b9f;
-//=====================
-// Boton Success
-//=====================
-$success: #7da87b;
-$successButtonBgColor: #7da87b;
-$successButtonBorder: 1px solid #7da87b;
-$successButtonTextColor: #ffffff;
-//hover
-$successButtonHoverBgColor: #107d11;
-$successButtonHoverTextColor: #ffffff;
-$successButtonHoverBorderColor: #107d11;
-//active
-// $successButtonActiveBgColor:#0C6B0D;
-$successButtonActiveTextColor: #ffffff;
-// $successButtonActiveBorderColor:#0C6B0D;
-//=====================
-// Boton Warning
-//=====================
-$warningButtonBgColor: #eed624;
-$warningButtonBorder: 1px solid #eed624;
-$warningButtonTextColor: #4b4a4a;
-//hover
-$warningButtonHoverBgColor: #ed990b;
-$warningButtonHoverTextColor: #444444;
-$warningButtonHoverBorderColor: #ed990b;
-//active
-$warningButtonActiveBgColor: #c6b422;
-$warningButtonActiveTextColor: #ffffff;
-$warningButtonActiveBorderColor: #c6b422;
-//=====================
-// Boton Danger
-//=====================
-$dangerButtonBgColor: #d15319;
-$dangerButtonBorder: 1px solid #d15319;
-$dangerButtonTextColor: #ffffff;
-//hover
-$dangerButtonHoverBgColor: #960713;
-$dangerButtonHoverTextColor: #ffffff;
-$dangerButtonHoverBorderColor: #c01120;
-//active
-$dangerButtonActiveBgColor: #960713;
-$dangerButtonActiveTextColor: #ffffff;
-$dangerButtonActiveBorderColor: #960713;
 
 // ========================================================================================
 // Personalizacion de las card
@@ -195,7 +177,7 @@ $cardShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
 // Personalizacion de las card
 // ========================================================================================
 $breadcrumTransition: box-shadow 0.3s;
-$breadcrumShadow: 0 0 0 0.2em $primaryColor;
+$breadcrumShadow: 0 0 0 0.2em $verdeCorporativo;
 $breadcrumBgColor: #ebebeb;
 $breadcrumBorderRadius: 4px;
 
@@ -230,8 +212,8 @@ $panelHeaderHoverBgColor: #dbdbdb;
 $panelHeaderHoverBorder: 1px solid #dbdbdb;
 $panelHeaderHoverTextColor: #333333;
 $panelHeaderHoverIconColor: #333333;
-$panelHeaderActiveBgColor: $primaryColor;
-$panelHeaderActiveBorder: 1px solid $primaryColor;
+$panelHeaderActiveBgColor: $verdeCorporativo;
+$panelHeaderActiveBorder: 1px solid $verdeCorporativo;
 $panelHeaderActiveTextColor: #ffffff;
 $panelHeaderActiveIconColor: #ffffff;
 $panelHeaderActiveHoverBgColor: $primaryDarkerColor;
@@ -259,18 +241,18 @@ $DropdowmMinWidth: 13.5em;
 $DropdowmBgColor: #eaeaea;
 $DropdowmColor: #333333;
 $DropdowmTransition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
-$DropdowmHoverBorderColor: $primaryColor;
+$DropdowmHoverBorderColor: $verdeCorporativo;
 $DropdowmItemsMaxHeigth: 200px;
 $DropdowmItemsColorHover: #eaeaea;
 $DropdowmItemsColorHighlight: #ffffff;
-$DropdowmItemsBgColorHighlight: $primaryColor;
+$DropdowmItemsBgColorHighlight: $verdeCorporativo;
 
 // ========================================================================================
 // Personalizacion de las Listbox
 // ========================================================================================
 
 $ListboxMinWidth: 15em;
-$ListboxBgColor: $primaryBgColor;
+$ListboxBgColor: $colorDefectoFondo;
 $ListboxPaddingElementos: 0.25em;
 
 // ========================================================================================
@@ -292,21 +274,21 @@ $menuitemHoverBgColor: #e5e5e5;
 $menuitemActiveTextColor: #333333;
 $menuitemActiveIconColor: #333333;
 $menuitemActiveBgColor: #eaeaea;
-$menuitemRouterLinkActiveTextColor: $primaryColor;
-$menuitemRouterLinkActiveIconColor: $primaryColor;
+$menuitemRouterLinkActiveTextColor: $verdeCorporativo;
+$menuitemRouterLinkActiveIconColor: $verdeCorporativo;
 $submenuHeaderMargin: 0;
 
 $submenuColorHeader: #f1f1f1;
 $overlayMenuBorder: 1px solid #c8c8c8;
 $overlayMenuShadow: 0 0px 3px 0 rgba(0, 0, 0, 0.16);
-$menuitemFocusShadow: 0 0 0 0.1em $primaryColorBorde;
+$menuitemFocusShadow: 0 0 0 0.1em $colorDefectoBorde;
 
 $contextMenuBgColor: #ffffff;
 $contextMenuBorder: 1px solid #c8c8c8;
 $contextMenuItemFontSize: 13px;
 $contextMenuItemFontweight: 500;
 $contextMenuItemHoverBgColor: #eaeaea;
-$contextMenuItemHoverTextColor: $primaryColor;
+$contextMenuItemHoverTextColor: $verdeCorporativo;
 $contextMenuWidth: 12.5em;
 $contextMenuPadding: 0.25em;
 
@@ -342,7 +324,7 @@ $tableFooterCellBgColor: #ffffff;
 $tableFooterCellTextColor: $textColor;
 $tableFooterCellFontWeight: 700;
 $tableFooterCellBorder: 1px solid #c8c8c8;
-$tableResizerHelperBgColor: $primaryColor;
+$tableResizerHelperBgColor: $verdeCorporativo;
 $tableRowBgColorSelected: #dbddc3;
 
 // ========================================================================================
@@ -357,18 +339,18 @@ $toastWidth: 23em;
 
 $checkboxWidth: 20px;
 $checkboxHeight: 20px;
-$checkboxActiveBorderColor: $primaryColor;
-$checkboxActiveBgColor: $primaryColor;
-$checkboxActiveTextColor: $primaryTextColor;
+$checkboxActiveBorderColor: $verdeCorporativo;
+$checkboxActiveBgColor: $verdeCorporativo;
+$checkboxActiveTextColor: $colorTextoBlanco;
 $checkboxActiveHoverBgColor: $primaryDarkerColor;
-$checkboxActiveHoverTextColor: $primaryTextColor;
+$checkboxActiveHoverTextColor: $colorTextoBlanco;
 $checkboxActiveHoverBorderColor: $primaryDarkerColor;
 $checkboxActiveFocusBgColor: $primaryDarkerColor;
-$checkboxActiveFocusTextColor: $primaryTextColor;
+$checkboxActiveFocusTextColor: $colorTextoBlanco;
 $checkboxActiveFocusBorderColor: $primaryDarkerColor;
 $checkboxFocusBgColor: $inputBgColor;
-$checkboxFocusTextColor: $primaryColor;
-$checkboxFocusBorderColor: $primaryColor;
+$checkboxFocusTextColor: $verdeCorporativo;
+$checkboxFocusBorderColor: $verdeCorporativo;
 $checkboxTransition: background-color $transitionDuration,
   border-color $transitionDuration;
 

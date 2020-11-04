@@ -1,12 +1,23 @@
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
+
 // -----------------------------------------------------------------------------
-//  Sass mixins de PlandirNG
+//  Declaramos aqui todos los mixin que usaremos en PlandirNG
 // -----------------------------------------------------------------------------
+
+
+/* Mixin estilos comunes para botones */
+/*--------------------------------------*/
+
+
+/*--------------------------------------*/
 
 @mixin icon-override($icon) {    
   &:before {
       content: $icon;
   }
-}
+} 
 
 @mixin icon-override-fa($icon) {    
   background: none;
@@ -64,12 +75,12 @@
 @mixin hover-input() {
   outline: 0 none;
   background-color: rgba(0, 0, 0, 0.1);
-  color: $primaryColor;
+  color: $verdeCorporativo;
 }
 
 %state-highlight {
   background-color: $highlightBgColor;
-  color:$primaryTextColor;           
+  color: $colorTextoBlanco;            
 }
  
 
@@ -157,3 +168,10 @@ filter: alpha(opacity=$opacity-ie);
   -ms-transform: scale($deg);
   transform: scale($deg);
 } 
+
+@mixin inline {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+}

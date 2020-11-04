@@ -1,21 +1,22 @@
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
+
+
+// -----------------------------------------------------------------------------
+// Variables para Breadcrumbs
+// -----------------------------------------------------------------------------
+
+$breadcrumbTransition: 0.3s ease;
+
 // ------------------------------------------------------------------------------------
 // Este fichero contiene todos los estilos del componente migas de pan
 // ------------------------------------------------------------------------------------
 
 
-
-@mixin inline {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  vertical-align: top;
-}
-
 body {
   .ui-breadcrumb {
-    background-color: $panelContentBgColor;
-    //border: $panelContentBorder;
-    //padding: $panelContentPadding;
+    background-color: $colorDefectoFondo;    
 
     ul {
       margin: 25px 0px 0px;
@@ -33,7 +34,7 @@ body {
         list-style-image: none;
         @include inline;
         border-left: 1px solid #ccc;
-        transition: 0.3s ease;
+        transition: $breadcrumbTransition;
 
         &.ui-breadcrumb-chevron {            
             display: none;
@@ -41,12 +42,12 @@ body {
 
         &:hover {
           &:before {
-            border-left: 10px solid $primaryColor;
+            border-left: 10px solid $verdeCorporativo;
           }
 
           a {
-            color: #000;
-            background: $primaryColor;
+            color: $negro;
+            background: $verdeCorporativo;
           }
         }
 
@@ -59,7 +60,7 @@ body {
           border-left: 10px solid #fff;
           border-top: 22px solid transparent;
           border-bottom: 22px solid transparent;
-          transition: 0.3s ease;
+          transition: $breadcrumbTransition;
         }
 
         &:after {
@@ -75,8 +76,8 @@ body {
 
         &.ui-menuitem-link {
           a {
-            color: #000;
-            background: $primaryColor;
+            color: $negro;
+            background: $verdeCorporativo;
           }
         }
 
@@ -94,14 +95,14 @@ body {
           display: block;
           font-size: 12px;
           line-height: 40px;
-          color: #757575;
+          color: $gris;
           padding: 0px 15px 0px 25px;
           text-decoration: none;
-          background: #fff;
+          background: $colorDefectoFondo;
           border: 1px solid #ddd;
           white-space: nowrap;
           overflow: hidden;
-          transition: 0.3s ease;
+          transition: $breadcrumbTransition;
         }
       }
     }

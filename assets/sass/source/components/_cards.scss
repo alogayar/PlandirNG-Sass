@@ -5,8 +5,8 @@
 
 body {
     .ui-card {
-        background-color:$primaryTextColor;
-        color: $primaryColor;
+        background-color:$colorTextoBlanco;
+        color: $verdeCorporativo;
         @include shadow($cardShadow);
     }
     

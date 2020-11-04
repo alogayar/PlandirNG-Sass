@@ -1,12 +1,29 @@
-.ui-accordion {
-  width: 100%;    
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
 
+
+// -----------------------------------------------------------------------------
+// Variables para Acordeon
+// -----------------------------------------------------------------------------
+
+$accordionWidth:100%;
+$accordionActiveBackgroundColor: #eaeaea;
+$accordionShadow: $cardShadow;
+
+// -----------------------------------------------------------------------------
+// Componente Acordeon 
+// -----------------------------------------------------------------------------
+
+.ui-accordion {
+  width: $accordionWidth;    
+  
   .ui-state-active {        
     border: 0;
-    background-color: #eaeaea;
-    @include shadow($cardShadow);
+    background-color: $accordionActiveBackgroundColor;
+    @include shadow($accordionShadow);
     span {
-     color:$primaryDarkColor;
+     color:$gris;
     }
   }
   
@@ -17,19 +34,18 @@
     transition: all 200ms;    
     
     &:hover {      
-      color:$primaryDarkColor;
-      background-color: #eaeaea;
+      color:$gris;
+      background-color: $accordionActiveBackgroundColor;
     }   
 
     a {
-      color: $primaryColor;
+      color: $verdeCorporativo;
       font-size: 14px;
       line-height: 1rem;
       display: block;
       padding: 0.5em;
       &:hover {
-        text-decoration: none;
-        //color: #fff;
+        text-decoration: none;        
       }
     }
   }
@@ -71,3 +87,6 @@
     }
   }
 }
+
+
+

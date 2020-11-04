@@ -1,6 +1,6 @@
 #noticias {
   .bordeVerde {
-    border: 4px solid $primaryColor;
+    border: 4px solid $verdeCorporativo;
   }
 
   p {
@@ -23,11 +23,11 @@
           text-decoration: none;
         }
         &:hover > p {
-          color: $primaryColor !important;
+          color: $verdeCorporativo !important;
         }
 
         img {
-          border: 4px solid $primaryColor;
+          border: 4px solid $verdeCorporativo;
           border-radius: 5px;
         }
         p.titular {
@@ -65,7 +65,7 @@
             text-decoration: none;
           }
           &:hover > p {
-            color: $primaryColor !important;
+            color: $verdeCorporativo !important;
           }
         }
         .noticia:first-child {
@@ -108,12 +108,12 @@
       flex-direction: column;
       i {
         font-size: 60px;
-        color: $primaryColor;
+        color: $verdeCorporativo;
         padding: 10px;
         cursor: pointer;
       }
       p {
-        color: $primaryColor;
+        color: $verdeCorporativo;
         cursor: pointer;
       }
     }

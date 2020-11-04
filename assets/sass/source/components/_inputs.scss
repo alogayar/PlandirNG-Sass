@@ -17,8 +17,8 @@ body {
     &:enabled:focus:not(.ui-state-error) {
       outline: 0 none;
       outline-offset: 0;
-      box-shadow: 0 0 0 0.1em $primaryColor;
-      border-color: $primaryColor;
+      box-shadow: 0 0 0 0.1em $verdeCorporativo;
+      border-color: $verdeCorporativo;
     }
   }
 
@@ -209,7 +209,7 @@ body {
   }
 
   .ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider {
-    background-color: $primaryColor;
+    background-color: $verdeCorporativo;
   }
 
   .ui-inputswitch-checked .ui-inputswitch-slider:before {
@@ -251,12 +251,12 @@ body {
       &.ui-state-focus {
         outline: 0 none;
         outline-offset: 0;
-        box-shadow: 0 0 0 0.2em $primaryColor;
-        border-color: $primaryColor;
+        box-shadow: 0 0 0 0.2em $verdeCorporativo;
+        border-color: $verdeCorporativo;
       }
       &.ui-state-active:not(.ui-state-disabled):hover {
-        border-color: $primaryColor;
-        background-color: $primaryColor;
+        border-color: $verdeCorporativo;
+        background-color: $verdeCorporativo;
         color: #ffffff;
       }
       .ui-chkbox-icon {

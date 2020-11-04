@@ -10,7 +10,7 @@ body {
         margin: 0 0.125em 1px 0;
         padding: 0;
         white-space: nowrap;
-        background-color: $primaryColor;
+        background-color: $verdeCorporativo;
         display: block;
         font-size: 13px;
         a {
@@ -22,8 +22,8 @@ body {
         
       }
       li.ui-state-active:hover {
-         background-color: $primaryColor !important;
-         border-color: $primaryColor !important;         
+         background-color: $verdeCorporativo !important;
+         border-color: $verdeCorporativo !important;         
       }
       
       li.ui-state-active,

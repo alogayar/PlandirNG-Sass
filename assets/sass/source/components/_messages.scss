@@ -1,31 +1,38 @@
+/*
+  @autor: NOVA0011 - Alberto Ogayar
+*/
+
+//=====================
+// Mensajes
+//=====================
+
 .ui-messages {
     border: none;
     margin: .5em 0;
     padding: 1em 1em 1em .5em;
     position: relative;
     justify-items: center;
-    background-color: $primaryColor;
-    color:$primaryTextColor;
+    background-color: $verdeCorporativo;
+    color:$blanco;
     @include flex;
     @include border-radius(5px);
-    @include linear-gradient(lighten($buttonBgColor, 1%));
-
+    @include linear-gradient(lighten($verdeCorporativo, 1%));
 }
 
 .ui-messages-success {    
-    @include linear-gradient($buttonBgColor);
+    @include linear-gradient($verdeCorporativo);
 }
 .ui-messages-warn {
-    color: $warningButtonTextColor;
-    @include linear-gradient($warningButtonBgColor);
+    color: $blanco;
+    @include linear-gradient($warning);
 }
 .ui-messages-info {
-    color: $infoButtonTextColor;
-    @include linear-gradient($infoButtonBgColor);
+    color: $blanco;
+    @include linear-gradient($info);
 }
 .ui-messages-error {
-    color: $dangerButtonTextColor;
-    @include linear-gradient($dangerButtonBgColor);
+    color: $blanco;
+    @include linear-gradient($danger);
 }
 
 .ui-messages .ui-messages-icon {
