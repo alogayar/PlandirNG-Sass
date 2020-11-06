@@ -7,18 +7,14 @@
 // -----------------------------------------------------------------------------
 
 
-/* Mixin estilos comunes para botones */
-/*--------------------------------------*/
-
-
-/*--------------------------------------*/
-
+/* Dibuja un icono a la derecha del elemente */ 
 @mixin icon-override($icon) {    
   &:before {
       content: $icon;
   }
 } 
 
+/* Dibuja un icono font-awesome a la derecha del elemente */
 @mixin icon-override-fa($icon) {    
   background: none;
   display: inline-block;
@@ -35,30 +31,34 @@
   }
 }
 
+/* Usa display flex */ 
 @mixin flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
 
-
+/* Para hacer que un elemento cambie su aparariencia */
 @mixin appearance($val) {
   -webkit-appearance: $val;
   -moz-appearance: $val;
   appearance: $val;
 }
 
+/* Para cambiar el modelo de caja  */
 @mixin box-sizing($val) {
   -webkit-box-sizing: $val;
   -moz-box-sizing: $val;
   box-sizing: $val;
 }
 
+/* Para crear gradientes lineales to bottom*/
+/* @param color */
 @mixin linear-gradient($val) {
   background: linear-gradient(180deg, $val 0%, darken($val,10%) 100%);  
 }
 
-
+/* Para crear una transicion */
 @mixin transition($transition...) {
   -moz-transition:    $transition;
   -o-transition:      $transition;
@@ -66,24 +66,27 @@
   transition:         $transition;
 }
 
+/*Sombras para los elementos con foco */
 @mixin focused-input() {
   border-color: $inputFocusBorderColor;
   outline: 0 none;
   @include shadow($inputFocusShadow);
 }
 
+/* Fondo para el estado hover del componente */
 @mixin hover-input() {
   outline: 0 none;
   background-color: rgba(0, 0, 0, 0.1);
   color: $verdeCorporativo;
 }
 
+/* Fondo verde corporativo, texto blanco */
 %state-highlight {
   background-color: $highlightBgColor;
   color: $colorTextoBlanco;            
 }
  
-
+/* Estilo para los componentes deshabilitados */
 @mixin disabled-input() {
   border-color: $inputDisabledBorderColor;
   background-color: $inputDisabledBgColor;
@@ -92,18 +95,21 @@
   pointer-events: none;
 }
 
+/* Para incluir sombra */
 @mixin shadow($value) {
   -webkit-box-shadow: $value;
   -moz-box-shadow: $value;
   box-shadow: $value;
 }
 
+/* Para los bordes redondeados */
 @mixin border-radius($val) {
   -moz-border-radius: $val;
   -webkit-border-radius: $val;
   border-radius: $val;
 }
 
+/* Bordes derecha redondeados */
 @mixin border-radius-right($val) {
   -moz-border-radius-topright: $val;
   -webkit-border-top-right-radius: $val;
@@ -113,6 +119,7 @@
   border-bottom-right-radius: $val; 
 }
 
+/* Bordes izquierda redondeados */
 @mixin border-radius-left($val) {
   -moz-border-radius-topleft: $val;
   -webkit-border-top-left-radius: $val;
@@ -122,6 +129,7 @@
   border-bottom-left-radius: $val;
 }
 
+/* Bordes superiores redondeados */
 @mixin border-radius-top($val) {
   -moz-border-radius-topleft: $val;
   -webkit-border-top-left-radius: $val;
@@ -131,6 +139,7 @@
   border-top-right-radius: $val;
 }
 
+/* Bordes inferiores redondeados */
 @mixin border-radius-bottom($val) {
   -moz-border-radius-bottomleft: $val;
   -webkit-border-bottom-left-radius: $val;
@@ -140,12 +149,14 @@
   border-bottom-right-radius: $val;
 }
 
+/* Para incluir transparencia */
 @mixin opacity($opacity) {
 opacity: $opacity;
 $opacity-ie: $opacity * 100;
 filter: alpha(opacity=$opacity-ie);
 }
 
+/* Para incluir texto provisional en un elemento input o textarea */
 @mixin placeholder {
   ::-webkit-input-placeholder {@content}
   :-moz-placeholder           {@content}
