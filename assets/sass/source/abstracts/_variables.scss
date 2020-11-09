@@ -7,15 +7,15 @@
 // ========================================================================================
 
 $verdeCorporativo: #8ea22d;
-$azulCorporativo: #005b9f;
+$verdeCorporativoDark: #7e8a45;
 $verdeLogoDiputacion: #698e02;
-
 $colorDefectoFondo: #ffffff;
 $colorLigeroFondo: #eaeaea;
 $colorTextoBlanco: #ffffff;
-
 $colorTexto: #67757c;
+$borderColor: #c8c8c8;
 
+$azul:#286090;
 $blanco: #ffffff;
 $gris: #67757c;
 $info: #398bf7;
@@ -29,7 +29,7 @@ $primaryDarkerColor: #005b9f;
 $colorDefectoBorde: #a6a6a6;
 
 $grisCorporativoColor: #757575;
-$azulCorporativoColor: #286090;
+
 $danger-dark: #e6294b;
 $light: #e9edf2;
 $themecolor: #398bf7;
@@ -90,9 +90,6 @@ $dark-transparent: rgba(0, 0, 0, 0.05);
 //Colores para el login
 $loginBoxShadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.2);
 
-// ========================================================================================
-// Personalizacion de los botones
-// ========================================================================================
 
 //=====================
 // Boton principal
@@ -119,13 +116,13 @@ $buttonHoverBorderColor: $gris;
 //=========================
 // Boton principal - ACTIVE
 //=========================
-$buttonActiveBgColor: $azulCorporativo;
+$buttonActiveBgColor: $azul;
 $buttonActiveTextColor: $blanco;
-$buttonActiveBorderColor: $azulCorporativo;
+$buttonActiveBorderColor: $azul;
 //=========================
 // Boton principal - FOCUS
 //=========================
-$buttonFocusBorderColor: $azulCorporativo;
+$buttonFocusBorderColor: $azul;
 $buttonFocusOutline: 0 none;
 $buttonFocusOutlineOffset: 0px;
 

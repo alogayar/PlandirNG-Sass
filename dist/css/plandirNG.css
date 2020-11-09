@@ -355,14 +355,34 @@ template {
 /*
   @autor: NOVA0011 - Alberto Ogayar
 */
-/* Mixin estilos comunes para botones */
-/*--------------------------------------*/
-/*--------------------------------------*/
+/* Dibuja un icono a la derecha del elemente */
+/* Dibuja un icono font-awesome a la derecha del elemente */
+/* Usa display flex */
+/* Para hacer que un elemento cambie su aparariencia */
+/* Para cambiar el modelo de caja  */
+/* Para crear gradientes lineales to bottom*/
+/* @param color */
+/* Para crear una transicion */
+/*Sombras para los elementos con foco */
+/* Fondo para el estado hover del componente */
+/* Fondo verde corporativo, texto blanco */
 .ui-listbox .ui-listbox-item.ui-state-highlight {
   background-color: #8ea22d;
   color: #ffffff;
 }
 
+/* Estilo para los componentes deshabilitados */
+/* Para incluir sombra */
+/* Para los bordes redondeados */
+/* Bordes derecha redondeados */
+/* Bordes izquierda redondeados */
+/* Bordes superiores redondeados */
+/* Bordes inferiores redondeados */
+/* Para incluir transparencia */
+/* Rotar un elemento */
+/* Escalar un elemento */
+/* Display inline-block */
+/* Para incluir texto provisional en un elemento input o textarea */
 /**
  * Set up a decent box model on the root element
  */
@@ -1512,80 +1532,71 @@ li.all-notificaciones strong {
 /*
   @autor: NOVA0011 - Alberto Ogayar
 */
-.ui-accordion {
-  width: 100%;
+body .ui-accordion .ui-accordion-header {
+  margin-bottom: 2px;
 }
 
-.ui-accordion .ui-state-active {
-  border: 0;
-  background-color: #eaeaea;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-}
-
-.ui-accordion .ui-state-active span {
+body .ui-accordion .ui-accordion-header a {
+  padding: 0.571em 1em;
+  border: 1px solid #c8c8c8;
+  background-color: #f4f4f4;
   color: #67757c;
+  font-weight: 700;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+  -webkit-transition: background-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: background-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 
-.ui-accordion .ui-accordion-header {
-  cursor: pointer;
-  position: relative;
-  margin-top: 1px;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
+body .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon {
+  color: #848484;
 }
 
-.ui-accordion .ui-accordion-header:hover {
-  color: #67757c;
-  background-color: #eaeaea;
+body .ui-accordion .ui-accordion-header a:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  -webkit-box-shadow: 0 0 0 0.2em red;
+  box-shadow: 0 0 0 0.2em red;
 }
 
-.ui-accordion .ui-accordion-header a {
-  color: #8ea22d;
-  font-size: 14px;
-  line-height: 1rem;
-  display: block;
-  padding: 0.5em;
+body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a {
+  background-color: #dbdbdb;
+  border: 1px solid #dbdbdb;
+  color: #333333;
 }
 
-.ui-accordion .ui-accordion-header a:hover {
-  text-decoration: none;
+body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a .ui-accordion-toggle-icon {
+  color: #333333;
 }
 
-.ui-accordion .ui-accordion-toggle-icon,
-.ui-accordion .ui-accordion-header-text {
-  vertical-align: middle;
+body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a {
+  background-color: #8ea22d;
+  border: 1px solid #8ea22d;
+  color: #ffffff;
 }
 
-.ui-accordion .ui-accordion-header.ui-state-disabled {
-  cursor: default;
+body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a .ui-accordion-toggle-icon {
+  color: #ffffff;
 }
 
-.ui-accordion .ui-accordion-header.ui-state-disabled a {
-  cursor: default;
+body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a {
+  border: 1px solid #7e8a45;
+  background-color: #7e8a45;
+  color: #ffffff;
 }
 
-.ui-accordion .ui-accordion-content-wrapper-overflown {
-  overflow: hidden;
+body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a .ui-accordion-toggle-icon {
+  color: #ffffff;
 }
 
-.ui-accordion .ui-accordion .ui-accordion-content {
-  padding: 1em;
-  border-top: 0;
-  overflow: visible;
-}
-
-.ui-rtl .ui-accordion .ui-accordion-header a {
-  padding: 0.5em 2em 0.5em 0.5em;
-}
-
-.ui-rtl .ui-accordion .ui-accordion-toggle-icon {
-  left: initial;
-  right: 0.5em;
-}
-
-.ui-rtl .ui-accordion .ui-accordion-toggle-icon.pi-caret-right:before {
-  content: "\e904";
+body .ui-accordion .ui-accordion-content {
+  padding: 0.571em 1em;
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 0.571em 1em;
 }
 
 /*
@@ -1733,10 +1744,10 @@ body .ui-button:enabled:focus {
 }
 
 body .ui-button:enabled:active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00589a), to(#003b67));
-  background: linear-gradient(180deg, #00589a 0%, #003b67 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#275d8c), to(#1c4364));
+  background: linear-gradient(180deg, #275d8c 0%, #1c4364 100%);
   color: #ffffff;
-  border-color: #00589a;
+  border-color: #275d8c;
 }
 
 body .ui-button.ui-button-text-only .ui-button-text {

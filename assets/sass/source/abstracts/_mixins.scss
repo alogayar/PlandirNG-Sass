@@ -156,14 +156,7 @@ $opacity-ie: $opacity * 100;
 filter: alpha(opacity=$opacity-ie);
 }
 
-/* Para incluir texto provisional en un elemento input o textarea */
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}  
-}
-
+/* Rotar un elemento */
 @mixin rotate($deg) {    
   -webkit-transform: rotate($deg);
   -moz-transform: rotate($deg);
@@ -172,6 +165,7 @@ filter: alpha(opacity=$opacity-ie);
   transform: rotate($deg);
 }
 
+/* Escalar un elemento */
 @mixin scale($deg) {    
   -webkit-transform: scale($deg);
   -moz-transform: scale($deg);
@@ -180,9 +174,19 @@ filter: alpha(opacity=$opacity-ie);
   transform: scale($deg);
 } 
 
+/* Display inline-block */
 @mixin inline {
   display: inline-block;
   *display: inline;
   zoom: 1;
   vertical-align: top;
+}
+
+
+/* Para incluir texto provisional en un elemento input o textarea */
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
 }

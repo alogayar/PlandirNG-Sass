@@ -1,92 +1,58 @@
 /*
   @autor: NOVA0011 - Alberto Ogayar
 */
-
-
-// -----------------------------------------------------------------------------
-// Variables para Acordeon
-// -----------------------------------------------------------------------------
-
-$accordionWidth:100%;
-$accordionActiveBackgroundColor: #eaeaea;
-$accordionShadow: $cardShadow;
-
 // -----------------------------------------------------------------------------
 // Componente Acordeon 
 // -----------------------------------------------------------------------------
 
-.ui-accordion {
-  width: $accordionWidth;    
-  
-  .ui-state-active {        
-    border: 0;
-    background-color: $accordionActiveBackgroundColor;
-    @include shadow($accordionShadow);
-    span {
-     color:$gris;
-    }
-  }
-  
-  .ui-accordion-header {
-    cursor: pointer;
-    position: relative;
-    margin-top: 1px;    
-    transition: all 200ms;    
-    
-    &:hover {      
-      color:$gris;
-      background-color: $accordionActiveBackgroundColor;
-    }   
-
-    a {
-      color: $verdeCorporativo;
-      font-size: 14px;
-      line-height: 1rem;
-      display: block;
-      padding: 0.5em;
-      &:hover {
-        text-decoration: none;        
-      }
-    }
-  }
-
-  .ui-accordion-toggle-icon,
-  .ui-accordion-header-text {
-    vertical-align: middle;
-  }
-
-  .ui-accordion-header.ui-state-disabled {
-    cursor: default;
-    a {
-      cursor: default;
-    }
-  }
-
-  .ui-accordion-content-wrapper-overflown {
-    overflow: hidden;
-  }
-
-  .ui-accordion .ui-accordion-content {
-    padding: 1em;
-    border-top: 0;
-    overflow: visible;
-  }
+body .ui-accordion .ui-accordion-header {
+  margin-bottom: 2px;
 }
-
-.ui-rtl {
-  .ui-accordion {
-    .ui-accordion-header a {
-      padding: 0.5em 2em 0.5em 0.5em;
-    }
-    .ui-accordion-toggle-icon {
-      left: initial;
-      right: 0.5em;
-    }
-    .ui-accordion-toggle-icon.pi-caret-right:before {
-      content: "\e904";
-    }
-  }
+body .ui-accordion .ui-accordion-header a {
+  padding: 0.571em 1em;
+  border: 1px solid $borderColor;  
+  background-color: #f4f4f4;
+  color: $colorTexto;
+  font-weight: 700;
+  @include border-radius(3px);  
+  @include transition(background-color 0.2s, box-shadow 0.2s);    
 }
-
-
-
+body .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon {
+  color: #848484;
+}
+body .ui-accordion .ui-accordion-header a:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  @include shadow(0 0 0 0.2em red);  
+}
+body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a {
+  background-color: #dbdbdb;
+  border: 1px solid #dbdbdb;
+  color: #333333;
+}
+body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a .ui-accordion-toggle-icon {
+  color: #333333;
+}
+body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a {
+  background-color: $verdeCorporativo;
+  border: 1px solid $verdeCorporativo;
+  color: #ffffff;
+}
+body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a .ui-accordion-toggle-icon {
+  color: #ffffff;
+}
+body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a {
+  border: 1px solid $verdeCorporativoDark;
+  background-color: $verdeCorporativoDark;
+  color: #ffffff;
+}
+body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a .ui-accordion-toggle-icon {
+  color: #ffffff;
+}
+body .ui-accordion .ui-accordion-content {
+  padding: 0.571em 1em;
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 0.571em 1em;
+}
