@@ -1,166 +1,94 @@
-body {
-  .ui-dropdown {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    position: relative;
-    cursor: pointer;
-    min-width: $DropdowmMinWidth;    
-    color: $DropdowmColor;
-    border: 1px solid #a6a6a6;
-    @include transition($DropdowmTransition);
-
-    &:not(.ui-state-disabled):hover {
-      border-color: $DropdowmHoverBorderColor;
-    }
-    &:not(.ui-state-disabled).ui-state-focus {
-      outline: 0 none;
-      outline-offset: 0;
-      box-shadow: 0 0 0 0.2em $DropdowmHoverBorderColor;
-    }
-
-    .ui-dropdown-hidden-select {
-      bottom: 0;
-      clip: auto;
-      select {
-        -webkit-transform: none;
-        transform: none;
-        height: 1px;
-        position: absolute;
-        top: 0;
-        clip: rect(0px, 0px, 0px, 0px);
-        pointer-events: none;
-      }
-    }
-    .ui-dropdown-clear-icon {
-      position: absolute;
-      right: 2em;
-      top: 50%;
-      font-size: 1em;
-      height: 1em;
-      margin-top: -0.5em;
-    }
-    .ui-dropdown-trigger {
-      border-right: none;
-      border-top: none;
-      border-bottom: none;
-      cursor: pointer;
-      background: $DropdowmBgColor;
-      width: 1.5em;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding: 0 0.25em;
-      .ui-dropdown-trigger-icon {
-        top: 50%;
-        left: 50%;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-        position: absolute;
-      }
-    }
-    .ui-dropdown-label {
-      display: block;
-      border: none;
-      white-space: nowrap;
-      overflow: hidden;
-      font-weight: normal;
-      width: 100%;
-      padding-right: 4em;
-      font-weight: normal;
-    }
-
-    label.ui-dropdown-label {
-      cursor: pointer;
-    }
-    input.ui-dropdown-label {
-      cursor: default;
-    }
-    .ui-dropdown-panel {
-      min-width: 100%;
-    }
-  }
-
-  .ui-dropdown-panel {
-    position: absolute;
-    height: auto;
-    padding: 0;
-    border: 1px solid #c8c8c8;
-    background-color: #ffffff;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-
-    .ui-dropdown-items {
-      max-height: $DropdowmItemsMaxHeigth;
-      padding: 0;
-      margin: 0;
-    }
-
-    .ui-dropdown-items-wrapper {
-      overflow: auto;
-    }
-    .ui-dropdown-item {
-      font-weight: normal;
-      border: 0 none;
-      cursor: pointer;
-      margin: 3px 0;
-      padding: 0.325em 0.55em;
-      text-align: left;
-      border-radius: 0;
-
-      @include transition(background-color 0.2s);
-      &:not(.ui-state-highlight):hover {
-        background-color: $DropdowmItemsColorHover;
-        color: $verdeCorporativo;
-      }
-    }
-    .ui-state-highlight {
-      color: $DropdowmItemsColorHighlight;
-      background-color: $DropdowmItemsBgColorHighlight;
-    }
-    .ui-dropdown-empty-message {
-      padding: 0.5em;
-    }
-    .ui-dropdown-item-group {
-      font-weight: bold;
-      cursor: default;
-    }
-    .ui-dropdown-list {
-      padding: 0.1em;
-      border: 0 none;
-    }
-    .ui-dropdown-filter {
-      width: 100%;
-      box-sizing: border-box;
-      padding-right: 1.5em;
-    }
-    .ui-dropdown-filter-container {
-      position: relative;
-      margin: 0;
-      padding: 0.4em;
-      display: inline-block;
-      width: 100%;
-      .ui-dropdown-filter-icon {
-        position: absolute;
-        top: 0.8em;
-        right: 1em;
-      }
-    }
-  }
-
-  .ui-dropdown-item-empty,
-  .ui-dropdown-label-empty {
-    text-indent: -9999px;
-    overflow: hidden;
-  }
-
-  .ui-dropdown.ui-state-disabled .ui-dropdown-trigger,
-  .ui-dropdown.ui-state-disabled .ui-dropdown-label {
-    cursor: default;
-  }
-
-  /** Dropdown **/
-  .ui-fluid .ui-dropdown,
-  .ui-fluid p-dropdown {
-    width: 100%;
-  }
+body .ui-dropdown {
+  background: $colorDefectoFondo;
+  border: 1px solid #a6a6a6;
+  @include transition(border-color 0.2s, box-shadow 0.2s);
+}
+body .ui-dropdown:not(.ui-state-disabled):hover {
+  border-color: #212121;
+}
+body .ui-dropdown:not(.ui-state-disabled).ui-state-focus {
+  outline: 0 none;
+  outline-offset: 0;
+  @include shadow(0 0 0 0.2em #b8ce4e);
+  border-color: $verdeCorporativoDark;
+}
+body .ui-dropdown .ui-dropdown-label {
+  padding-right: 2em;
+}
+body .ui-dropdown .ui-dropdown-label .ui-placeholder {
+  color: #666666;
+}
+body .ui-dropdown .ui-dropdown-trigger {
+  background-color: $colorDefectoFondo;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  padding: 0;
+  color: #848484;
+}
+body .ui-dropdown .ui-dropdown-clear-icon {
+  color: #848484;
+}
+body .ui-dropdown.ui-dropdown-clearable .ui-dropdown-label {
+  padding-right: 4em;
+}
+body .ui-dropdown-panel {
+  padding: 0;
+  border: $borde;
+  background-color: $colorDefectoFondo;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+body .ui-dropdown-panel .ui-dropdown-filter-container {
+  padding: 0.429em 0.857em 0.429em 0.857em;
+  border-bottom: 1px solid #eaeaea;
+  color: #333333;
+  background-color: $colorDefectoFondo;
+  margin: 0;
+}
+body .ui-dropdown-panel .ui-dropdown-filter-container .ui-dropdown-filter {
+  width: 100%;
+  padding-right: 2em;
+}
+body .ui-dropdown-panel .ui-dropdown-filter-container .ui-dropdown-filter-icon {
+  top: 50%;
+  margin-top: -0.5em;
+  right: 1.357em;
+  color: $verdeCorporativoDark;
+}
+body .ui-dropdown-panel .ui-dropdown-items {
+  padding: 0;
+}
+body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item,
+body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item-group {
+  margin: 0;
+  padding: 0.429em 0.857em;
+  border: 0 none;
+  color: #333333;
+  background-color: transparent;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight,
+body
+  .ui-dropdown-panel
+  .ui-dropdown-items
+  .ui-dropdown-item-group.ui-state-highlight {
+  @extend .fondoBlancoTextoVerde;
+}
+body
+  .ui-dropdown-panel
+  .ui-dropdown-items
+  .ui-dropdown-item:not(.ui-state-highlight):not(.ui-state-disabled):hover,
+body
+  .ui-dropdown-panel
+  .ui-dropdown-items
+  .ui-dropdown-item-group:not(.ui-state-highlight):not(.ui-state-disabled):hover {
+  color: #333333;
+  background-color: #eaeaea;
+}
+body p-dropdown.ng-dirty.ng-invalid > .ui-dropdown {
+  border: 1px solid #a80000;
 }

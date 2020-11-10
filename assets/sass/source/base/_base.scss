@@ -51,23 +51,6 @@ body {
     }
   }
 
-  .botones-fila {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;         
-    .ui-button {
-      margin-right: 7px !important;
-      padding: 0 !important;      
-    }
-  }
-  .botones-columna {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;         
-    .ui-button {
-      margin-bottom: 7px !important;
-      padding: 0 !important;      
-    }
-  }
+  
   
 }

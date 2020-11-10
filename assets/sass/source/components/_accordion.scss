@@ -2,7 +2,7 @@
   @autor: NOVA0011 - Alberto Ogayar
 */
 // -----------------------------------------------------------------------------
-// Componente Acordeon 
+// Componente Acordeon
 // -----------------------------------------------------------------------------
 
 body .ui-accordion .ui-accordion-header {
@@ -10,12 +10,12 @@ body .ui-accordion .ui-accordion-header {
 }
 body .ui-accordion .ui-accordion-header a {
   padding: 0.571em 1em;
-  border: 1px solid $borderColor;  
+  border: 1px solid $borderColor;
   background-color: #f4f4f4;
   color: $colorTexto;
   font-weight: 700;
-  @include border-radius(3px);  
-  @include transition(background-color 0.2s, box-shadow 0.2s);    
+  @include border-radius(3px);
+  @include transition(background-color 0.2s, box-shadow 0.2s);
 }
 body .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon {
   color: #848484;
@@ -23,36 +23,57 @@ body .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon {
 body .ui-accordion .ui-accordion-header a:focus {
   outline: 0 none;
   outline-offset: 0;
-  @include shadow(0 0 0 0.2em red);  
+  @include shadow(0 0 0 0.2em #b8ce4e);
 }
-body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a {
+body
+  .ui-accordion
+  .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover
+  a {
   background-color: #dbdbdb;
   border: 1px solid #dbdbdb;
   color: #333333;
 }
-body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a .ui-accordion-toggle-icon {
+body
+  .ui-accordion
+  .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover
+  a
+  .ui-accordion-toggle-icon {
   color: #333333;
 }
-body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a {
+body
+  .ui-accordion
+  .ui-accordion-header:not(.ui-state-disabled).ui-state-active
+  a {
   background-color: $verdeCorporativo;
   border: 1px solid $verdeCorporativo;
-  color: #ffffff;
+  color: $colorTextoBlanco;
 }
-body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a .ui-accordion-toggle-icon {
-  color: #ffffff;
+body
+  .ui-accordion
+  .ui-accordion-header:not(.ui-state-disabled).ui-state-active
+  a
+  .ui-accordion-toggle-icon {
+  color: $colorTextoBlanco;
 }
-body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a {
+body
+  .ui-accordion
+  .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover
+  a {
   border: 1px solid $verdeCorporativoDark;
   background-color: $verdeCorporativoDark;
-  color: #ffffff;
+  color: $colorTextoBlanco;
 }
-body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a .ui-accordion-toggle-icon {
-  color: #ffffff;
+body
+  .ui-accordion
+  .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover
+  a
+  .ui-accordion-toggle-icon {
+  color: $colorTextoBlanco;
 }
 body .ui-accordion .ui-accordion-content {
   padding: 0.571em 1em;
-  border: 1px solid #c8c8c8;
-  background-color: #ffffff;
+  border: 1px solid $borderColor;
+  background-color: $colorDefectoFondo;
   color: #333333;
   padding: 0.571em 1em;
 }

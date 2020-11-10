@@ -1,27 +1,47 @@
 .ui-corner-all {
-    @include border-radius($borderRadius);
+  @include border-radius($borderRadius);
 }
 
 .ui-corner-top {
-    @include border-radius-top($borderRadius);
+  @include border-radius-top($borderRadius);
 }
 
 .ui-corner-bottom {
-    @include border-radius-bottom($borderRadius);
+  @include border-radius-bottom($borderRadius);
 }
 
 .ui-corner-left {
-    @include border-radius-left($borderRadius);
+  @include border-radius-left($borderRadius);
 }
 
 .ui-corner-right {
-    @include border-radius-right($borderRadius);
-} 
-
-.ui-helper-reset {
-    line-height: normal;
+  @include border-radius-right($borderRadius);
 }
 
-.ui-state-disabled, .ui-widget:disabled {
-    @include opacity($disabledOpacity);
+.ui-helper-reset {
+  line-height: normal;
+}
+
+.ui-state-disabled,
+.ui-widget:disabled {
+  @include opacity($disabledOpacity);
+}
+
+.botones-fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  .ui-button {
+    margin-right: 7px !important;
+    padding: 0 !important;
+  }
+}
+.botones-columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .ui-button {
+    margin-bottom: 7px !important;
+    padding: 0 !important;
+  }
 }

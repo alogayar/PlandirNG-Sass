@@ -1,48 +1,68 @@
-.ui-dialog {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-clip: padding-box;
+body .ui-dialog {
+  padding: 0;
+  @include shadow(0 0 6px 0 rgba(0, 0, 0, 0.16));
+}
+body .ui-dialog .ui-dialog-titlebar {
+  border: $borde;
+  background-color: #f4f4f4;
+  color: $colorTexto;
+  padding: 1em;
+  font-weight: 700;
+  border-bottom: 0 none;
+}
+body .ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+  margin: 0;
+  float: none;
+}
+body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
+  color: #848484;
+  border: 0 none;
+  padding: 0;
+  margin-left: 0.5em;
+  @include transition(color 0.2s, background-color 0.2s, box-shadow 0.2s);
+}
+body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon span {
+  width: auto;
+}
+body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:hover {
+  color: #333333;
+}
+body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  @include shadow(0 0 0 0.2em #b8ce4e);
+}
+body .ui-dialog .ui-dialog-content {
   background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  outline: 0;
-  min-width: 30vw;
-
-  .ui-dialog-titlebar {
-    background-color: $tableCaptionBgColor;
-    color: #f4f4f4;
-    padding: 1em;
-    font-weight: 700;
-
-    .ui-dialog-title {
-      margin: 0;
-      float: none;
-    }
-  }
-  .ui-dialog-content {
-    font-size: 14px;
-    font-weight: 300;
-    background-color: #f0f0f0 !important;
-    color: #333333;
-    padding: 1.571em 1.5em !important;
-    border-bottom: 1px solid rgba(142, 162, 45, 0.2) !important;
-    strong {
-        font-weight: bold;
-    }
-  }
-
-  .ui-dialog-titlebar-icons {
-    float: right;
-    color: #f4f4f4 !important;
-    a {
-      color: #f4f4f4;
-    }
-  }
-  .ui-dialog-footer {
-    background-color: #f0f0f0 !important;
-    button:first-of-type {
-      margin-right: 10px;
-    }
-  }
+  color: #333333;
+  border: $borde;
+  padding: 0.571em 1em;
+}
+body .ui-dialog .ui-dialog-footer {
+  border: $borde;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 0.571em 1em;
+  margin: 0;
+  text-align: right;
+  position: relative;
+  border-top: 0 none;
+}
+body .ui-dialog .ui-dialog-footer button {
+  margin: 0 0.5em 0 0;
+  width: auto;
+}
+body .ui-dialog.ui-confirm-dialog .ui-dialog-content {
+  padding: 1.5em;
+}
+body .ui-dialog.ui-confirm-dialog .ui-dialog-content > span {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 14px;
+  margin: 0;
+}
+body .ui-dialog.ui-confirm-dialog .ui-dialog-content > span.ui-icon {
+  margin-right: 0.35em;
+  font-size: 16px;
 }

@@ -105,3 +105,150 @@ body {
     }
   }
 }
+
+
+
+body .ui-menu {
+  padding: 0;
+  background-color: $colorDefectoFondo;
+  border: $borde;
+}
+body .ui-menu .ui-menuitem-link {
+  padding: 0.714em 0.857em;
+  color: #333333;
+  font-weight: normal;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+body .ui-menu .ui-menuitem-link .ui-menuitem-text {
+  color: #333333;
+}
+body .ui-menu .ui-menuitem-link .ui-menuitem-icon {
+  color: #333333;
+  margin-right: 0.5em;
+}
+body .ui-menu .ui-menuitem-link:hover {
+  background-color: #eaeaea;
+}
+body .ui-menu .ui-menuitem-link:hover .ui-menuitem-text {
+  color: #333333;
+}
+body .ui-menu .ui-menuitem-link:hover .ui-menuitem-icon {
+  color: #333333;
+}
+body .ui-menu .ui-menuitem-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  @include shadow($inputFocusShadow);
+
+}
+body .ui-menu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-text {
+  color: #6b7a22;
+}
+body .ui-menu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-icon {
+  color: #6b7a22;
+}
+body .ui-menu .ui-menuitem {
+  margin: 0;
+}
+body .ui-menu.ui-shadow {
+  border: 1px solid #c8c8c8;
+  -webkit-box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+}
+body .ui-menu .ui-submenu-header {
+  margin: 0;
+  padding: 0.714em 0.857em;
+  color: #333333;
+  background-color: #f4f4f4;
+  font-weight: 700;
+  border: 0 none;
+}
+body .ui-menu .ui-menu-separator {
+  border: 1px solid #c8c8c8;
+  border-width: 1px 0 0 0;
+}
+body .ui-menubar {
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #c8c8c8;
+}
+body .ui-menubar .ui-menuitem-link {
+  padding: 0.714em 0.857em;
+  color: #333333;
+  font-weight: normal;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+body .ui-menubar .ui-menuitem-link .ui-menuitem-text {
+  color: #333333;
+}
+body .ui-menubar .ui-menuitem-link .ui-menuitem-icon {
+  color: #333333;
+  margin-right: 0.5em;
+}
+body .ui-menubar .ui-menuitem-link:hover {
+  background-color: #eaeaea;
+}
+body .ui-menubar .ui-menuitem-link:hover .ui-menuitem-text {
+  color: #333333;
+}
+body .ui-menubar .ui-menuitem-link:hover .ui-menuitem-icon {
+  color: #333333;
+}
+body .ui-menubar .ui-menuitem-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  @include shadow($inputFocusShadow);
+}
+body .ui-menubar .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-text {
+  color: #6b7a22;
+}
+body .ui-menubar .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-icon {
+  color: #6b7a22;
+}
+body .ui-menubar .ui-menubar-root-list > .ui-menuitem > .ui-menuitem-link {
+  padding: 0.714em 0.857em;
+}
+body .ui-menubar .ui-menubar-root-list > .ui-menu-separator {
+  border: 1px solid #c8c8c8;
+  border-width: 0 0 0 1px;
+}
+body .ui-menubar .ui-submenu-list {
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #c8c8c8;
+  -webkit-box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+}
+body .ui-menubar .ui-submenu-list .ui-menuitem {
+  margin: 0;
+}
+body .ui-menubar .ui-submenu-list .ui-menu-separator {
+  border: 1px solid #c8c8c8;
+  border-width: 1px 0 0 0;
+}
+body .ui-menubar .ui-menuitem {
+  margin: 0;
+}
+body .ui-menubar .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+  background-color: #eaeaea;
+}
+body .ui-menubar .ui-menuitem.ui-menuitem-active > .ui-menuitem-link .ui-menuitem-text {
+  color: #333333;
+}
+body .ui-menubar .ui-menuitem.ui-menuitem-active > .ui-menuitem-link .ui-menuitem-icon, body .ui-menubar .ui-menuitem.ui-menuitem-active > .ui-menuitem-link .ui-submenu-icon {
+  color: #333333;
+}
