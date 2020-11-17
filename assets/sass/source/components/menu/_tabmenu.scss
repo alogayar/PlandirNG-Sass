@@ -1,0 +1,62 @@
+body .ui-tabmenu {
+    border: 0 none;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav {
+    padding: 0;
+    background: transparent;
+    border-bottom: 1px solid #c8c8c8;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
+    position: static;
+    border: 1px solid #c8c8c8;
+    background-color: #f4f4f4;
+    margin-right: 2px;
+    margin-bottom: -1px;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-link {
+    color: #333333;
+    padding: 0.571em 1em;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-link .ui-menuitem-text {
+    color: #333333;
+    margin-right: 0.5em;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-link .ui-menuitem-icon {
+    color: #848484;
+    margin-right: 0.5em;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-link:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+    box-shadow: 0 0 0 0.2em #8dcdff;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover {
+    background-color: #dbdbdb;
+    border: 1px solid #dbdbdb;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover .ui-menuitem-link .ui-menuitem-text {
+    color: #333333;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover .ui-menuitem-link .ui-menuitem-icon {
+    color: #333333;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+    background-color: #007ad9;
+    border: 1px solid #007ad9;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active .ui-menuitem-link .ui-menuitem-text {
+    color: #ffffff;
+  }
+  body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active .ui-menuitem-link .ui-menuitem-icon {
+    color: #ffffff;
+  }

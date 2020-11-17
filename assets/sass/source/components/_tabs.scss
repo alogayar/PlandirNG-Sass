@@ -1,207 +1,324 @@
-body {
-  .ui-tabview {
-    padding: 0.25em;
-    .ui-tabview-nav {
-      margin: 0;
-      li {        
-        list-style: none;
-        float: left;
-        position: relative;
-        margin: 0 0.125em 1px 0;
-        padding: 0;
-        white-space: nowrap;
-        background-color: $verdeCorporativo;
-        display: block;
-        font-size: 13px;
-        a {
-          float: left;
-          padding: 0.5em 2.5em;
-          text-decoration: none;
-          color: #fff ;
-        }
+// body {
+//   .ui-tabview {
+//     padding: 0.25em;
+//     .ui-tabview-nav {
+//       margin: 0;
+//       li {        
+//         list-style: none;
+//         float: left;
+//         position: relative;
+//         margin: 0 0.125em 1px 0;
+//         padding: 0;
+//         white-space: nowrap;
+//         background-color: $verdeCorporativo;
+//         display: block;
+//         font-size: 13px;
+//         a {
+//           float: left;
+//           padding: 0.5em 2.5em;
+//           text-decoration: none;
+//           color: #fff ;
+//         }
         
-      }
-      li.ui-state-active:hover {
-         background-color: $verdeCorporativo !important;
-         border-color: $verdeCorporativo !important;         
-      }
+//       }
+//       li.ui-state-active:hover {
+//          background-color: $verdeCorporativo !important;
+//          border-color: $verdeCorporativo !important;         
+//       }
       
-      li.ui-state-active,
-      li.ui-tabview-selected a,
-      li.ui-state-disabled a,
-      li.ui-state-processing a {
-        // cursor: text;
-        // background-color: $primaryDarkColor;
-        // color: $primaryTextColor;        
-      }
-    }
+//       li.ui-state-active,
+//       li.ui-tabview-selected a,
+//       li.ui-state-disabled a,
+//       li.ui-state-processing a {
+//         // cursor: text;
+//         // background-color: $primaryDarkColor;
+//         // color: $primaryTextColor;        
+//       }
+//     }
 
-  .ui-tabview .ui-tabview-nav li .ui-tabview-right-icon {
-    margin-left: 0.25em;
-    vertical-align: middle;
-  }
+//   .ui-tabview .ui-tabview-nav li .ui-tabview-right-icon {
+//     margin-left: 0.25em;
+//     vertical-align: middle;
+//   }
 
-  .ui-tabview .ui-tabview-title {
-    vertical-align: middle;
-  }
+//   .ui-tabview .ui-tabview-title {
+//     vertical-align: middle;
+//   }
 
-  .ui-tabview .ui-tabview-nav li .ui-tabview-close {
-    vertical-align: middle;
-    cursor: pointer;
-    // color: #4D4D4D;
-    // margin: 1.3em 0.5em 0 0;
-    // vertical-align: middle;
-    // font-weight: bold;
-    // font-size: 0.75em;
-  }
+//   .ui-tabview .ui-tabview-nav li .ui-tabview-close {
+//     vertical-align: middle;
+//     cursor: pointer;
+//     // color: #4D4D4D;
+//     // margin: 1.3em 0.5em 0 0;
+//     // vertical-align: middle;
+//     // font-weight: bold;
+//     // font-size: 0.75em;
+//   }
 
-  /* per orientation settings */
-  /* top and bottom */
-  .ui-tabview.ui-tabview-top > .ui-tabview-nav li {
-    border-bottom: 0;
-    top: 1px;
-  }
+//   /* per orientation settings */
+//   /* top and bottom */
+//   .ui-tabview.ui-tabview-top > .ui-tabview-nav li {
+//     border-bottom: 0;
+//     top: 1px;
+//   }
 
-  .ui-tabview.ui-tabview-top > .ui-tabview-nav {
-    padding: 0.2em 0.2em 0;
-  }
+//   .ui-tabview.ui-tabview-top > .ui-tabview-nav {
+//     padding: 0.2em 0.2em 0;
+//   }
 
-  .ui-tabview.ui-tabview-bottom > .ui-tabview-nav {
-    padding: 0 0.2em 0.2em;
-  }
+//   .ui-tabview.ui-tabview-bottom > .ui-tabview-nav {
+//     padding: 0 0.2em 0.2em;
+//   }
 
-  .ui-tabview.ui-tabview-bottom > .ui-tabview-nav li {
-    border-top: 0;
-  }
+//   .ui-tabview.ui-tabview-bottom > .ui-tabview-nav li {
+//     border-top: 0;
+//   }
 
-  /* left and right*/
-  .ui-tabview-left::after,
-  .ui-tabview-right::after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden;
-  }
+//   /* left and right*/
+//   .ui-tabview-left::after,
+//   .ui-tabview-right::after {
+//     clear: both;
+//     content: ".";
+//     display: block;
+//     height: 0;
+//     visibility: hidden;
+//   }
 
-  .ui-tabview-left > .ui-tabview-nav {
-    float: left;
-    width: 25%;
-    height: 300px;
-    background-image: none;
-    padding-top: 1px;
-  }
+//   .ui-tabview-left > .ui-tabview-nav {
+//     float: left;
+//     width: 25%;
+//     height: 300px;
+//     background-image: none;
+//     padding-top: 1px;
+//   }
 
-  .ui-tabview-left > .ui-tabview-panels {
-    float: right;
-    width: 75%;
-  }
+//   .ui-tabview-left > .ui-tabview-panels {
+//     float: right;
+//     width: 75%;
+//   }
 
-  .ui-tabview.ui-tabview-left > .ui-tabview-nav li,
-  .ui-tabview.ui-tabview-right > .ui-tabview-nav li {
-    display: block;
-    float: right;
-    white-space: normal;
-    width: 99%;
-  }
+//   .ui-tabview.ui-tabview-left > .ui-tabview-nav li,
+//   .ui-tabview.ui-tabview-right > .ui-tabview-nav li {
+//     display: block;
+//     float: right;
+//     white-space: normal;
+//     width: 99%;
+//   }
 
-  .ui-tabview.ui-tabview-left > .ui-tabview-nav li {
-    margin: 0 0 1px 0;
-    border-right: 0 none;
-  }
+//   .ui-tabview.ui-tabview-left > .ui-tabview-nav li {
+//     margin: 0 0 1px 0;
+//     border-right: 0 none;
+//   }
 
-  .ui-tabview.ui-tabview-right > .ui-tabview-nav {
-    float: right;
-    width: 25%;
-    height: 300px;
-    background-image: none;
-    padding-top: 1px;
-  }
+//   .ui-tabview.ui-tabview-right > .ui-tabview-nav {
+//     float: right;
+//     width: 25%;
+//     height: 300px;
+//     background-image: none;
+//     padding-top: 1px;
+//   }
 
-  .ui-tabview.ui-tabview-right > .ui-tabview-panels {
-    float: left;
-    width: 75%;
-  }
+//   .ui-tabview.ui-tabview-right > .ui-tabview-panels {
+//     float: left;
+//     width: 75%;
+//   }
 
-  .ui-tabview.ui-tabview-right > .ui-tabview-nav li {
-    margin: 0 0 1px 0;
-    border-left: 0 none;
-  }
+//   .ui-tabview.ui-tabview-right > .ui-tabview-nav li {
+//     margin: 0 0 1px 0;
+//     border-left: 0 none;
+//   }
 
-  /* RTL */
-  .ui-rtl .ui-tabview .ui-tabview-nav li {
-    float: right;
-  }
+//   /* RTL */
+//   .ui-rtl .ui-tabview .ui-tabview-nav li {
+//     float: right;
+//   }
 
-  /** TabMenu **/
-  .ui-tabmenu .ui-tabmenu-nav {
-    margin: 0;
-    padding: 0.25em 0.5em 0 0.25em;
-  }
+//   /** TabMenu **/
+//   .ui-tabmenu .ui-tabmenu-nav {
+//     margin: 0;
+//     padding: 0.25em 0.5em 0 0.25em;
+//   }
 
-  .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
-    list-style: none;
-    float: left;
-    position: relative;
-    margin: 0 0.2em 1px 0;
-    padding: 0;
-    white-space: nowrap;
-    display: block;
-    border-bottom: 0;
-    top: 1px;
-  }
+//   .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
+//     list-style: none;
+//     float: left;
+//     position: relative;
+//     margin: 0 0.2em 1px 0;
+//     padding: 0;
+//     white-space: nowrap;
+//     display: block;
+//     border-bottom: 0;
+//     top: 1px;
+//   }
 
-  .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a {
-    float: left;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    cursor: pointer;
-  }
+//   .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a {
+//     float: left;
+//     padding: 0.5em 1em;
+//     text-decoration: none;
+//     cursor: pointer;
+//   }
 
-  .ui-tabmenu .ui-tabmenu-nav a {
-    padding: 0.5em 1em;
-  }
+//   .ui-tabmenu .ui-tabmenu-nav a {
+//     padding: 0.5em 1em;
+//   }
 
-  .ui-tabmenu .ui-menuitem-icon {
-    margin-right: 0.25em;
-    vertical-align: middle;
-  }
+//   .ui-tabmenu .ui-menuitem-icon {
+//     margin-right: 0.25em;
+//     vertical-align: middle;
+//   }
 
-  .ui-tabmenu .ui-menuitem-text {
-    vertical-align: middle;
-  }
-    .ui-tabview-panel {
-      background: none;
-      background-color: #fff;
-      padding: 1em 1em;      
-      color: #333333;
-      font-size: 14px;
-    }
+//   .ui-tabmenu .ui-menuitem-text {
+//     vertical-align: middle;
+//   }
+//     .ui-tabview-panel {
+//       background: none;
+//       background-color: #fff;
+//       padding: 1em 1em;      
+//       color: #333333;
+//       font-size: 14px;
+//     }
   
-    .ui-tabview-nav li .ui-tabview-left-icon {
-      margin-right: 0.25em;
-      vertical-align: middle;
-    }
+//     .ui-tabview-nav li .ui-tabview-left-icon {
+//       margin-right: 0.25em;
+//       vertical-align: middle;
+//     }
   
-    .ui-tabview-nav li .ui-tabview-right-icon {
-      margin-left: 0.25em;
-      vertical-align: middle;
-    }
+//     .ui-tabview-nav li .ui-tabview-right-icon {
+//       margin-left: 0.25em;
+//       vertical-align: middle;
+//     }
   
-    .ui-tabview-title {
-      vertical-align: middle;
-    }
+//     .ui-tabview-title {
+//       vertical-align: middle;
+//     }
   
-    .ui-tabview-nav li .ui-tabview-close {
-      margin: 1.3em 0.7em 0 0;
-      font-size: 11px;      
-      font-weight: bold;
-      cursor: pointer;
-    }
+//     .ui-tabview-nav li .ui-tabview-close {
+//       margin: 1.3em 0.7em 0 0;
+//       font-size: 11px;      
+//       font-weight: bold;
+//       cursor: pointer;
+//     }
 
-    .ui-tabview-nav li a,
-    .ui-tabview.ui-tabview-collapsible .ui-tabview-nav li.ui-tabview-selected a {
-      cursor: pointer;
-    }
-  }
+//     .ui-tabview-nav li a,
+//     .ui-tabview.ui-tabview-collapsible .ui-tabview-nav li.ui-tabview-selected a {
+//       cursor: pointer;
+//     }
+//   }
+// }
+
+
+
+body .ui-tabview.ui-tabview-top, body .ui-tabview.ui-tabview-bottom, body .ui-tabview.ui-tabview-left, body .ui-tabview.ui-tabview-right {
+  border: 0 none;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav, body .ui-tabview.ui-tabview-left .ui-tabview-nav, body .ui-tabview.ui-tabview-right .ui-tabview-nav {
+  padding: 0;
+  background: transparent;
+  border: 0 none;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li, body .ui-tabview.ui-tabview-left .ui-tabview-nav li, body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
+  border: 1px solid #c8c8c8;
+  background-color: #f4f4f4;
+  -moz-transition: background-color 0.2s, box-shadow 0.2s;
+  -o-transition: background-color 0.2s, box-shadow 0.2s;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a {
+  float: none;
+  display: inline-block;
+  color: #333333;
+  padding: 0.571em 1em;
+  font-weight: 700;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a .ui-tabview-left-icon {
+  margin-right: 0.5em;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a .ui-tabview-right-icon {
+  margin-left: 0.5em;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li .ui-tabview-close, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li .ui-tabview-close, body .ui-tabview.ui-tabview-left .ui-tabview-nav li .ui-tabview-close, body .ui-tabview.ui-tabview-right .ui-tabview-nav li .ui-tabview-close {
+  color: #848484;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li .ui-tabview-close:focus, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li .ui-tabview-close:focus, body .ui-tabview.ui-tabview-left .ui-tabview-nav li .ui-tabview-close:focus, body .ui-tabview.ui-tabview-right .ui-tabview-nav li .ui-tabview-close:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+  box-shadow: 0 0 0 0.2em #8dcdff;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-left .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-right .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover {
+  background-color: #dbdbdb;
+  border: 1px solid #dbdbdb;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a {
+  color: #333333;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover .ui-tabview-close, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover .ui-tabview-close, body .ui-tabview.ui-tabview-left .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover .ui-tabview-close, body .ui-tabview.ui-tabview-right .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover .ui-tabview-close {
+  color: #333333;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active {
+  background-color: #007ad9;
+  border: 1px solid #007ad9;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active a {
+  color: #ffffff;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active .ui-tabview-close {
+  color: #ffffff;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover {
+  border: 1px solid #005b9f;
+  background-color: #005b9f;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a {
+  color: #ffffff;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon {
+  color: #ffffff;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-tabview-selected a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-tabview-selected a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-tabview-selected a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-tabview-selected a {
+  cursor: pointer;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li:focus, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:focus, body .ui-tabview.ui-tabview-left .ui-tabview-nav li:focus, body .ui-tabview.ui-tabview-right .ui-tabview-nav li:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+  box-shadow: 0 0 0 0.2em #8dcdff;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav {
+  margin-bottom: -1px;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li {
+  margin-right: 2px;
+}
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav {
+  margin-top: -1px;
+}
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li {
+  margin-right: 2px;
+}
+body .ui-tabview.ui-tabview-left .ui-tabview-nav {
+  margin-right: -px;
+}
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li {
+  margin-bottom: 2px;
+}
+body .ui-tabview.ui-tabview-right .ui-tabview-nav {
+  margin-right: -1px;
+}
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
+  margin-bottom: 2px;
+}
+body .ui-tabview .ui-tabview-panels {
+  background-color: #ffffff;
+  padding: 0.571em 1em;
+  border: 1px solid #c8c8c8;
+  color: #333333;
+}
+body .ui-tabview .ui-tabview-panels .ui-tabview-panel {
+  padding: 0;
 }

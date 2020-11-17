@@ -1,82 +1,197 @@
-/*
-  @autor: NOVA0011 - Alberto Ogayar
-*/
+// /*
+//   @autor: NOVA0011 - Alberto Ogayar
+// */
 
-//=====================
-// Mensajes
-//=====================
+// //=====================
+// // Mensajes
+// //=====================
 
-.ui-messages {
-    border: none;
-    margin: .5em 0;
-    padding: 1em 1em 1em .5em;
-    position: relative;
-    justify-items: center;
-    background-color: $verdeCorporativo;
-    color:$blanco;
-    @include flex;
-    @include border-radius(5px);
-    @include linear-gradient(lighten($verdeCorporativo, 1%));
-}
+// .ui-messages {
+//     border: none;
+//     margin: .5em 0;
+//     padding: 1em 1em 1em .5em;
+//     position: relative;
+//     justify-items: center;
+//     background-color: $verdeCorporativo;
+//     color:$blanco;
+//     @include flex;
+//     @include border-radius(5px);
+//     @include linear-gradient(lighten($verdeCorporativo, 1%));
+// }
 
-.ui-messages-success {    
-    @include linear-gradient($verdeCorporativo);
-}
-.ui-messages-warn {
-    color: $blanco;
-    @include linear-gradient($warning);
-}
-.ui-messages-info {
-    color: $blanco;
-    @include linear-gradient($info);
-}
-.ui-messages-error {
-    color: $blanco;
-    @include linear-gradient($danger);
-}
+// .ui-messages-success {
+//     @include linear-gradient($verdeCorporativo);
+// }
+// .ui-messages-warn {
+//     color: $blanco;
+//     @include linear-gradient($warning);
+// }
+// .ui-messages-info {
+//     color: $blanco;
+//     @include linear-gradient($info);
+// }
+// .ui-messages-error {
+//     color: $blanco;
+//     @include linear-gradient($danger);
+// }
 
-.ui-messages .ui-messages-icon {
-    display:inline-block;
-    padding: 0 0 0 5px;
-    margin: auto 0;
-    vertical-align: middle;
-    font-size: 1.2em;
-    font-weight: bold;
-}
+// .ui-messages .ui-messages-icon {
+//     display:inline-block;
+//     padding: 0 0 0 5px;
+//     margin: auto 0;
+//     vertical-align: middle;
+//     font-size: 1.2em;
+//     font-weight: bold;
+// }
 
-.ui-messages .ui-messages-summary {
-    font-weight: 500;
-    margin-left: .25em;
-}
+// .ui-messages .ui-messages-summary {
+//     font-weight: 500;
+//     margin-left: .25em;
+// }
 
-.ui-messages .ui-messages-detail {
-    font-weight: 100;
-    font-size: $fontSize - 1;
-    margin-left: .25em;
-}
+// .ui-messages .ui-messages-detail {
+//     font-weight: 100;
+//     font-size: $fontSize - 1;
+//     margin-left: .25em;
+// }
 
-.ui-messages ul {
-    margin: 0;
-    padding: 0 0 0 5px;
-    list-style-type: none;
-    display: inline-block;
-    vertical-align: middle;
-    display: flex;
-    flex-direction: column;
-}
+// .ui-messages ul {
+//     margin: 0;
+//     padding: 0 0 0 5px;
+//     list-style-type: none;
+//     display: inline-block;
+//     vertical-align: middle;
+//     display: flex;
+//     flex-direction: column;
+// }
 
-.ui-messages ul > li {
-    padding: .25em;
-}
+// .ui-messages ul > li {
+//     padding: .25em;
+// }
 
-.ui-messages.ui-messages-noicon ul {
-    margin: 0 1.5em 0 0;
-}
+// .ui-messages.ui-messages-noicon ul {
+//     margin: 0 1.5em 0 0;
+// }
 
-.ui-messages .ui-messages-close {
-    color: #000;
-    cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+// .ui-messages .ui-messages-close {
+//     color: #000;
+//     cursor: pointer;
+//     position: absolute;
+//     top: 5px;
+//     right: 5px;
+// }
+
+body .ui-message {
+  padding: 0.429em;
+  margin: 0;
+}
+body .ui-message.ui-message-info {
+  background-color: #7fbcec;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-message.ui-message-info .ui-message-icon {
+  color: #212121;
+}
+body .ui-message.ui-message-success {
+  background-color: #b7d8b7;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-message.ui-message-success .ui-message-icon {
+  color: #212121;
+}
+body .ui-message.ui-message-warn {
+  background-color: #ffe399;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-message.ui-message-warn .ui-message-icon {
+  color: #212121;
+}
+body .ui-message.ui-message-error {
+  background-color: #f8b7bd;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-message.ui-message-error .ui-message-icon {
+  color: #212121;
+}
+body .ui-message .ui-message-icon {
+  font-size: 1.25em;
+}
+body .ui-message .ui-message-text {
+  font-size: 1em;
+}
+body .ui-messages {
+  padding: 1em;
+  margin: 1em 0;
+}
+body .ui-messages.ui-messages-info {
+  background-color: #7fbcec;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-messages.ui-messages-info .ui-messages-icon {
+  color: #212121;
+}
+body .ui-messages.ui-messages-info .ui-messages-close {
+  color: #212121;
+}
+body .ui-messages.ui-messages-success {
+  background-color: #b7d8b7;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-messages.ui-messages-success .ui-messages-icon {
+  color: #212121;
+}
+body .ui-messages.ui-messages-success .ui-messages-close {
+  color: #212121;
+}
+body .ui-messages.ui-messages-warn {
+  background-color: #ffe399;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-messages.ui-messages-warn .ui-messages-icon {
+  color: #212121;
+}
+body .ui-messages.ui-messages-warn .ui-messages-close {
+  color: #212121;
+}
+body .ui-messages.ui-messages-error {
+  background-color: #f8b7bd;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-messages.ui-messages-error .ui-messages-icon {
+  color: #212121;
+}
+body .ui-messages.ui-messages-error .ui-messages-close {
+  color: #212121;
+}
+body .ui-messages .ui-messages-close {
+  top: 0.25em;
+  right: 0.5em;
+  font-size: 1.5em;
+  overflow: hidden;
+  line-height: 1;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+body .ui-messages .ui-messages-close:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+  box-shadow: 0 0 0 0.2em #8dcdff;
+}
+body .ui-messages .ui-messages-icon {
+  font-size: 2em;
 }

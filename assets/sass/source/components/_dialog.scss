@@ -1,11 +1,82 @@
+// body .ui-dialog {
+//   padding: 0;
+//   @include shadow(0 0 6px 0 rgba(0, 0, 0, 0.16));
+// }
+// body .ui-dialog .ui-dialog-titlebar {
+//   border: $borde;
+//   background-color: #f4f4f4;
+//   color: $colorTexto;
+//   padding: 1em;
+//   font-weight: 700;
+//   border-bottom: 0 none;
+// }
+// body .ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+//   margin: 0;
+//   float: none;
+// }
+// body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
+//   color: #848484;
+//   border: 0 none;
+//   padding: 0;
+//   margin-left: 0.5em;
+//   @include transition(color 0.2s, background-color 0.2s, box-shadow 0.2s);
+// }
+// body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon span {
+//   width: auto;
+// }
+// body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:hover {
+//   color: #333333;
+// }
+// body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:focus {
+//   outline: 0 none;
+//   outline-offset: 0;
+//   @include shadow(0 0 0 0.2em #b8ce4e);
+// }
+// body .ui-dialog .ui-dialog-content {
+//   background-color: #ffffff;
+//   color: #333333;
+//   border: $borde;
+//   padding: 0.571em 1em;
+// }
+// body .ui-dialog .ui-dialog-footer {
+//   border: $borde;
+//   background-color: #ffffff;
+//   color: #333333;
+//   padding: 0.571em 1em;
+//   margin: 0;
+//   text-align: right;
+//   position: relative;
+//   border-top: 0 none;
+// }
+// body .ui-dialog .ui-dialog-footer button {
+//   margin: 0 0.5em 0 0;
+//   width: auto;
+// }
+// body .ui-dialog.ui-confirm-dialog .ui-dialog-content {
+//   padding: 1.5em;
+// }
+// body .ui-dialog.ui-confirm-dialog .ui-dialog-content > span {
+//   float: none;
+//   display: inline-block;
+//   vertical-align: middle;
+//   line-height: 14px;
+//   margin: 0;
+// }
+// body .ui-dialog.ui-confirm-dialog .ui-dialog-content > span.ui-icon {
+//   margin-right: 0.35em;
+//   font-size: 16px;
+// }
+
 body .ui-dialog {
   padding: 0;
-  @include shadow(0 0 6px 0 rgba(0, 0, 0, 0.16));
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
 }
 body .ui-dialog .ui-dialog-titlebar {
-  border: $borde;
+  border: 1px solid #c8c8c8;
   background-color: #f4f4f4;
-  color: $colorTexto;
+  color: #333333;
   padding: 1em;
   font-weight: 700;
   border-bottom: 0 none;
@@ -19,7 +90,10 @@ body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
   border: 0 none;
   padding: 0;
   margin-left: 0.5em;
-  @include transition(color 0.2s, background-color 0.2s, box-shadow 0.2s);
+  -moz-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  -webkit-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon span {
   width: auto;
@@ -30,16 +104,18 @@ body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:hover {
 body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:focus {
   outline: 0 none;
   outline-offset: 0;
-  @include shadow(0 0 0 0.2em #b8ce4e);
+  -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+  box-shadow: 0 0 0 0.2em #8dcdff;
 }
 body .ui-dialog .ui-dialog-content {
   background-color: #ffffff;
   color: #333333;
-  border: $borde;
+  border: 1px solid #c8c8c8;
   padding: 0.571em 1em;
 }
 body .ui-dialog .ui-dialog-footer {
-  border: $borde;
+  border: 1px solid #c8c8c8;
   background-color: #ffffff;
   color: #333333;
   padding: 0.571em 1em;

@@ -1,41 +1,49 @@
-// -----------------------------------------------------------------------------
-// Este fichero contiene todos los estilos relacionados con el componente card
-// -----------------------------------------------------------------------------
+// // -----------------------------------------------------------------------------
+// // Este fichero contiene todos los estilos relacionados con el componente card
+// // -----------------------------------------------------------------------------
 
-body {
-  .ui-card {
-    background-color: $colorTextoBlanco;
-    color: $verdeCorporativo;
-    @include shadow($cardShadow);
-  }
+// body {
+//   .ui-card {
+//     background-color: $colorTextoBlanco;
+//     color: $verdeCorporativo;
+//     @include shadow($cardShadow);
+//   }
 
-  .ui-card-header img {
-    width: 100%;
-  }
+//   .ui-card-header img {
+//     width: 100%;
+//   }
 
-  .ui-card-body {
-    padding: 1em;
-  }
+//   .ui-card-body {
+//     padding: 1em;
+//   }
 
-  .ui-card-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
+//   .ui-card-title {
+//     font-size: 1.5em;
+//     font-weight: bold;
+//     margin-bottom: 0.5em;
+//   }
 
-  .ui-card-subtitle {
-    opacity: 0.7;
-    margin-bottom: 0.5em;
-    margin-top: -0.25em;
-    font-weight: bold;
-  }
+//   .ui-card-subtitle {
+//     opacity: 0.7;
+//     margin-bottom: 0.5em;
+//     margin-top: -0.25em;
+//     font-weight: bold;
+//   }
 
-  .ui-card-footer {
-    padding-top: 1em;
-  }
-  .ui-card-content {
-    color: $textColor;
-    line-height: 21px;
-    font-size: 14px;
-  }
+//   .ui-card-footer {
+//     padding-top: 1em;
+//   }
+//   .ui-card-content {
+//     color: $textColor;
+//     line-height: 21px;
+//     font-size: 14px;
+//   }
+// }
+
+body .ui-card {
+  background-color: #ffffff;
+  color: #333333;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
 }

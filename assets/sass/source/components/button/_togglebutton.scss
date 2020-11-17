@@ -1,0 +1,44 @@
+body .ui-togglebutton {
+    background-color: #dadada;
+    border: 1px solid #dadada;
+    color: #333333;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  body .ui-togglebutton .ui-button-icon-left {
+    color: #666666;
+  }
+  body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active):hover {
+    background-color: #c8c8c8;
+    border-color: #c8c8c8;
+    color: #333333;
+  }
+  body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active):hover .ui-button-icon-left {
+    color: #212121;
+  }
+  body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active).ui-state-focus {
+    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+    box-shadow: 0 0 0 0.2em #8dcdff;
+  }
+  body .ui-togglebutton.ui-state-active {
+    background-color: #007ad9;
+    border-color: #007ad9;
+    color: #ffffff;
+  }
+  body .ui-togglebutton.ui-state-active .ui-button-icon-left {
+    color: #ffffff;
+  }
+  body .ui-togglebutton.ui-state-active:hover {
+    background-color: #116fbf;
+    border-color: #116fbf;
+    color: #ffffff;
+  }
+  body .ui-togglebutton.ui-state-active:hover .ui-button-icon-left {
+    color: #ffffff;
+  }
+  body p-togglebutton.ng-dirty.ng-invalid .ui-button {
+    border: 1px solid #a80000;
+  }

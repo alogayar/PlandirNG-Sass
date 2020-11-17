@@ -1,0 +1,102 @@
+body .ui-slidemenu {
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #c8c8c8;
+}
+body .ui-slidemenu .ui-menuitem-link {
+  padding: 0.714em 0.857em;
+  color: #333333;
+  font-weight: normal;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  user-select: none;
+}
+body .ui-slidemenu .ui-menuitem-link .ui-menuitem-text {
+  color: #333333;
+}
+body .ui-slidemenu .ui-menuitem-link .ui-menuitem-icon {
+  color: #333333;
+  margin-right: 0.5em;
+}
+body .ui-slidemenu .ui-menuitem-link:not(.ui-state-disabled):hover {
+  background-color: #eaeaea;
+}
+body
+  .ui-slidemenu
+  .ui-menuitem-link:not(.ui-state-disabled):hover
+  .ui-menuitem-text {
+  color: #333333;
+}
+body
+  .ui-slidemenu
+  .ui-menuitem-link:not(.ui-state-disabled):hover
+  .ui-menuitem-icon {
+  color: #333333;
+}
+body .ui-slidemenu .ui-menuitem-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  -webkit-box-shadow: inset 0 0 0 0.2em #8dcdff;
+  -moz-box-shadow: inset 0 0 0 0.2em #8dcdff;
+  box-shadow: inset 0 0 0 0.2em #8dcdff;
+}
+body .ui-slidemenu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-text {
+  color: #007ad9;
+}
+body .ui-slidemenu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-icon {
+  color: #007ad9;
+}
+body .ui-slidemenu .ui-submenu-list {
+  padding: 0;
+  background-color: #ffffff;
+  border: 0 none;
+}
+body .ui-slidemenu .ui-menuitem {
+  margin: 0;
+}
+body .ui-slidemenu .ui-menuitem .ui-menuitem-link .ui-submenu-icon {
+  right: 0.429em;
+}
+body .ui-slidemenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+  background-color: #eaeaea;
+}
+body
+  .ui-slidemenu
+  .ui-menuitem.ui-menuitem-active
+  > .ui-menuitem-link
+  .ui-menuitem-text {
+  color: #333333;
+}
+body
+  .ui-slidemenu
+  .ui-menuitem.ui-menuitem-active
+  > .ui-menuitem-link
+  .ui-menuitem-icon,
+body
+  .ui-slidemenu
+  .ui-menuitem.ui-menuitem-active
+  > .ui-menuitem-link
+  .ui-submenu-icon {
+  color: #333333;
+}
+body .ui-slidemenu .ui-slidemenu-backward {
+  margin: 0;
+  padding: 0.571em 1em;
+  color: #333333;
+  background-color: #f4f4f4;
+  font-weight: 700;
+  border: 0 none;
+}
+body .ui-slidemenu .ui-slidemenu-backward:hover {
+  background-color: #dbdbdb;
+  color: #333333;
+}
+body .ui-slidemenu .ui-menu-separator {
+  border: 1px solid #c8c8c8;
+  border-width: 1px 0 0 0;
+}

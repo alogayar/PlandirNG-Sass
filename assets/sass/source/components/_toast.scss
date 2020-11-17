@@ -1,87 +1,127 @@
-$toastShadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-$toastMessageMargin: 0 0 1em 0;
+// $toastShadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+// $toastMessageMargin: 0 0 1em 0;
 
-body {
-  .ui-toast {
-    position: fixed;
-    width: $toastWidth;
+// body {
+//   .ui-toast {
+//     position: fixed;
+//     width: $toastWidth;
     
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    z-index: 999;
+//     padding: 0.75rem 1.25rem;
+//     margin-bottom: 1rem;
+//     border: 1px solid transparent;
+//     border-radius: 0.25rem;
+//     z-index: 999;
 
-    .ui-toast-message {
-      position: relative;
-      display: block;
-      margin-bottom: 0.75em;
-      overflow: hidden;
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+//     .ui-toast-message {
+//       position: relative;
+//       display: block;
+//       margin-bottom: 0.75em;
+//       overflow: hidden;
+//       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 
-      .ui-toast-message-content {
-        padding: 0.5em 2em;
+//       .ui-toast-message-content {
+//         padding: 0.5em 2em;
 
-        .ui-toast-close-icon {
-          position: absolute;
-          top: 0.25em;
-          right: 0.25em;
-          cursor: pointer;
-          display: inline-block;
-          color: #000;
-          text-shadow: 0 1px 0 #fff;
-          opacity: 0.5;
-        }
-        .ui-toast-icon {
-          position: absolute;
-          display: inline-block;
-          left: 0.5em;
-          top: 0.25em;
-        }
+//         .ui-toast-close-icon {
+//           position: absolute;
+//           top: 0.25em;
+//           right: 0.25em;
+//           cursor: pointer;
+//           display: inline-block;
+//           color: #000;
+//           text-shadow: 0 1px 0 #fff;
+//           opacity: 0.5;
+//         }
+//         .ui-toast-icon {
+//           position: absolute;
+//           display: inline-block;
+//           left: 0.5em;
+//           top: 0.25em;
+//         }
 
-        .ui-toast-message-text-content {
-          padding: 0 0 0.25em 0;
-          margin-left: 0 !important;
+//         .ui-toast-message-text-content {
+//           padding: 0 0 0.25em 0;
+//           margin-left: 0 !important;
           
           
-          .ui-toast-summary {
-            font-weight: bold;
-            padding: 0 0 0.5em 0;
-            display: block;
-            text-align: center; 
-          }
-          .ui-toast-detail {
-            letter-spacing: 0.5px;
-            font-weight: lighter;
-            padding-top: 10px;
-          }
-        }
-      }
-    }
+//           .ui-toast-summary {
+//             font-weight: bold;
+//             padding: 0 0 0.5em 0;
+//             display: block;
+//             text-align: center; 
+//           }
+//           .ui-toast-detail {
+//             letter-spacing: 0.5px;
+//             font-weight: lighter;
+//             padding-top: 10px;
+//           }
+//         }
+//       }
+//     }
 
-    //Element of an info message.
-    .ui-toast-message-info {
-      color: #0c5460;
-      background-color: #d1ecf1;
-      border-color: #bee5eb;
-    }
-    //Element of an success message.
-    .ui-toast-message-success {
-      color: #155724;
-      background-color: #d4edda;
-      border-color: #c3e6cb;
-    }
-    //Element of an warn message.
-    .ui-toast-message-warn {
-      color: #856404;
-      background-color: #fff3cd;
-      border-color: #ffeeba;
-    }
-    //Element of an error message.
-    .ui-toast-message-error {
-      color: #721c24;
-      background-color: #f8d7da;
-      border-color: #f5c6cb;
-    }
-  }
+//     //Element of an info message.
+//     .ui-toast-message-info {
+//       color: #0c5460;
+//       background-color: #d1ecf1;
+//       border-color: #bee5eb;
+//     }
+//     //Element of an success message.
+//     .ui-toast-message-success {
+//       color: #155724;
+//       background-color: #d4edda;
+//       border-color: #c3e6cb;
+//     }
+//     //Element of an warn message.
+//     .ui-toast-message-warn {
+//       color: #856404;
+//       background-color: #fff3cd;
+//       border-color: #ffeeba;
+//     }
+//     //Element of an error message.
+//     .ui-toast-message-error {
+//       color: #721c24;
+//       background-color: #f8d7da;
+//       border-color: #f5c6cb;
+//     }
+//   }
+// }
+
+
+body .ui-toast .ui-toast-message {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  margin: 0 0 1em 0;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-info {
+  background-color: #7fbcec;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-info .ui-toast-close-icon {
+  color: #212121;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-success {
+  background-color: #b7d8b7;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-success .ui-toast-close-icon {
+  color: #212121;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-warn {
+  background-color: #ffe399;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-warn .ui-toast-close-icon {
+  color: #212121;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-error {
+  background-color: #f8b7bd;
+  border: 0 none;
+  color: #212121;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-error .ui-toast-close-icon {
+  color: #212121;
 }

@@ -1,208 +1,274 @@
-body {
-  .ui-widget-content {
-    p {
-      line-height: 1.5;
-      margin: 0;
-    }
-  }
+// body {
+//   .ui-widget-content {
+//     p {
+//       line-height: 1.5;
+//       margin: 0;
+//     }
+//   }
 
-  .ui-tabview {
-    &.ui-tabview-top,
-    &.ui-tabview-bottom,
-    &.ui-tabview-left,
-    &.ui-tabview-right {
-      border: 0 none;
+//   .ui-tabview {
+//     &.ui-tabview-top,
+//     &.ui-tabview-bottom,
+//     &.ui-tabview-left,
+//     &.ui-tabview-right {
+//       border: 0 none;
 
-      .ui-tabview-nav {
-        padding: 0;
-        background: $tabsNavBgColor;
+//       .ui-tabview-nav {
+//         padding: 0;
+//         background: $tabsNavBgColor;
 
-        li {
-          border: $panelHeaderBorder;
-          background-color: $panelHeaderBgColor;
+//         li {
+//           border: $panelHeaderBorder;
+//           background-color: $panelHeaderBgColor;
 
-          a {
-            float: none;
-            display: inline-block;
-            color: $panelHeaderTextColor;
-            padding: $panelHeaderPadding;
+//           a {
+//             float: none;
+//             display: inline-block;
+//             color: $panelHeaderTextColor;
+//             padding: $panelHeaderPadding;
 
-            .ui-tabview-left-icon {
-              color: $panelHeaderIconColor;
-              margin-right: $inlineSpacing;
-            }
+//             .ui-tabview-left-icon {
+//               color: $panelHeaderIconColor;
+//               margin-right: $inlineSpacing;
+//             }
 
-            .ui-tabview-right-icon {
-              color: $panelHeaderIconColor;
-              margin-left: $inlineSpacing;
-            }
-          }
+//             .ui-tabview-right-icon {
+//               color: $panelHeaderIconColor;
+//               margin-left: $inlineSpacing;
+//             }
+//           }
 
-          .ui-tabview-close {
-            color: $panelHeaderIconColor;
-            margin: 0 $inlineSpacing + 0.3 0 -1 * $inlineSpacing + 0.3;
-          }
+//           .ui-tabview-close {
+//             color: $panelHeaderIconColor;
+//             margin: 0 $inlineSpacing + 0.3 0 -1 * $inlineSpacing + 0.3;
+//           }
 
-          &:not(.ui-state-active):not(.ui-state-disabled):hover {
-            background-color: $panelHeaderHoverBgColor;
-            border: $panelHeaderHoverBorder;
+//           &:not(.ui-state-active):not(.ui-state-disabled):hover {
+//             background-color: $panelHeaderHoverBgColor;
+//             border: $panelHeaderHoverBorder;
 
-            a {
-              color: $panelHeaderHoverTextColor;
+//             a {
+//               color: $panelHeaderHoverTextColor;
 
-              .ui-tabview-left-icon,
-              .ui-tabview-right-icon {
-                color: $panelHeaderIconHoverColor;
-              }
-            }
+//               .ui-tabview-left-icon,
+//               .ui-tabview-right-icon {
+//                 color: $panelHeaderIconHoverColor;
+//               }
+//             }
 
-            .ui-tabview-close {
-              color: $panelHeaderHoverTextColor;
-            }
-          }
+//             .ui-tabview-close {
+//               color: $panelHeaderHoverTextColor;
+//             }
+//           }
 
-          &.ui-state-active {
-            background-color: $panelHeaderActiveBgColor;
-            border: $panelHeaderActiveBorder;
+//           &.ui-state-active {
+//             background-color: $panelHeaderActiveBgColor;
+//             border: $panelHeaderActiveBorder;
 
-            a {
-              color: $panelHeaderActiveTextColor;
+//             a {
+//               color: $panelHeaderActiveTextColor;
 
-              .ui-tabview-left-icon,
-              .ui-tabview-right-icon {
-                color: $panelHeaderActiveIconColor;
-              }
-            }
+//               .ui-tabview-left-icon,
+//               .ui-tabview-right-icon {
+//                 color: $panelHeaderActiveIconColor;
+//               }
+//             }
 
-            .ui-tabview-close {
-              color: $panelHeaderActiveIconColor;
-            }
+//             .ui-tabview-close {
+//               color: $panelHeaderActiveIconColor;
+//             }
 
-            &:hover {
-              border: $panelHeaderActiveHoverBorder;
-              background-color: $panelHeaderActiveHoverBgColor;
+//             &:hover {
+//               border: $panelHeaderActiveHoverBorder;
+//               background-color: $panelHeaderActiveHoverBgColor;
 
-              a {
-                color: $panelHeaderActiveHoverTextColor;
+//               a {
+//                 color: $panelHeaderActiveHoverTextColor;
 
-                .ui-tabview-left-icon,
-                .ui-tabview-right-icon {
-                  color: $panelHeaderActiveHoverIconColor;
-                }
-              }
-            }
-          }
+//                 .ui-tabview-left-icon,
+//                 .ui-tabview-right-icon {
+//                   color: $panelHeaderActiveHoverIconColor;
+//                 }
+//               }
+//             }
+//           }
 
-          &.ui-tabview-selected {
-            a {
-              cursor: pointer;
-            }
-          }
-        }
-      }
-    }
+//           &.ui-tabview-selected {
+//             a {
+//               cursor: pointer;
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    &.ui-tabview-top {
-      .ui-tabview-nav {
-        margin-bottom: -1px;
+//     &.ui-tabview-top {
+//       .ui-tabview-nav {
+//         margin-bottom: -1px;
 
-        li {
-          margin-right: $tabHeaderSpacing;
-        }
-      }
-    }
+//         li {
+//           margin-right: $tabHeaderSpacing;
+//         }
+//       }
+//     }
 
-    &.ui-tabview-bottom {
-      .ui-tabview-nav {
-        margin-top: -1px;
+//     &.ui-tabview-bottom {
+//       .ui-tabview-nav {
+//         margin-top: -1px;
 
-        li {
-          margin-right: $tabHeaderSpacing;
-        }
-      }
-    }
+//         li {
+//           margin-right: $tabHeaderSpacing;
+//         }
+//       }
+//     }
 
-    &.ui-tabview-left {
-      .ui-tabview-nav {
-        margin-right: -px;
+//     &.ui-tabview-left {
+//       .ui-tabview-nav {
+//         margin-right: -px;
 
-        li {
-          margin-bottom: $tabHeaderSpacing;
-        }
-      }
-    }
+//         li {
+//           margin-bottom: $tabHeaderSpacing;
+//         }
+//       }
+//     }
 
-    &.ui-tabview-right {
-      .ui-tabview-nav {
-        margin-right: -1px;
+//     &.ui-tabview-right {
+//       .ui-tabview-nav {
+//         margin-right: -1px;
 
-        li {
-          margin-bottom: $tabHeaderSpacing;
-        }
-      }
-    }
+//         li {
+//           margin-bottom: $tabHeaderSpacing;
+//         }
+//       }
+//     }
 
-    .ui-tabview-panels {
-      background-color: $panelContentBgColor;
-      padding: $panelContentPadding;
-      border: $panelContentBorder;
-      color: $panelContentTextColor;
+//     .ui-tabview-panels {
+//       background-color: $panelContentBgColor;
+//       padding: $panelContentPadding;
+//       border: $panelContentBorder;
+//       color: $panelContentTextColor;
 
-      .ui-tabview-panel {
-        padding: 0;
-      }
-    }
-  }
+//       .ui-tabview-panel {
+//         padding: 0;
+//       }
+//     }
+//   }
 
-  //Container element.
-  .ui-panel {
-    padding: 0;
-    border: 0 none;
-    //Header section.
-    .ui-panel-titlebar {
-      border: $panelHeaderBorder;
-      padding: $panelHeaderPadding;
-      background-color: $panelHeaderBgColor;
-      color: $panelHeaderTextColor;
-    }
-    .ui-panel-titlebar-icon {
-      color: $panelHeaderIconColor;
-    }
-    //Content of panel.
-    .ui-panel-content {
-      padding: $panelHeaderPadding;
-      border: $panelHeaderBorder;
-      background-color: #ffffff;
-      color: $panelContentTextColor;
-      border-top: 0 none;
-      font-size: 13px;
-    }
-  }
-  //Title text of panel.
-  .ui-panel-title {
-    vertical-align: middle;
-    font-weight: 600;
-    font-size: 13px;
-  }
-  // ui-panel-titlebar-toggler	Toggle icon.
-}
+//   //Container element.
+//   .ui-panel {
+//     padding: 0;
+//     border: 0 none;
+//     //Header section.
+//     .ui-panel-titlebar {
+//       border: $panelHeaderBorder;
+//       padding: $panelHeaderPadding;
+//       background-color: $panelHeaderBgColor;
+//       color: $panelHeaderTextColor;
+//     }
+//     .ui-panel-titlebar-icon {
+//       color: $panelHeaderIconColor;
+//     }
+//     //Content of panel.
+//     .ui-panel-content {
+//       padding: $panelHeaderPadding;
+//       border: $panelHeaderBorder;
+//       background-color: #ffffff;
+//       color: $panelContentTextColor;
+//       border-top: 0 none;
+//       font-size: 13px;
+//     }
+//   }
+//   //Title text of panel.
+//   .ui-panel-title {
+//     vertical-align: middle;
+//     font-weight: 600;
+//     font-size: 13px;
+//   }
+//   // ui-panel-titlebar-toggler	Toggle icon.
+// }
 
-.container-fluid {
-  .ui-tabview.ui-tabview-top .ui-tabview-nav {
-    margin-bottom: -1px;
-    position: fixed;
-    top: 35px;
-    z-index: 60;
-  }
-  .ui-tabview.ui-tabview-top .ui-tabview-nav li,
-  body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li,
-  body .ui-tabview.ui-tabview-left .ui-tabview-nav li,
-  body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
-    border: 1px solid #c8c8c8;
-    background-color: #6e6e6e;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
-    border-bottom: 0;
-  }
+// .container-fluid {
+//   .ui-tabview.ui-tabview-top .ui-tabview-nav {
+//     margin-bottom: -1px;
+//     position: fixed;
+//     top: 35px;
+//     z-index: 60;
+//   }
+//   .ui-tabview.ui-tabview-top .ui-tabview-nav li,
+//   body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li,
+//   body .ui-tabview.ui-tabview-left .ui-tabview-nav li,
+//   body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
+//     border: 1px solid #c8c8c8;
+//     background-color: #6e6e6e;
+//     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+//     border-bottom: 0;
+//   }
 
   
+// }
+
+
+body .ui-panel {
+  padding: 0;
+  border: 0 none;
+}
+body .ui-panel .ui-panel-titlebar {
+  border: 1px solid #c8c8c8;
+  padding: 0.571em 1em;
+  background-color: #f4f4f4;
+  color: #333333;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body .ui-panel .ui-panel-titlebar .ui-panel-title {
+  vertical-align: middle;
+  font-weight: 700;
+}
+body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon {
+  margin: 0;
+  position: relative;
+  font-size: 14px;
+  color: #848484;
+  border: 1px solid transparent;
+  line-height: 1;
+  -moz-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  -webkit-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:hover {
+  color: #333333;
+}
+body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+  box-shadow: 0 0 0 0.2em #8dcdff;
+}
+body .ui-panel .ui-panel-content {
+  padding: 0.571em 1em;
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 0.571em 1em;
+  border-top: 0 none;
+}
+body .ui-panel .ui-panel-footer {
+  padding: 0.571em 1em;
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+  color: #333333;
+  border-top: 0 none;
+  margin: 0;
 }
