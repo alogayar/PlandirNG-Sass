@@ -1,56 +1,68 @@
 // -----------------------------------------------------------------------------
-// Estilos propios y comunes a todos los componentes
+// Estilos comunes a todos los componentes
 // -----------------------------------------------------------------------------
 
-/**
- * Set up a decent box model on the root element
- */
-html {
-  box-sizing: border-box;
-}
-
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-}
-
-*:focus {
-  outline: none;
+  @include box-sizing(border-box);
 }
 
 body {
-  .p-component,
-  .ui-widget,
-  .ui-widget .ui-widget {
+  .ui-widget {
     font-family: $fontFamily;
+    font-size: $fontSize;
     text-decoration: none;
-  }
-  .ui-widget-content {
-    font-weight: normal;
   }
   .ui-widget-overlay {
     background-color: rgba(0, 0, 0, 0.4);
   }
-  .pi {
-    font-size: $sizeIcons;
-    font-family: primeicons;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
+  .ui-widget-content p {
+    line-height: 1.5;
+    margin: 0;
   }
 
   a {
     color: $verdeCorporativo;
-    &:hover {
-      color: $primaryDarkColor;
-    }
+    text-decoration: none;
   }
+  a:hover {
+    color: $verdeCorporativo;
+  }
+  a:active {
+    color: $verdeCorporativo;
+  }
+  .ui-helper-reset {
+    line-height: normal;
+  }
+  .ui-state-disabled, body .ui-widget:disabled {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  .pi {
+    font-size: 1.25em;
+  }
+  .ui-link {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    border-radius: 3px;
+  }
+  .ui-link:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    -webkit-box-shadow: 0 0 0 0.2em #ffe8b3;
+    -moz-box-shadow: 0 0 0 0.2em #ffe8b3;
+    box-shadow: 0 0 0 0.2em #ffe8b3;
+  }
+}
 
-  
-  
+body ::-webkit-input-placeholder {
+  color: #9b9b9b;
+}
+body :-moz-placeholder {
+  color: #9b9b9b;
+}
+body ::-moz-placeholder {
+  color: #9b9b9b;
+}
+body :-ms-input-placeholder {
+  color: #9b9b9b;
 }

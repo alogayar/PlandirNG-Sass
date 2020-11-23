@@ -11,14 +11,14 @@ body .ui-accordion .ui-accordion-header {
 body .ui-accordion .ui-accordion-header a {
   padding: 0.571em 1em;
   border: 1px solid $borderColor;
-  background-color: #f4f4f4;
+  background-color: $colorLigeroFondo;
   color: $colorTexto;
   font-weight: 700;
   @include border-radius(3px);
   @include transition(background-color 0.2s, box-shadow 0.2s);
 }
 body .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon {
-  color: #848484;
+  color: $colorIconos;
 }
 body .ui-accordion .ui-accordion-header a:focus {
   outline: 0 none;
@@ -31,14 +31,14 @@ body
   a {
   background-color: #dbdbdb;
   border: 1px solid #dbdbdb;
-  color: #333333;
+  color: $colorTextoHover;
 }
 body
   .ui-accordion
   .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover
   a
   .ui-accordion-toggle-icon {
-  color: #333333;
+  color: $colorTextoHover;
 }
 body
   .ui-accordion
