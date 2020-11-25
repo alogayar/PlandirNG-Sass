@@ -5,15 +5,13 @@ body .ui-chips > ul.ui-inputtext {
     display: inline-block;
   }
   body .ui-chips > ul.ui-inputtext:not(.ui-state-disabled):hover {
-    border-color: #212121;
+    border-color: $verdeCorporativo;
   }
   body .ui-chips > ul.ui-inputtext:not(.ui-state-disabled).ui-state-focus {
     outline: 0 none;
     outline-offset: 0;
-    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-    box-shadow: 0 0 0 0.2em #8dcdff;
-    border-color: #007ad9;
+    @include shadow($shadowVerde);
+    border-color: $verdeCorporativo;
   }
   body .ui-chips > ul.ui-inputtext .ui-chips-input-token {
     padding: 0.2145em 0;
@@ -35,9 +33,9 @@ body .ui-chips > ul.ui-inputtext {
     font-size: 14px;
     padding: 0.2145em 0.429em;
     margin: 0 0.286em 0 0;
-    background: #007ad9;
+    background: $verdeCorporativo;
     color: #ffffff;
   }
   body p-chips.ng-dirty.ng-invalid > .ui-inputtext {
-    border: 1px solid #a80000;
+    border: $borderDanger;
   }

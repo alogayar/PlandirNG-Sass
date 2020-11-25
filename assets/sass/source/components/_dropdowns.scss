@@ -4,12 +4,12 @@ body .ui-dropdown {
   @include transition(border-color 0.2s, box-shadow 0.2s);
 }
 body .ui-dropdown:not(.ui-state-disabled):hover {
-  border-color: #212121;
+  border-color: $verdeCorporativo;
 }
 body .ui-dropdown:not(.ui-state-disabled).ui-state-focus {
   outline: 0 none;
   outline-offset: 0;
-  @include shadow(0 0 0 0.2em #b8ce4e);
+  @include shadow($shadowVerde);
   border-color: $verdeCorporativoDark;
 }
 body .ui-dropdown .ui-dropdown-label {
@@ -76,7 +76,7 @@ body
   .ui-dropdown-panel
   .ui-dropdown-items
   .ui-dropdown-item-group.ui-state-highlight {
-  @extend .fondoBlancoTextoVerde;
+  @extend %FondoBlancoTextoVerde;
 }
 body
   .ui-dropdown-panel
@@ -90,5 +90,5 @@ body
   background-color: #eaeaea;
 }
 body p-dropdown.ng-dirty.ng-invalid > .ui-dropdown {
-  border: 1px solid #a80000;
+  border: $borderDanger;
 }

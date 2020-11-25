@@ -104,9 +104,8 @@ body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:hover {
 body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:focus {
   outline: 0 none;
   outline-offset: 0;
-  -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-  box-shadow: 0 0 0 0.2em #8dcdff;
+  @include shadow($shadowVerde);
+  
 }
 body .ui-dialog .ui-dialog-content {
   background-color: #ffffff;

@@ -1,174 +1,199 @@
 body .ui-button {
-    margin: 0;
-    color: #ffffff;
-    background-color: $verdeCorporativo;
-    border: 1px solid $verdeCorporativo;
-    font-size: 14px;
-    @include transition(background-color 0.2s, box-shadow 0.2s);
-    
+  margin: 0;
+  color: #ffffff;
+  background-color: $buttonBgColor;
+  border: $buttonBorder;
+  font-size: $fontSize;
+  @include transition(background-color 0.2s, box-shadow 0.2s);
+}
+body .ui-button:enabled:hover {
+  background-color: $buttonHoverBgColor;
+  color: $buttonHoverTextColor;
+  border-color: $buttonHoverBorderColor;
+}
+body .ui-button:enabled:focus {
+  outline: 0 none;
+  outline-offset: 0px;
+  @include shadow($buttonFocusShadow);
+}
+body .ui-button:enabled:active {
+  background-color: $buttonActiveBgColor;
+  color: $buttonActiveTextColor;
+  border-color: $buttonActiveBorderColor;
+}
+body .ui-button.ui-button-text-only .ui-button-text {
+  padding: $buttonTextOnlyPadding;
+}
+body .ui-button.ui-button-text-icon-left .ui-button-text {
+  padding: $buttonWithLeftIconPadding;
+}
+body .ui-button.ui-button-text-icon-right .ui-button-text {
+  padding: $buttonWithRightIconPadding;
+}
+body .ui-button.ui-button-icon-only {
+  width: $buttonIconOnlyWidth;
+}
+body .ui-button.ui-button-icon-only .ui-button-text {
+  padding: $buttonIconOnlyPadding;
+}
+body .ui-button.ui-button-raised {
+  @include shadow($raisedButtonShadow);
+}
+body .ui-button.ui-button-rounded {
+  @include border-radius($roundedButtonBorderRadius);
+}
+body .ui-fluid .ui-button-icon-only {
+  width: $buttonIconOnlyWidth;
+}
+@media (max-width: 640px) {
+  body .ui-buttonset:not(.ui-splitbutton) .ui-button {
+    margin-bottom: 1px;
+   @include border-radius(3px);
   }
-  body .ui-button:enabled:hover {
-    background-color: #6e7e20;
-    color: #ffffff;
-    border-color: #6e7e20;
-  }
-  body .ui-button:enabled:focus {
-    outline: 0 none;
-    outline-offset: 0px;
-    -webkit-box-shadow: 0 0 0 0.2em #7b8642;
-    -moz-box-shadow: 0 0 0 0.2em #7b8642;
-    box-shadow: 0 0 0 0.2em #7b8642;
-  }
-  body .ui-button:enabled:active {
-    background-color: #505f02;
-    color: #ffffff;
-    border-color: #505f02;
-  }
-  body .ui-button.ui-button-text-only .ui-button-text {
-    padding: 0.429em 1em;
-  }
-  body .ui-button.ui-button-text-icon-left .ui-button-text {
-    padding: 0.429em 1em 0.429em 2em;
-  }
-  body .ui-button.ui-button-text-icon-right .ui-button-text {
-    padding: 0.429em 2em 0.429em 1em;
-  }
-  body .ui-button.ui-button-icon-only {
-    width: 2.357em;
-  }
-  body .ui-button.ui-button-icon-only .ui-button-text {
-    padding: 0.429em;
-  }
-  body .ui-button.ui-button-raised {
-    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
-  }
-  body .ui-button.ui-button-rounded {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
-  }
-  body .ui-fluid .ui-button-icon-only {
-    width: 2.357em;
-  }
-  @media (max-width: 640px) {
-    body .ui-buttonset:not(.ui-splitbutton) .ui-button {
-      margin-bottom: 1px;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
-      border-radius: 3px;
-    }
-  }
-  body .ui-splitbutton.ui-buttonset .ui-button {
-    border: 1px solid transparent;
-  }
-  body .ui-splitbutton.ui-buttonset .ui-menu {
-    min-width: 100%;
-  }
-  body .ui-button.ui-state-default.ui-button-secondary, body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default {
-    color: #333333;
-    background-color: #f4f4f4;
-    border: 1px solid #f4f4f4;
-  }
-  body .ui-button.ui-state-default.ui-button-secondary:enabled:hover, body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default:enabled:hover {
-    background-color: #c8c8c8;
-    color: #333333;
-    border-color: #c8c8c8;
-  }
-  body .ui-button.ui-state-default.ui-button-secondary:enabled:focus, body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default:enabled:focus {
-    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-    box-shadow: 0 0 0 0.2em #8dcdff;
-  }
-  body .ui-button.ui-state-default.ui-button-secondary:enabled:active, body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default:enabled:active {
-    background-color: #a0a0a0;
-    color: #333333;
-    border-color: #a0a0a0;
-  }
-  body .ui-button.ui-state-default.ui-button-info, body .ui-buttonset.ui-button-info > .ui-button.ui-state-default {
-    color: #ffffff;
-    background-color: #007ad9;
-    border: 1px solid #007ad9;
-  }
-  body .ui-button.ui-state-default.ui-button-info:enabled:hover, body .ui-buttonset.ui-button-info > .ui-button.ui-state-default:enabled:hover {
-    background-color: #116fbf;
-    color: #ffffff;
-    border-color: #116fbf;
-  }
-  body .ui-button.ui-state-default.ui-button-info:enabled:focus, body .ui-buttonset.ui-button-info > .ui-button.ui-state-default:enabled:focus {
-    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-    box-shadow: 0 0 0 0.2em #8dcdff;
-  }
-  body .ui-button.ui-state-default.ui-button-info:enabled:active, body .ui-buttonset.ui-button-info > .ui-button.ui-state-default:enabled:active {
-    background-color: #005b9f;
-    color: #ffffff;
-    border-color: #005b9f;
-  }
-  body .ui-button.ui-state-default.ui-button-success, body .ui-buttonset.ui-button-success > .ui-button.ui-state-default {
-    color: #ffffff;
-    background-color: #34A835;
-    border: 1px solid #34A835;
-  }
-  body .ui-button.ui-state-default.ui-button-success:enabled:hover, body .ui-buttonset.ui-button-success > .ui-button.ui-state-default:enabled:hover {
-    background-color: #107D11;
-    color: #ffffff;
-    border-color: #107D11;
-  }
-  body .ui-button.ui-state-default.ui-button-success:enabled:focus, body .ui-buttonset.ui-button-success > .ui-button.ui-state-default:enabled:focus {
-    -webkit-box-shadow: 0 0 0 0.2em #aae5aa;
-    -moz-box-shadow: 0 0 0 0.2em #aae5aa;
-    box-shadow: 0 0 0 0.2em #aae5aa;
-  }
-  body .ui-button.ui-state-default.ui-button-success:enabled:active, body .ui-buttonset.ui-button-success > .ui-button.ui-state-default:enabled:active {
-    background-color: #0C6B0D;
-    color: #ffffff;
-    border-color: #0C6B0D;
-  }
-  body .ui-button.ui-state-default.ui-button-warning, body .ui-buttonset.ui-button-warning > .ui-button.ui-state-default {
-    color: #333333;
-    background-color: #ffba01;
-    border: 1px solid #ffba01;
-  }
-  body .ui-button.ui-state-default.ui-button-warning:enabled:hover, body .ui-buttonset.ui-button-warning > .ui-button.ui-state-default:enabled:hover {
-    background-color: #ED990B;
-    color: #333333;
-    border-color: #ED990B;
-  }
-  body .ui-button.ui-state-default.ui-button-warning:enabled:focus, body .ui-buttonset.ui-button-warning > .ui-button.ui-state-default:enabled:focus {
-    -webkit-box-shadow: 0 0 0 0.2em #ffeab4;
-    -moz-box-shadow: 0 0 0 0.2em #ffeab4;
-    box-shadow: 0 0 0 0.2em #ffeab4;
-  }
-  body .ui-button.ui-state-default.ui-button-warning:enabled:active, body .ui-buttonset.ui-button-warning > .ui-button.ui-state-default:enabled:active {
-    background-color: #D38B10;
-    color: #333333;
-    border-color: #D38B10;
-  }
-  body .ui-button.ui-state-default.ui-button-danger, body .ui-buttonset.ui-button-danger > .ui-button.ui-state-default {
-    color: #ffffff;
-    background-color: #e91224;
-    border: 1px solid #e91224;
-  }
-  body .ui-button.ui-state-default.ui-button-danger:enabled:hover, body .ui-buttonset.ui-button-danger > .ui-button.ui-state-default:enabled:hover {
-    background-color: #c01120;
-    color: #ffffff;
-    border-color: #c01120;
-  }
-  body .ui-button.ui-state-default.ui-button-danger:enabled:focus, body .ui-buttonset.ui-button-danger > .ui-button.ui-state-default:enabled:focus {
-    -webkit-box-shadow: 0 0 0 0.2em #f9b4ba;
-    -moz-box-shadow: 0 0 0 0.2em #f9b4ba;
-    box-shadow: 0 0 0 0.2em #f9b4ba;
-  }
-  body .ui-button.ui-state-default.ui-button-danger:enabled:active, body .ui-buttonset.ui-button-danger > .ui-button.ui-state-default:enabled:active {
-    background-color: #a90000;
-    color: #ffffff;
-    border-color: #a90000;
-  }
-  body .ui-splitbutton.ui-buttonset .ui-button {
-    border: 1px solid transparent;
-  }
-  body .ui-splitbutton.ui-buttonset .ui-menu {
-    min-width: 100%;
-  }
+}
+body .ui-splitbutton.ui-buttonset .ui-button {
+  border: 1px solid transparent;
+}
+body .ui-splitbutton.ui-buttonset .ui-menu {
+  min-width: 100%;
+}
+body .ui-button.ui-state-default.ui-button-secondary,
+body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default {
+  color: $secondaryButtonTextColor;
+  background-color: $secondaryButtonBgColor;
+  border: $secondaryButtonBorder;
+}
+body .ui-button.ui-state-default.ui-button-secondary:enabled:hover,
+body
+  .ui-buttonset.ui-button-secondary
+  > .ui-button.ui-state-default:enabled:hover {
+  background-color: $secondaryButtonHoverBgColor;
+  color: $blanco;
+  border-color: $secondaryButtonHoverBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-secondary:enabled:focus,
+body
+  .ui-buttonset.ui-button-secondary
+  > .ui-button.ui-state-default:enabled:focus {
+  @include shadow($secondaryFocusShadow);
+}
+body .ui-button.ui-state-default.ui-button-secondary:enabled:active,
+body
+  .ui-buttonset.ui-button-secondary
+  > .ui-button.ui-state-default:enabled:active {
+  background-color: $secondaryButtonActiveBgColor;
+  color: $secondaryButtonActiveTextColor;
+  border-color: $secondaryButtonActiveBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-info,
+body .ui-buttonset.ui-button-info > .ui-button.ui-state-default {
+  color: $infoButtonTextColor;
+  background-color: $infoButtonBgColor;
+  border: $infoButtonBorder;
+}
+body .ui-button.ui-state-default.ui-button-info:enabled:hover,
+body .ui-buttonset.ui-button-info > .ui-button.ui-state-default:enabled:hover {
+  background-color: $infoButtonHoverBgColor;
+  color: #ffffff;
+  border-color: $infoButtonHoverBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-info:enabled:focus,
+body .ui-buttonset.ui-button-info > .ui-button.ui-state-default:enabled:focus {
+  @include shadow($infoFocusShadow);
+}
+body .ui-button.ui-state-default.ui-button-info:enabled:active,
+body .ui-buttonset.ui-button-info > .ui-button.ui-state-default:enabled:active {
+  background-color: $infoButtonActiveBgColor;
+  color: $infoButtonActiveTextColor;
+  border-color: $infoButtonActiveBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-success,
+body .ui-buttonset.ui-button-success > .ui-button.ui-state-default {
+  background-color: $successButtonBgColor;
+  color: $successButtonTextColor;
+  border: $successButtonBorder;
+}
+body .ui-button.ui-state-default.ui-button-success:enabled:hover,
+body
+  .ui-buttonset.ui-button-success
+  > .ui-button.ui-state-default:enabled:hover {
+  background-color: $successButtonHoverBgColor;
+  color: $successButtonHoverTextColor;
+  border-color: $successButtonHoverBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-success:enabled:focus,
+body
+  .ui-buttonset.ui-button-success
+  > .ui-button.ui-state-default:enabled:focus {
+    @include shadow($successButtonFocusShadow);
+}
+body .ui-button.ui-state-default.ui-button-success:enabled:active,
+body
+  .ui-buttonset.ui-button-success
+  > .ui-button.ui-state-default:enabled:active {
+  background-color: $successButtonActiveBgColor;
+  color: $successButtonActiveTextColor;
+  border-color: $successButtonActiveBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-warning,
+body .ui-buttonset.ui-button-warning > .ui-button.ui-state-default {
+  color: $warningButtonTextColor;
+  background-color: $warningButtonBgColor;
+  border: $warningButtonBorder;
+}
+body .ui-button.ui-state-default.ui-button-warning:enabled:hover,
+body
+  .ui-buttonset.ui-button-warning
+  > .ui-button.ui-state-default:enabled:hover {
+  background-color: $warningButtonHoverBgColor;
+  color: $warningButtonHoverTextColor;
+  border-color: $warningButtonHoverBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-warning:enabled:focus,
+body
+  .ui-buttonset.ui-button-warning
+  > .ui-button.ui-state-default:enabled:focus {
+    @include shadow($warningButtonFocusShadow);
+}
+body .ui-button.ui-state-default.ui-button-warning:enabled:active,
+body
+  .ui-buttonset.ui-button-warning
+  > .ui-button.ui-state-default:enabled:active {
+  background-color: $warningButtonActiveBgColor;
+  color: $warningButtonActiveTextColor;
+  border-color: $warningButtonActiveBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-danger,
+body .ui-buttonset.ui-button-danger > .ui-button.ui-state-default {
+  color: $dangerButtonTextColor;
+  background-color: $dangerButtonBgColor;
+  border: 1px solid $dangerButtonBgColor;
+}
+body .ui-button.ui-state-default.ui-button-danger:enabled:hover,
+body
+  .ui-buttonset.ui-button-danger
+  > .ui-button.ui-state-default:enabled:hover {
+  background-color: $dangerButtonHoverBgColor;
+  color: $dangerButtonHoverTextColor;
+  border-color: $dangerButtonHoverBorderColor;
+}
+body .ui-button.ui-state-default.ui-button-danger:enabled:focus,
+body
+  .ui-buttonset.ui-button-danger
+  > .ui-button.ui-state-default:enabled:focus {
+@include shadow($dangerButtonFocusShadow);
+}
+body .ui-button.ui-state-default.ui-button-danger:enabled:active,
+body
+  .ui-buttonset.ui-button-danger
+  > .ui-button.ui-state-default:enabled:active {
+  background-color: $dangerButtonActiveBgColor;
+  color: $dangerButtonActiveTextColor;
+  border-color: $dangerButtonActiveBorderColor;
+}
+body .ui-splitbutton.ui-buttonset .ui-button {
+  border: 1px solid transparent;
+}
+body .ui-splitbutton.ui-buttonset .ui-menu {
+  min-width: 100%;
+}

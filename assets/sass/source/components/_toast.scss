@@ -5,7 +5,7 @@
 //   .ui-toast {
 //     position: fixed;
 //     width: $toastWidth;
-    
+
 //     padding: 0.75rem 1.25rem;
 //     margin-bottom: 1rem;
 //     border: 1px solid transparent;
@@ -42,13 +42,12 @@
 //         .ui-toast-message-text-content {
 //           padding: 0 0 0.25em 0;
 //           margin-left: 0 !important;
-          
-          
+
 //           .ui-toast-summary {
 //             font-weight: bold;
 //             padding: 0 0 0.5em 0;
 //             display: block;
-//             text-align: center; 
+//             text-align: center;
 //           }
 //           .ui-toast-detail {
 //             letter-spacing: 0.5px;
@@ -86,7 +85,6 @@
 //   }
 // }
 
-
 body .ui-toast .ui-toast-message {
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -94,23 +92,23 @@ body .ui-toast .ui-toast-message {
   margin: 0 0 1em 0;
 }
 body .ui-toast .ui-toast-message.ui-toast-message-info {
-  background-color: #7fbcec;
+  background-color: $info;
   border: 0 none;
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-toast .ui-toast-message.ui-toast-message-info .ui-toast-close-icon {
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-toast .ui-toast-message.ui-toast-message-success {
-  background-color: #b7d8b7;
+  background-color: $success;
   border: 0 none;
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-toast .ui-toast-message.ui-toast-message-success .ui-toast-close-icon {
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-toast .ui-toast-message.ui-toast-message-warn {
-  background-color: #ffe399;
+  background-color: $warning;
   border: 0 none;
   color: #212121;
 }
@@ -118,7 +116,7 @@ body .ui-toast .ui-toast-message.ui-toast-message-warn .ui-toast-close-icon {
   color: #212121;
 }
 body .ui-toast .ui-toast-message.ui-toast-message-error {
-  background-color: #f8b7bd;
+  background-color: $error;
   border: 0 none;
   color: #212121;
 }

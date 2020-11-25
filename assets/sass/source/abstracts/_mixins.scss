@@ -80,12 +80,6 @@
   color: $verdeCorporativo;
 }
 
-/* Fondo verde corporativo, texto blanco */
-%state-highlight {
-  background-color: $highlightBgColor;
-  color: $colorTextoBlanco;            
-}
- 
 /* Estilo para los componentes deshabilitados */
 @mixin disabled-input() {
   border-color: $inputDisabledBorderColor;
@@ -191,3 +185,33 @@ filter: alpha(opacity=$opacity-ie);
   :-ms-input-placeholder      {@content}  
 }
 
+/* Fondo verde corporativo, texto blanco */
+%FondoVerdeTextoBlanco {
+  background-color: $verdeCorporativo;
+  color: $colorTextoBlanco;            
+}
+ 
+/* Fondo verde corporativo Borde verde, texto blanco */
+%FondoBordeVerdeTextoBlanco {
+  background-color: $verdeCorporativo;
+  border-color: $verdeCorporativo;
+  color: $colorTextoBlanco;            
+}
+/* Fondo verde claro Borde verde, texto blanco */
+%FondoBordeVerdeClaroTextoBlanco {
+  background-color: $verdeCorporativoClear;
+  border-color: $verdeCorporativoClear;
+  color: $colorTextoBlanco;            
+}
+/* Fondo gris Borde verde, texto blanco */
+%FondoBordeGrisTextoBlanco {
+  background-color: $gris;
+  border-color: $gris;
+  color: $colorTextoBlanco;            
+}
+/* Fondo gris Borde verde, texto blanco */
+%FondoBlancoTextoVerde {
+  background-color: $blanco;
+  border-color: $verdeCorporativo;
+  color: $verdeCorporativo;            
+}

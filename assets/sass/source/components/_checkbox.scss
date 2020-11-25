@@ -25,19 +25,17 @@ body .ui-chkbox {
   body .ui-chkbox .ui-chkbox-box.ui-state-focus {
     outline: 0 none;
     outline-offset: 0;
-    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-    box-shadow: 0 0 0 0.2em #8dcdff;
-    border-color: #007ad9;
+   @include shadow($shadowVerde);
+    border-color: $verdeCorporativo;
   }
   body .ui-chkbox .ui-chkbox-box.ui-state-active {
-    border-color: #007ad9;
-    background-color: #007ad9;
+    border-color: $verdeCorporativo;
+    background-color: $verdeCorporativo;
     color: #ffffff;
   }
   body .ui-chkbox .ui-chkbox-box.ui-state-active:not(.ui-state-disabled):hover {
-    border-color: #005b9f;
-    background-color: #005b9f;
+    border-color: $verdeLogoDiputacion;
+    background-color: $verdeLogoDiputacion;
     color: #ffffff;
   }
   body .ui-chkbox .ui-chkbox-box .ui-chkbox-icon {
@@ -49,5 +47,5 @@ body .ui-chkbox {
     margin: 0 0 0 0.5em;
   }
   body p-checkbox.ng-dirty.ng-invalid .ui-chkbox-box {
-    border: 1px solid #a80000;
+    border: $borderDanger;
   }

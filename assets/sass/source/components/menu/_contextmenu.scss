@@ -38,15 +38,13 @@ body .ui-contextmenu {
   body .ui-contextmenu .ui-menuitem-link:focus {
     outline: 0 none;
     outline-offset: 0;
-    -webkit-box-shadow: inset 0 0 0 0.2em #8dcdff;
-    -moz-box-shadow: inset 0 0 0 0.2em #8dcdff;
-    box-shadow: inset 0 0 0 0.2em #8dcdff;
+   @include shadow($shadowVerde);
   }
   body .ui-contextmenu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-text {
-    color: #007ad9;
+    color: $verdeCorporativoDark;
   }
   body .ui-contextmenu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-icon {
-    color: #007ad9;
+    color: $verdeCorporativoDark;
   }
   body .ui-contextmenu .ui-submenu-list {
     padding: 0;

@@ -86,23 +86,23 @@ body .ui-message {
   margin: 0;
 }
 body .ui-message.ui-message-info {
-  background-color: #7fbcec;
+  background-color: $info;
   border: 0 none;
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-message.ui-message-info .ui-message-icon {
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-message.ui-message-success {
-  background-color: #b7d8b7;
+  background-color: $success;
   border: 0 none;
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-message.ui-message-success .ui-message-icon {
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-message.ui-message-warn {
-  background-color: #ffe399;
+  background-color: $warning;
   border: 0 none;
   color: #212121;
 }
@@ -110,7 +110,7 @@ body .ui-message.ui-message-warn .ui-message-icon {
   color: #212121;
 }
 body .ui-message.ui-message-error {
-  background-color: #f8b7bd;
+  background-color: $error;
   border: 0 none;
   color: #212121;
 }
@@ -128,29 +128,29 @@ body .ui-messages {
   margin: 1em 0;
 }
 body .ui-messages.ui-messages-info {
-  background-color: #7fbcec;
+  background-color: $info;
   border: 0 none;
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-messages.ui-messages-info .ui-messages-icon {
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-messages.ui-messages-info .ui-messages-close {
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-messages.ui-messages-success {
-  background-color: #b7d8b7;
+  background-color: $success;
   border: 0 none;
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-messages.ui-messages-success .ui-messages-icon {
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-messages.ui-messages-success .ui-messages-close {
-  color: #212121;
+  color: $colorLigeroFondo;
 }
 body .ui-messages.ui-messages-warn {
-  background-color: #ffe399;
+  background-color: $warning;
   border: 0 none;
   color: #212121;
 }
@@ -161,7 +161,7 @@ body .ui-messages.ui-messages-warn .ui-messages-close {
   color: #212121;
 }
 body .ui-messages.ui-messages-error {
-  background-color: #f8b7bd;
+  background-color: $error;
   border: 0 none;
   color: #212121;
 }
@@ -188,9 +188,7 @@ body .ui-messages .ui-messages-close {
 body .ui-messages .ui-messages-close:focus {
   outline: 0 none;
   outline-offset: 0;
-  -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-  box-shadow: 0 0 0 0.2em #8dcdff;
+  @include shadow($shadowVerde);
 }
 body .ui-messages .ui-messages-icon {
   font-size: 2em;

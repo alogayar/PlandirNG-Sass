@@ -136,10 +136,10 @@ body .ui-menu .ui-menuitem-link:hover {
   background-color: #eaeaea;
 }
 body .ui-menu .ui-menuitem-link:hover .ui-menuitem-text {
-  color: #333333;
+  color: $verdeCorporativo;
 }
 body .ui-menu .ui-menuitem-link:hover .ui-menuitem-icon {
-  color: #333333;
+  color: $verdeCorporativo;
 }
 body .ui-menu .ui-menuitem-link:focus {
   outline: 0 none;

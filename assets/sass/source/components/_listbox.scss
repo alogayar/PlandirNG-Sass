@@ -26,7 +26,7 @@ body .ui-listbox {
     left: auto;
     margin-top: -0.5em;
     right: 0.5em;
-    color: #007ad9;
+    color: $verdeCorporativo;
   }
   body .ui-listbox .ui-listbox-list {
     background-color: #ffffff;
@@ -47,14 +47,12 @@ body .ui-listbox {
   }
   body .ui-listbox .ui-listbox-list .ui-listbox-item.ui-state-highlight {
     color: #ffffff;
-    background-color: #007ad9;
+    background-color: $verdeCorporativoDark;
   }
   body .ui-listbox .ui-listbox-list .ui-listbox-item:focus {
     outline: 0 none;
     outline-offset: 0;
-    -webkit-box-shadow: inset 0 0 0 0.2em #8dcdff;
-    -moz-box-shadow: inset 0 0 0 0.2em #8dcdff;
-    box-shadow: inset 0 0 0 0.2em #8dcdff;
+    @include shadow($bglight);
   }
   body .ui-listbox .ui-listbox-list .ui-listbox-item .ui-chkbox {
     position: static;
@@ -80,5 +78,5 @@ body .ui-listbox {
     background-color: #ffffff;
   }
   body p-listbox.ng-dirty.ng-invalid .ui-inputtext {
-    border: 1px solid #a80000;
+    border: $borderDanger;
   }

@@ -19,26 +19,20 @@ body .ui-togglebutton {
     color: #212121;
   }
   body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active).ui-state-focus {
-    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-    box-shadow: 0 0 0 0.2em #8dcdff;
+    @include shadow($shadowVerde);
   }
   body .ui-togglebutton.ui-state-active {
-    background-color: #007ad9;
-    border-color: #007ad9;
-    color: #ffffff;
+    @extend %FondoBordeVerdeTextoBlanco;
   }
   body .ui-togglebutton.ui-state-active .ui-button-icon-left {
     color: #ffffff;
   }
   body .ui-togglebutton.ui-state-active:hover {
-    background-color: #116fbf;
-    border-color: #116fbf;
-    color: #ffffff;
+    @extend %FondoBordeVerdeClaroTextoBlanco;
   }
   body .ui-togglebutton.ui-state-active:hover .ui-button-icon-left {
     color: #ffffff;
   }
   body p-togglebutton.ng-dirty.ng-invalid .ui-button {
-    border: 1px solid #a80000;
+    border: $borderDanger;
   }

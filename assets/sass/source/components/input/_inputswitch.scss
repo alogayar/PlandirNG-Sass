@@ -1,52 +1,52 @@
-
-
-  body .ui-inputswitch {
-    width: 3em;
-    height: 1.75em;
-  }
-  body .ui-inputswitch .ui-inputswitch-slider {
-    -moz-transition: background-color 0.2s, box-shadow 0.2s;
-    -o-transition: background-color 0.2s, box-shadow 0.2s;
-    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
-    transition: background-color 0.2s, box-shadow 0.2s;
-    border-radius: 30px;
-    background: #cccccc;
-  }
-  body .ui-inputswitch .ui-inputswitch-slider:before {
-    background-color: #ffffff;
-    height: 1.25em;
-    width: 1.25em;
-    left: 0.25em;
-    bottom: 0.25em;
-    border-radius: 50%;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
-  body .ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider:before {
-    -webkit-transform: translateX(1.25em);
-    -ms-transform: translateX(1.25em);
-    transform: translateX(1.25em);
-  }
-  body .ui-inputswitch.ui-inputswitch-focus .ui-inputswitch-slider {
-    background: #b7b7b7;
-    outline: 0 none;
-    outline-offset: 0;
-    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-    box-shadow: 0 0 0 0.2em #8dcdff;
-  }
-  body .ui-inputswitch:not(.ui-state-disabled):hover .ui-inputswitch-slider {
-    background-color: #b7b7b7;
-  }
-  body .ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider {
-    background-color: #007ad9;
-  }
-  body .ui-inputswitch.ui-inputswitch-checked:not(.ui-state-disabled):hover .ui-inputswitch-slider {
-    background-color: #116fbf;
-  }
-  body .ui-inputswitch.ui-inputswitch-checked.ui-inputswitch-focus .ui-inputswitch-slider {
-    background: #005b9f;
-  }
-  body p-inputswitch.ng-dirty.ng-invalid .ui-inputswitch {
-    border: 1px solid #a80000;
-  }
+body .ui-inputswitch {
+  width: 3em;
+  height: 1.75em;
+}
+body .ui-inputswitch .ui-inputswitch-slider {
+  -moz-transition: background-color 0.2s, box-shadow 0.2s;
+  -o-transition: background-color 0.2s, box-shadow 0.2s;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  border-radius: 30px;
+  background: #cccccc;
+}
+body .ui-inputswitch .ui-inputswitch-slider:before {
+  background-color: #ffffff;
+  height: 1.25em;
+  width: 1.25em;
+  left: 0.25em;
+  bottom: 0.25em;
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body .ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider:before {
+  -webkit-transform: translateX(1.25em);
+  -ms-transform: translateX(1.25em);
+  transform: translateX(1.25em);
+}
+body .ui-inputswitch.ui-inputswitch-focus .ui-inputswitch-slider {
+  background: #b7b7b7;
+  outline: 0 none;
+  outline-offset: 0;
+  @include shadow($shadowVerde);
+}
+body .ui-inputswitch:not(.ui-state-disabled):hover .ui-inputswitch-slider {
+  background-color: #b7b7b7;
+}
+body .ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider {
+  background-color: $verdeCorporativo;
+}
+body
+  .ui-inputswitch.ui-inputswitch-checked:not(.ui-state-disabled):hover
+  .ui-inputswitch-slider {
+  background-color: $verdeLogoDiputacion;
+}
+body
+  .ui-inputswitch.ui-inputswitch-checked.ui-inputswitch-focus
+  .ui-inputswitch-slider {
+  background: $verdeCorporativoDark;
+}
+body p-inputswitch.ng-dirty.ng-invalid .ui-inputswitch {
+  border: $borderDanger;
+}

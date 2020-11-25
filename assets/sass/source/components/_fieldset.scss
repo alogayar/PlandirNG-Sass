@@ -1,81 +1,80 @@
-// body {
-//   .ui-fieldset {
-//     border: 1px solid #c8c8c8;
-//     background-color: #ffffff;
-//     color: #333333;
-//     font-size: 14px;
-//     text-decoration: none;
-//   }
+body {
+  .ui-fieldset {
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    text-decoration: none;
+  }
 
-//   .ui-fieldset-legend {
-//     padding: 0.5em 1em;
-//     font-size: 14px;
-//     color: $verdeCorporativo;
-//     width: auto;
-//   }
+  .ui-fieldset-legend {
+    padding: 0.5em 1em;
+    font-size: $fontSize+3;
+    color: $verdeCorporativo;
+    width: auto;
+  }
+}
+
+.p-fieldset-legend > a,
+.p-fieldset-legend > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-fieldset-toggleable .p-fieldset-legend a {
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-fieldset-legend-text {
+  line-height: 1;
+}
+
+// body .ui-fieldset {
+//   border: 1px solid #c8c8c8;
+//   background-color: #ffffff;
+//   color: #333333;
 // }
-
-// .p-fieldset-legend > a,
-// .p-fieldset-legend > span {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+// body .ui-fieldset .ui-fieldset-legend a {
+//   padding: 0.571em 1em;
+//   border: 1px solid #c8c8c8;
+//   color: #333333;
+//   background-color: #f4f4f4;
+//   -moz-border-radius: 3px;
+//   -webkit-border-radius: 3px;
+//   border-radius: 3px;
+//   -moz-transition: background-color 0.2s, box-shadow 0.2s;
+//   -o-transition: background-color 0.2s, box-shadow 0.2s;
+//   -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+//   transition: background-color 0.2s, box-shadow 0.2s;
 // }
-
-// .p-fieldset-toggleable .p-fieldset-legend a {
-//   cursor: pointer;
-//   user-select: none;
-//   overflow: hidden;
-//   position: relative;
+// body .ui-fieldset .ui-fieldset-legend a .ui-fieldset-toggler {
+//   float: none;
+//   display: inline-block;
+//   vertical-align: middle;
+//   margin-right: 0.5em;
+//   color: #848484;
 // }
-
-// .p-fieldset-legend-text {
-//   line-height: 1;
+// body .ui-fieldset .ui-fieldset-legend a .ui-fieldset-legend-text {
+//   padding: 0;
 // }
-
-body .ui-fieldset {
-  border: 1px solid #c8c8c8;
-  background-color: #ffffff;
-  color: #333333;
-}
-body .ui-fieldset .ui-fieldset-legend a {
-  padding: 0.571em 1em;
-  border: 1px solid #c8c8c8;
-  color: #333333;
-  background-color: #f4f4f4;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -moz-transition: background-color 0.2s, box-shadow 0.2s;
-  -o-transition: background-color 0.2s, box-shadow 0.2s;
-  -webkit-transition: background-color 0.2s, box-shadow 0.2s;
-  transition: background-color 0.2s, box-shadow 0.2s;
-}
-body .ui-fieldset .ui-fieldset-legend a .ui-fieldset-toggler {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.5em;
-  color: #848484;
-}
-body .ui-fieldset .ui-fieldset-legend a .ui-fieldset-legend-text {
-  padding: 0;
-}
-body .ui-fieldset .ui-fieldset-legend a:focus {
-  outline: 0 none;
-  outline-offset: 0;
-  -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-  box-shadow: 0 0 0 0.2em #8dcdff;
-}
-body .ui-fieldset.ui-fieldset-toggleable .ui-fieldset-legend a:hover {
-  background-color: #dbdbdb;
-  border: 1px solid #dbdbdb;
-  color: #333333;
-}
-body .ui-fieldset.ui-fieldset-toggleable .ui-fieldset-legend a:hover .ui-fieldset-toggler {
-  color: #333333;
-}
-body .ui-fieldset .ui-fieldset-content {
-  padding: 0;
-}
+// body .ui-fieldset .ui-fieldset-legend a:focus {
+//   outline: 0 none;
+//   outline-offset: 0;
+//   @include shadow($shadowVerde);
+  
+// }
+// body .ui-fieldset.ui-fieldset-toggleable .ui-fieldset-legend a:hover {
+//   background-color: #dbdbdb;
+//   border: 1px solid #dbdbdb;
+//   color: #333333;
+// }
+// body .ui-fieldset.ui-fieldset-toggleable .ui-fieldset-legend a:hover .ui-fieldset-toggler {
+//   color: #333333;
+// }
+// body .ui-fieldset .ui-fieldset-content {
+//   padding: 0;
+// }
