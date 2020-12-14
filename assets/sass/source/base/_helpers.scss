@@ -27,6 +27,31 @@
   @include opacity($disabledOpacity);
 }
 
+.activo {
+  @include border-radius(6px);
+  font-size: 13px;
+  @include FondoBordeyColor(#39803a, #f8f9fa);
+  text-align: center;
+  @include inline;
+  padding: 0.2em 0.4em;
+}
+.caducado {
+  @include border-radius(6px);
+  font-size: 13px;
+  @include FondoBordeyColor(#ffba01, #333333);
+  text-align: center;
+  @include inline;
+  padding: 0.2em 0.4em;
+}
+.eliminado {
+  border-radius: 6px;
+  font-size: 13px;
+  @include FondoBordeyColor(#e91224, #f8f9fa);
+  text-align: center;
+  @include inline;
+  padding: 0.2em 0.4em;
+}
+
 .botones-fila {
   display: flex;
   flex-direction: row;
@@ -45,7 +70,6 @@
     padding: 0 !important;
   }
 }
-
 
 .fondoBlancoTextoVerde {
   color: $colorTextoBlanco;

@@ -38,6 +38,12 @@
   display: flex;
 }
 
+@mixin flex($display: flex, $justify: center, $align: center) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 /* Para hacer que un elemento cambie su aparariencia */
 @mixin appearance($val) {
   -webkit-appearance: $val;
@@ -176,23 +182,19 @@ filter: alpha(opacity=$opacity-ie);
   vertical-align: top;
 }
 
-
-/* Para incluir texto provisional en un elemento input o textarea */
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}  
+@mixin FondoBordeyColor ($background,$color) {
+  background-color: $background;
+  border: 1px solid $background;
+  color: $color;
 }
 
 /* Fondo verde corporativo, texto blanco */
 %FondoVerdeTextoBlanco {
   background-color: $verdeCorporativo;
   color: $colorTextoBlanco;            
-}
- 
+} 
 /* Fondo verde corporativo Borde verde, texto blanco */
-%FondoBordeVerdeTextoBlanco {
+%FondoBordeVerdeTextoBlanco {  
   background-color: $verdeCorporativo;
   border-color: $verdeCorporativo;
   color: $colorTextoBlanco;            
@@ -214,4 +216,13 @@ filter: alpha(opacity=$opacity-ie);
   background-color: $blanco;
   border-color: $verdeCorporativo;
   color: $verdeCorporativo;            
+}
+
+
+/* Para incluir texto provisional en un elemento input o textarea */
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
 }

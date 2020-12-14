@@ -1,40 +1,37 @@
 /*============================================================== 
- Estilos globales del layout que usaremos en todas las pgainas 
+ Estilos globales del layout que usaremos en todas las painas 
  ============================================================== */
 
-@media (min-width: 768px) {
-  .navbar-header {
-    width: 180px !important;
-  }
-}
+//  #main-wrapper { 
+//   width: 100%;
+//   overflow: hidden;
+// }
 
-.fix-header {
-  .topbar {
-    position: fixed;
-    width: 100%;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-  }
-}
+// .page-wrapper {
+//   background: $blanco;
+//   padding-bottom: 60px;
+//   position: relative;
+// }
 
-/* Notificaciones header */
+// .container-fluid {
+//   padding: 25px 25px;
+// }
 
-.badge {
-  right: -2px;
-  top: 15px;
-  margin-right: 5px;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 13px;
-  padding: 2px 7px;
-  position: absolute;
-  display: inline-block;
-  min-width: 10px;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  border-radius: 10px;
-}
+// .card {
+//   margin-bottom: 30px;
+//   .card-subtitle {
+//       font-weight: 300;
+//       margin-bottom: 15px;
+//       color: $muted;
+//   }
+//   .card-title {
+//       position: relative;
+//   }
+// }
+
+
+
+
 .bg-green {
   background: #8ea22d !important;
   border: 1px solid #8ea22d !important;
@@ -106,7 +103,7 @@ li.all-notificaciones {
   color: $colorTexto;
 
   thead {
-    background-color: #FFFFEC;
+    background-color: #ffffec;
     border-bottom: 2px solid $verdeCorporativo;
     th {
       font-weight: 600 !important;

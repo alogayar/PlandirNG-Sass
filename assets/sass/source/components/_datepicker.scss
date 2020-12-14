@@ -1,9 +1,9 @@
 body .ui-datepicker {
   padding: 0.857em;
-  min-width: 20em;
-  background-color: #ffffff;
-  color: #333333;
-  border: 1px solid #a6a6a6;
+  min-width: 20em !important;
+  background-color: $colorLigeroFondo;
+  color: $colorTexto;
+  border: $borde;
 }
 body .ui-datepicker:not(.ui-datepicker-inline) {
   border: 1px solid #c8c8c8;
@@ -19,7 +19,7 @@ body
   .ui-datepicker:not(.ui-state-disabled)
   .ui-datepicker-header
   .ui-datepicker-next:hover {
-  color: $verdeCorporativo;
+  color: $blanco;
 }
 body
   .ui-datepicker:not(.ui-state-disabled)
@@ -38,7 +38,8 @@ body
   table
   td
   a:not(.ui-state-active):not(.ui-state-highlight):hover {
-  background-color: #eaeaea;
+  background-color: #cccccc;
+  width: max-content;
 }
 body
   .ui-datepicker:not(.ui-state-disabled)
@@ -48,11 +49,11 @@ body
 }
 body .ui-datepicker .ui-datepicker-header {
   padding: 0.429em 0.857em 0.429em 0.857em;
-  background-color: #ffffff;
-  color: #333333;
+  background-color: #6d6d6d;
+  color: $colorLigeroFondo;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0;
+  border-radius: 1;
 }
 body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
 body .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
@@ -113,6 +114,7 @@ body .ui-datepicker table td > a.ui-state-active,
 body .ui-datepicker table td > span.ui-state-active {
   color: #ffffff;
   background-color: $verdeCorporativo;
+  width: max-content;
 }
 body .ui-datepicker table td > a {
   cursor: pointer;
@@ -124,13 +126,15 @@ body .ui-datepicker table td > a:focus {
 }
 body .ui-datepicker table td.ui-datepicker-today > a,
 body .ui-datepicker table td.ui-datepicker-today > span {
-  background-color: #d0d0d0;
-  color: #333333;
+  background-color: $verdeCorporativo;
+  color: $colorLigeroFondo;
+  width: max-content;
 }
 body .ui-datepicker table td.ui-datepicker-today > a.ui-state-active,
 body .ui-datepicker table td.ui-datepicker-today > span.ui-state-active {
   color: #ffffff;
   background-color: $verdeCorporativo;
+  width: max-content;
 }
 body .ui-datepicker table td.ui-datepicker-weeknumber {
   border-right: 1px solid #a6a6a6;
@@ -183,36 +187,4 @@ body
   .ui-datepicker-group:last-child {
   padding-right: 0;
   border-right: 0 none;
-}
-body .ui-calendar.ui-calendar-w-btn .ui-inputtext {
-  -moz-border-radius-topright: 0;
-  -webkit-border-top-right-radius: 0;
-  border-top-right-radius: 0;
-  -moz-border-radius-bottomright: 0;
-  -webkit-border-bottom-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right: 0 none;
-}
-body
-  .ui-calendar.ui-calendar-w-btn
-  .ui-inputtext:enabled:hover:not(.ui-state-error),
-body
-  .ui-calendar.ui-calendar-w-btn
-  .ui-inputtext:enabled:focus:not(.ui-state-error) {
-  border-right: 0 none;
-}
-body .ui-calendar.ui-calendar-w-btn .ui-datepicker-trigger.ui-button {
-  width: 2.357em;
-  -moz-border-radius-topleft: 0;
-  -webkit-border-top-left-radius: 0;
-  border-top-left-radius: 0;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-bottom-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-body .ui-fluid .ui-calendar.ui-calendar-w-btn input.ui-inputtext {
-  width: calc(100% - 2.357em);
-}
-body p-calendar.ng-dirty.ng-invalid > .ui-calendar > .ui-inputtext {
-  border: $borderDanger;
 }

@@ -4,9 +4,15 @@
 
 * {
   @include box-sizing(border-box);
+  padding: 0;
+  margin: 0;
 }
 
 body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  background: #eaeded;
+
   .ui-widget {
     font-family: $fontFamily;
     font-size: $fontSize;
@@ -21,19 +27,14 @@ body {
   }
 
   a {
-    color: $verdeCorporativo;
-    text-decoration: none;
+    text-decoration: none;       
   }
-  a:hover {
-    color: $verdeCorporativo;
-  }
-  a:active {
-    color: $verdeCorporativo;
-  }
+
   .ui-helper-reset {
     line-height: normal;
   }
-  .ui-state-disabled, body .ui-widget:disabled {
+  .ui-state-disabled,
+  body .ui-widget:disabled {
     opacity: 0.5;
     filter: alpha(opacity=50);
   }

@@ -11,10 +11,10 @@ $verdeCorporativoClear:#aec539;
 $verdeCorporativoDark: #768626;
 $verdeLogoDiputacion: #698e02;
 $colorDefectoFondo: #ffffff;
-$colorLigeroFondo: #f4f4f4;
+$colorLigeroFondo: #f8f9fa;
 $colorTextoBlanco: #ffffff;
-$colorTexto: #67757c;
-$colorTextoHover: #333333;
+$colorTexto: #333333;
+$colorTextoHover: #67757c;
 $borderColor: #a6a6a6;
 $borde: 1px solid $borderColor;
 $colorIconos: #848484;
@@ -29,6 +29,7 @@ $error: #f8b7bd;
 $azul: #286090;
 $blanco: #ffffff;
 $gris: #67757c;
+
 
 
 
@@ -57,10 +58,13 @@ $negro: #000;
 // ========================================================================================
 // Variables para los Assets - CDN
 // ========================================================================================
-$baseUrlCDN: "http://cdn.dipujaen.es/";
+//$baseUrlCDN: "http://cdn.dipujaen.es/";
+$baseUrlCDN: 'http://plandirng.dipujaen.es/cdn/';
 $baseUrlAssets: $baseUrlCDN + "assets/";
 $carpetaImages: "img/";
 $carpetaFonts: "fonts/";
+$carpetaIcons: "icons/";
+$carpetaPlugins: "plugins/";
 $baseUrlImages: $baseUrlAssets + $carpetaImages;
 $baseUrlFonts: $baseUrlAssets + $carpetaFonts;
 
