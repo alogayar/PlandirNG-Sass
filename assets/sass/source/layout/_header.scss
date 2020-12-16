@@ -1,13 +1,11 @@
 .menu {
-  background: #4d4d4d;
-  .contenedor {
-    width: 95%;
-    max-width: 1900px;
-    margin: auto;
-  }
+  background: #4d4d4d; 
+
+  /* Para resoluciones menores */
   .contendor-botones-menu {
     display: none;
   }
+  /* Primera barra con logo y enlaces  */
   .contenedor-logo-enlaces {
     display: flex;
     justify-content: space-between;
@@ -166,33 +164,6 @@
             background: $light;
             color: $themecolor;
             text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-  .contenedor-menu {
-    background: #f8f8f8;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
-    .contenedor-menu-enlaces {
-      ul {
-        padding: 5px 0;
-        list-style-type: none;
-        li {
-          padding: 5px 10px;
-          font-size: 13px;
-          color: #333;
-          border: 1px solid transparent;
-          text-transform: uppercase;
-          cursor: pointer;
-
-          &:hover {
-            transition: border 0.5s;
-            border: 1px solid rgba(#8ea22d, 0.7);
-            border-radius: 3px;
           }
         }
       }

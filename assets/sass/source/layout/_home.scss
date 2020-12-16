@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, fr);
+  grid-template-rows: repeat(4, fr);
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "footer";
+
+  .header {
+    grid-area: header;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .content {
+    grid-area: content;
+  }
+  .footer {
+    grid-area: footer;
+  }
+
+  /* Contenedor Principal */
+  .contenedor {
+    width: 95%;
+    max-width: 1900px;
+    margin: auto;
+  }
+}
