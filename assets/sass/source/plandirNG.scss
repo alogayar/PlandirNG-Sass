@@ -17,7 +17,7 @@
    
  // 3 Componentes Prime    
  @import "components/accordion";      
- @import "components/autocomplete"; 
+ @import "components/autocomplete";    
  @import "components/breadcrums";    
  @import "components/calendar"; 
  @import "components/cards"; 
@@ -37,21 +37,22 @@
  @import "components/toast";    
  @import "components/tooltip";   
  @import "components/button/button";                
- @import "components/button/radiobutton";   
+ @import "components/button/radiobutton";    
  @import "components/button/togglebutton";     
- @import "components/input/inputgroup";      
- @import "components/input/inputswitch";   
+ @import "components/input/inputgroup";         
+ @import "components/input/inputswitch";      
  @import "components/input/inputtext";   
- @import "components/menu/contextmenu";      
- @import "components/menu/menu";   
- @import "components/menu/menubar";   
- @import "components/menu/tieredmenu";    
+ @import "components/menu/contextmenu";       
+ @import "components/menu/menu";        
+ @import "components/menu/menubar";      
+ @import "components/menu/tieredmenu";      
  @import "components/overlaypanel";       
  
- // 4 Estructura Layout
+ // 4 Estructura Layout 
  @import "layout/home";  
  @import "layout/header"; 
  @import "layout/sidebar"; 
+ @import "layout/mediaqueries"; 
  @import "pages/login"; 
  @import "pages/noticias";  
  @import "pages/commons";  
