@@ -1,9 +1,28 @@
 .menu {
-  background: #4d4d4d; 
+  background: #4d4d4d;
+  display: flex;
+  justify-content: flex-start;
 
   /* Para resoluciones menores */
-  .contendor-botones-menu {
+  .contenedor-botones-menu {
+    width: auto;
     display: none;
+    .btn-barras,
+    .btn-cerrar {
+      border-radius: 4px;
+      background: none;
+      color: #8ea22d;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+      font-size: 13px;
+      &:hover {
+        border: 1px solid #8ea22d;
+      }
+    }
+
+    &.activo {
+      display: inline;
+    }
   }
   /* Primera barra con logo y enlaces  */
   .contenedor-logo-enlaces {
