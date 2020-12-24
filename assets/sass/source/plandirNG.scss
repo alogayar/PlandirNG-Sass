@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-// 1. Variables y funciones  
+// 1. Variables y funciones   
  @import "abstracts/variables";         
- @import "abstracts/functions";   
- @import "abstracts/mixins";       
-    
- // 2. Fuentes         
- @import "base/plugins";       
+ @import "abstracts/functions";    
+ @import "abstracts/mixins";             
+      
+ // 2. Fuentes            
+ @import "base/plugins";          
  @import "base/fonts";          
  @import "base/base";        
  @import "base/grid";  //PrimeFlex        

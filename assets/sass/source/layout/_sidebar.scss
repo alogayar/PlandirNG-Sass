@@ -21,11 +21,19 @@
             color: #333;
             border: 1px solid transparent;
             text-transform: uppercase;
+            white-space: pre;
             cursor: pointer;
             &:hover {
               transition: border 0.5s;
               border: 1px solid rgba(#8ea22d, 0.7);
               border-radius: 3px;
+            }
+            
+            .ui-menuitem-link{
+              color: red;
+              .ui-menuitem-icon{
+                padding-right: 10px;
+              }
             }
 
             /* Submenu */
@@ -36,9 +44,9 @@
                 width: auto;
                 top: 12px !important;
                 left: 0px !important;
-                border: 0;
-                display: grid;
-                grid-template-columns: 230px auto;
+                border: 0;                
+                
+                grid-template-columns: auto auto;
                 grid-template-rows: 1fr;
                 box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
                 &::before {
@@ -54,6 +62,14 @@
               }
             }
           }
+        }
+        li.ui-menuitem-active {
+          color:  #8ea22d;
+          .ui-submenu-list {
+           display: grid;
+         
+          }
+
         }
       }
     }
@@ -72,9 +88,9 @@
       .ui-tieredmenu {
         display: block;
         width: 100%;
-        ul {          
+        ul {
           width: 100%;
-          flex-direction: column;           
+          flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
           position: fixed;
@@ -87,7 +103,6 @@
             padding-right: 10px;
           }
         }
-
       }
     }
   }

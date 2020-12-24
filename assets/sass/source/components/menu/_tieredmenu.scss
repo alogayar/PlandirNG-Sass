@@ -1,6 +1,6 @@
 body .ui-tieredmenu {
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }
 body .ui-tieredmenu ul {
   display: flex;
@@ -10,56 +10,48 @@ body .ui-tieredmenu ul {
 body .ui-tieredmenu .ui-menuitem-link {
   user-select: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 body .ui-tieredmenu .ui-menuitem-link .ui-menuitem-text {
   color: #777;
 }
 body .ui-tieredmenu .ui-menuitem-link .ui-menuitem-icon {
-  color: #777;  
-  display: none;
-
+  color: #777;
 }
 body .ui-tieredmenu .ui-menuitem-link:not(.ui-state-disabled):hover {
-  
 }
 body
   .ui-tieredmenu
   .ui-menuitem-link:not(.ui-state-disabled):hover
   .ui-menuitem-text {
-  
 }
 body
   .ui-tieredmenu
   .ui-menuitem-link:not(.ui-state-disabled):hover
   .ui-menuitem-icon {
-  
 }
 body .ui-tieredmenu .ui-menuitem-link:focus {
   outline: 0 none;
   outline-offset: 0;
-  
 }
 body
   .ui-tieredmenu
   .ui-menuitem-link.ui-menuitem-link-active
   .ui-menuitem-text {
-  
 }
 body
   .ui-tieredmenu
   .ui-menuitem-link.ui-menuitem-link-active
   .ui-menuitem-icon {
-  
 }
 body .ui-tieredmenu .ui-submenu-list {
   padding: 0;
   background-color: #ffffff;
   border: 1px solid #c8c8c8;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   -webkit-box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
@@ -71,10 +63,8 @@ body .ui-tieredmenu .ui-menuitem .ui-menuitem-link .ui-submenu-icon {
   display: none;
   right: -15px;
   color: #777;
-  
 }
 body .ui-tieredmenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
-  
 }
 body
   .ui-tieredmenu
