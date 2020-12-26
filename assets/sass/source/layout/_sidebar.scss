@@ -34,7 +34,7 @@
             /* Enlace Menu */
             .ui-menuitem-link {
               .ui-menuitem-icon {
-                padding-right: 10px;
+                width: 15px;
               }
             }
 
@@ -51,31 +51,41 @@
                 grid-template-columns: auto auto;
                 grid-template-rows: 1fr;
                 box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+                padding: 10px 10px;
+                animation-name: submenu;
+                animation-duration: 0.3s;
+                animation-timing-function: ease;
+                animation-iteration-count: 1;
               }
             }
           }
           .ui-menuitem-active {
             .ui-submenu {
               .ui-submenu-list {
-                padding:0px 10px;
                 display: grid;
-                animation-name: submenu;
-                animation-duration: 0.3s;
-                animation-timing-function: ease;
-                animation-iteration-count: 1;
-                .ui-menuitem-active {
-                  
 
+                .ui-menuitem-active {
                   &:hover {
-                    border: 0;
-                    
-                  }
-                  .ui-menuitem-link {
+                    border: 1px solid transparent;
+                    text-decoration: underline;
+
+                    .ui-menuitem-link {
+                      color: #8ea22d !important;
+                      .ui-menuitem-text {
+                        color: #8ea22d !important;
+                      }
+                    }
+                    .ui-menuitem-icon {
+                      color: #8ea22d;
+                    }
                   }
                 }
               }
             }
           }
+        }
+        .ui-menuitem-icon {
+          margin-right: 0.55em;
         }
       }
     }
