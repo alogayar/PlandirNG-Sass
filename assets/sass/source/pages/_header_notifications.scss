@@ -8,65 +8,116 @@
 .enlace-utramitadora {
   font-family: "Roboto", sans-serif;
   .ui-overlaypanel {
-    background-color: $blanco;
-    color: $colorTexto;
-    padding: 0;
-    top: 45px !important;
-    box-shadow: none;
-    border: 1px solid rgba(235, 235, 235, 0.4);
-    border-top: 0;
+    
+    background: $blanco;
+    border:none;
+    border-radius: 5px; 
     .ui-overlaypanel-content {
-      width: auto;      
-      padding: 0; 
-      .ui-card {
-        min-width: 380px;
-        .ui-card-header {
-          
-        }
+      padding: 0.571em .0em;
+      .ui-card,
+      .ui-card-shadow {
+        box-shadow: none !important;
         .ui-card-body {
           padding: 0;
-          .ui-card-content {
-            .ui-listbox {
-              border: none;
-              padding: 0;
-              margin: 0;
-              &::-webkit-scrollbar {
+        }
+        .ui-listbox {
+          border: none;
+          min-width: 380px;
+          background: #ffffff;
+          .ui-listbox-header {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 400;
+            background: rgba(0,0,0,0.07);
+            padding: 5px 20px;           
+            border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+          }
+          ul {
+            li {
+              & > div {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
               }
-              &::-webkit-scrollbar-thumb {
-              }
-              &.ui-inputtext {
-
-              }
-
-              .ui-listbox-item {
-                background: #fff;
-                & > div {
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                }
-              }
-              .ui-state-highlight {
-                
-                & > div {
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                }
-              }
+            }
+            .ui-state-highlight{
+              background: #fff;
+              color: #444;
             }
           }
         }
       }
-    }
-    &::after {
-      border-bottom-color: #f2f2f2 !important;
-    }
-    &::before {
-      border-bottom-color: #ccc !important;
+      .ui-inputtext {
+        padding:0;
+      }
     }
   }
 }
+
+// .enlace-utramitadora {
+//   font-family: "Roboto", sans-serif;
+//   .ui-overlaypanel {
+//     background-color: $blanco;
+//     color: $colorTexto;
+//     border: 1px solid red;
+//     padding: 0;
+//     width: 400px;
+//     top: 45px !important;
+//     //border: 1px solid rgba(235, 235, 235, 0.4);
+//     border-top: 0;
+//     .ui-overlaypanel-content {
+//       margin: 0;
+//       padding: 0;
+//       .ui-card {
+//         min-width: 380px;
+//         border: 1px solid green;
+//         .ui-card-header {
+//         }
+//         .ui-card-body {
+//           padding: 0;
+//           .ui-card-content {
+//             .ui-listbox {
+//               border: none;
+//               padding: 0;
+//               margin: 0;
+//               min-width: 380px;
+//               &::-webkit-scrollbar {
+//               }
+//               &::-webkit-scrollbar-thumb {
+//               }
+//               &.ui-inputtext {
+//               }
+
+//               .ui-listbox-item {
+//                 background: #ccc;
+//                 & > div {
+//                   display: flex;
+//                   justify-content: space-between;
+//                   align-items: center;
+//                 }
+//               }
+//               .ui-state-highlight {
+//                 & > div {
+//                   display: flex;
+//                   justify-content: space-between;
+//                   align-items: center;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     &::after {
+//       border-bottom-color: #f2f2f2 !important;
+//     }
+//     &::before {
+//       border-bottom-color: #ccc !important;
+//     }
+//   }
+// }
 
 /* Notificaciones header */
 .badge {
