@@ -8,50 +8,87 @@
 .enlace-utramitadora {
   font-family: "Roboto", sans-serif;
   .ui-overlaypanel {
-    
     background: $blanco;
-    border:none;
-    border-radius: 5px; 
+    border: none;
+    border-radius: 0px;
+    padding: 1.5px;
     .ui-overlaypanel-content {
-      padding: 0.571em .0em;
+      padding: 0;
       .ui-card,
       .ui-card-shadow {
         box-shadow: none !important;
         .ui-card-body {
           padding: 0;
+          .ui-card-footer{
+            background-color: #fffcd2;
+            color: #5d5700;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+            text-transform: uppercase;
+          }
         }
         .ui-listbox {
           border: none;
-          min-width: 380px;
+          min-width: 300px;
           background: #ffffff;
           .ui-listbox-header {
             text-transform: uppercase;
             font-size: 14px;
             font-weight: 400;
-            background: rgba(0,0,0,0.07);
-            padding: 5px 20px;           
+            background: #fff;
+            padding: 5px 20px;
             border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+          }
+          .ui-listbox-footer{
+            background-color: #fffcd2;
+            color: #5d5700;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+            text-transform: uppercase;
           }
           ul {
             li {
+              color: #333;
+              background: #e9edc0;
               & > div {
+                font-size: 13px !important;
+                min-height: 20px;                
                 padding: 0;
                 margin: 0;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                h6 {
+                  font-size: 13px;
+                  padding-top: 5px;
+                  display: inline-block;
+                }
+                i[class*="check"] {
+                  color: #9AD54A;
+                }
               }
             }
-            .ui-state-highlight{
-              background: #fff;
-              color: #444;
+            li:hover {
+              background: #E9E1C4;                
+              color: #333;
+            }
+            .ui-state-highlight {
+             
             }
           }
         }
       }
       .ui-inputtext {
-        padding:0;
+        padding: 0;
       }
+    }
+    &::after {
+      border-bottom-color: #f2f2f2 !important;
+    }
+    &::before {
+      border-bottom-color: #ccc !important;
     }
   }
 }
