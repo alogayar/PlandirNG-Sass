@@ -6,6 +6,7 @@
  ============================================================== */
 
 .enlace-utramitadora,
+.enlace-user,
 .enlace-notificaciones {
   font-family: "Roboto", sans-serif;
   .ui-overlaypanel {
@@ -163,7 +164,7 @@
               display: block !important;
             }
             i {
-              display: inline-block !important; 
+              display: inline-block !important;
             }
           }
         }
@@ -172,15 +173,39 @@
   }
 }
 .enlace-user {
-  font-family: "Roboto", sans-serif;
-  .ui-overlaypanel {    
-    background: #f9f9f9;
-    border: 0.5px solid #e6e6e6 !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0px;
-    padding: 1.5px;
-    .ui-overlaypanel-content {
-      padding: 0;
+  font-family: $fontFamily;
+  
+  .ui-overlaypanel {
+    min-width: 380px;    
+
+    .u-text {
+      color: #808080;
+      p {
+        margin-bottom: 4px !important;
+        font-size: 13px !important;
+        text-transform: lowercase;
+      }
+    }
+    .divider{
+      margin: 4px 0 !important;
+    }    
+      
+    .dropdown-user {
+      
+      .u-img {
+        width: 70px !important;
+        margin-right: 10px;
+        img {
+          width:100% !important;
+        }
+      }
+      
+      .user-data:hover {        
+        a {
+          color: #808080 !important;
+          background: #eaeaea !important;        
+        }
+      }
     }
   }
 }
