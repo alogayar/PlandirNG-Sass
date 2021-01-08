@@ -17,6 +17,7 @@
     border-radius: 0px;
     padding: 1.5px;
     margin-top: 10px;
+    top: 38.5px !important;
     .ui-overlaypanel-content {
       padding: 0;
       .ui-card,
@@ -145,9 +146,9 @@
   }
 }
 .enlace-notificaciones {
-  .ui-listbox {
-    overflow: hidden !important;
-    .ui-listbox-list-wrapper {
+  .djnotifi {
+    font-family: $fontFamily;
+    .djnotifi-listbox {
       ul {
         max-height: 200px;
         li {
@@ -156,15 +157,27 @@
           text-transform: uppercase;
           text-align: left;
           display: block;
-
-          > div {
+          .djnotifi-contenedor {
             display: block !important;
+            text-transform: uppercase;
+            text-align: left;
 
-            div {
-              display: block !important;
-            }
-            i {
-              display: inline-block !important;
+            .djnotifi-titulo {
+              display: block;
+              width: 100%;
+              .titulo {
+                color: #808080;
+                font-size: 13px;
+                padding: 0;
+                margin: 0;
+              }
+              .djnotifi-icons {
+                display: block;
+                width: 100%;
+              }
+              .djnotifi-icons > div {
+                display: inline-block !important;
+              }
             }
           }
         }
@@ -173,37 +186,42 @@
   }
 }
 .enlace-user {
-  font-family: $fontFamily;
-  
-  .ui-overlaypanel {
-    min-width: 380px;    
+  font-family: $fontFamily !important;
 
-    .u-text {
-      color: #808080;
-      p {
-        margin-bottom: 4px !important;
-        font-size: 13px !important;
-        text-transform: lowercase;
-      }
+  .contenedor-usuario {
+    .name {
+      letter-spacing: 0.5px;
     }
-    .divider{
-      margin: 4px 0 !important;
-    }    
-      
-    .dropdown-user {
-      
-      .u-img {
-        width: 70px !important;
-        margin-right: 10px;
-        img {
-          width:100% !important;
+
+    .ui-overlaypanel {
+      min-width: 310px;
+
+      .u-text {
+        color: #808080;
+        p {
+          margin-bottom: 4px !important;
+          font-size: 13px !important;
+          text-transform: lowercase;
         }
       }
-      
-      .user-data:hover {        
-        a {
-          color: #808080 !important;
-          background: #eaeaea !important;        
+      .divider {
+        margin: 4px 0 !important;
+      }
+
+      .dropdown-user {
+        .u-img {
+          width: 70px !important;
+          margin-right: 10px;
+          img {
+            width: 100% !important;
+          }
+        }
+
+        .user-data:hover {
+          a {
+            color: #808080 !important;
+            background: #eaeaea !important;
+          }
         }
       }
     }
