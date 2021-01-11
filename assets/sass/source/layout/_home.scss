@@ -1,7 +1,7 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(1, fr);
-  grid-template-rows: repeat(4, fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 45px 50px 1fr 1fr;
   grid-template-areas:
     "header"
     "sidebar"
@@ -14,7 +14,7 @@
   .sidebar {
     grid-area: sidebar;
   }
-  .content {
+  .contenido {
     grid-area: content;
   }
   .footer {
@@ -26,5 +26,25 @@
     width: 95%;
     max-width: 1900px;
     margin: auto;
+  }
+
+  .contenedor-pestanas {
+    .navegacion {
+      background: #fff;
+      font-size: 10px;
+      height: 15px;
+      padding: 10px 15px 5px 30px;
+      ul {
+        background: #fff asset($baseUrlAssets, $carpetaImages, "pattern.png")
+          repeat-x left bottom;
+        height: 17px;
+        margin-top: 3px;
+        li {
+          display: inline;
+          float: left;
+          padding-right: 4px;
+        }
+      }
+    }
   }
 }

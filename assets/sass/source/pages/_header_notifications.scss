@@ -11,7 +11,7 @@
   font-family: "Roboto", sans-serif;
   .ui-overlaypanel {
     min-width: 380px;
-    background: #f9f9f9;
+    background: #f7f7f7;
     border: 0.5px solid #e6e6e6 !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0px;
@@ -69,7 +69,7 @@
         .ui-listbox {
           border: none;
           min-width: 380px;
-          background: #f9f9f9;
+          background: #f7f7f7;
 
           .ui-listbox-header {
             text-align: left;
@@ -90,7 +90,7 @@
             li {
               font-size: 12px !important;
               color: #808080;
-              background: #f0f0f0;
+              background: #f7f7f7;
               height: 40px;
 
               & > div {
@@ -111,7 +111,7 @@
             }
             &::-webkit-scrollbar {
               width: 8px;
-              background-color: #f5f5f5;
+              background-color: #f7f7f7;
             }
             &::-webkit-scrollbar-thumb {
               border-radius: 10px;
@@ -121,7 +121,7 @@
             &::-webkit-scrollbar-track {
               border-radius: 10px;
               box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-              background-color: #f5f5f5;
+              background-color: #f7f7f7;
             }
 
             li:hover {
@@ -147,6 +147,14 @@
 }
 .enlace-notificaciones {
   .djnotifi {
+    .djnotifi-empty {
+      border-top: 1px solid #eaeaea;
+      padding: 1.3em;
+      font-size: 13px;
+      color: #808080;
+      text-transform: uppercase;
+      background: #f7f7f7;
+    }
     .djnotifi-listbox {
       ul {
         max-height: 225px !important;
@@ -156,7 +164,7 @@
           text-align: left;
           display: block;
           height: auto !important;
-          background: #f0f0f0;
+          background: #f7f7f7;
 
           .djnotifi-contenedor {
             font-family: $fontFamily;
@@ -223,7 +231,7 @@
     text-align: left;
     color: #808080;
     position: relative;
-    background: #f0f0f0;
+    background: #f7f7f7;
 
     span {
       text-transform: uppercase;
@@ -264,6 +272,10 @@
       }
     }
     .djnotifi-borrar {
+      position: absolute;
+      top: 28px;
+      right: 0;
+      padding-right: 6px;
       i {
         color: $verdeCorporativoDark !important;
       }
@@ -272,6 +284,15 @@
       font-size: 12px;
       color: #777;
       padding: 10px;
+    }
+    .djnotifi-time {
+      position: absolute;
+      top: 0;
+      right: 0;
+      .time {
+        font-size: 12px;
+        font-weight: 600;
+      }
     }
   }
 }
@@ -284,36 +305,37 @@
       font-size: 14px;
       font-weight: 400;
     }
+  }
 
-    .ui-overlaypanel {
-      min-width: 310px;
+  .ui-overlaypanel {
+    min-width: 310px;
+    color: #808080;
 
-      .u-text {
-        color: #808080;
-        p {
-          margin-bottom: 4px !important;
-          font-size: 13px !important;
-          text-transform: lowercase;
+    .u-text {
+      color: #808080;
+      p {
+        margin-bottom: 4px !important;
+        font-size: 13px !important;
+        text-transform: lowercase;
+      }
+    }
+    .divider {
+      margin: 4px 0 !important;
+    }
+
+    .dropdown-user {
+      .u-img {
+        width: 70px !important;
+        margin-right: 10px;
+        img {
+          width: 100% !important;
         }
       }
-      .divider {
-        margin: 4px 0 !important;
-      }
 
-      .dropdown-user {
-        .u-img {
-          width: 70px !important;
-          margin-right: 10px;
-          img {
-            width: 100% !important;
-          }
-        }
-
-        .user-data:hover {
-          a {
-            color: #808080 !important;
-            background: #eaeaea !important;
-          }
+      .user-data:hover {
+        a {
+          color: #808080 !important;
+          background: #eaeaea !important;
         }
       }
     }
