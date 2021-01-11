@@ -75,3 +75,18 @@
   color: $colorTextoBlanco;
   background-color: $verdeCorporativoDark;
 }
+
+/* Prioridad Notificaciones */
+.p-baja {
+  color: $success !important;
+}
+.p-media {
+  color: $warning !important;
+}
+.p-alta {
+  color: $danger-dark !important;
+}
+.p-critica {
+  color: $danger !important;
+}
+
