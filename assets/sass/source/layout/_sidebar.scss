@@ -2,9 +2,10 @@
   position: fixed;
   width: 100%;
   top: 45px;
+  z-index: 2000;
 
   .contenedor-menu {
-    background: #f8f8f8;
+    background: #f6f6f6;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -42,6 +43,7 @@
             p-tieredmenusub {
               position: relative;
               .ui-submenu-list {
+                background: #f6f6f6;
                 position: absolute;
                 width: auto;
                 top: 12px !important;
@@ -122,6 +124,31 @@
       }
     }
   }
+}
+
+
+
+
+$widthMenuExpanded: 200px;
+$widthMenuCollapsed: 30px;
+$zindexMenu: 2000;
+
+
+/* Estilos para menu lateral */
+.menu-collapsed {
+  width: $widthMenuCollapsed;
+}
+.menu-expanded {
+  width: $widthMenuExpanded;
+}
+#sidebar {
+  background: #8ea22d;
+  position: fixed;
+  height: 100vh;
+  width: $widthMenuExpanded;
+  top: 35px;
+  left: 0;
+  z-index: 2000;
 }
 
 @keyframes submenu {

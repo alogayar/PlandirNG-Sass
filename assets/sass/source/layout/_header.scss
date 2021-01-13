@@ -2,15 +2,15 @@
   background: #4d4d4d;
   display: flex;
   justify-content: flex-start;
-  height: 45px;
+  height: 35px;
   position: fixed;
   width: 100%;
-  z-index: 2000;
+  z-index: 1000;
 
-  /* Para resoluciones menores */
+
   .contenedor-botones-menu {
     width: auto;
-    display: none;
+    display: inline;
     .btn-barras,
     .btn-cerrar {
       border-radius: 4px;
@@ -28,12 +28,15 @@
       display: inline;
     }
   }
-  /* Primera barra con logo y enlaces  */
+  
   .contenedor-logo-enlaces {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 0;
+    .logo {
+      margin-left: -10px;
+    }
     img {
       width: auto;
       height: 30px;
@@ -54,6 +57,10 @@
       font-weight: bold;
       margin-left: 10px;
       vertical-align: middle;
+    }
+    .contenedor-pestanas{
+      min-width: 500px;      
+      
     }
     .contenedor-enlaces {
       .enlaces {
@@ -78,7 +85,7 @@
           display: flex;
           justify-content: flex-end;
           align-items: center;
-          line-height: 2em;
+          line-height: 1.5em;
 
           i {
             color: #ccc;
@@ -115,7 +122,7 @@
       .name {
         display: block;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 12px;
       }
       .username {
         display: block;

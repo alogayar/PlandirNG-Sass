@@ -1,12 +1,11 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 45px 50px 1fr 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 35px 1fr 1fr;
   grid-template-areas:
-    "header"
-    "sidebar"
-    "content"
-    "footer";
+    "header header"
+    "sidebar content"    
+    "footer footer";
 
   .header {
     grid-area: header;
@@ -28,23 +27,65 @@
     margin: auto;
   }
 
-  .contenedor-pestanas {
-    .navegacion {
-      background: #fff;
-      font-size: 10px;
-      height: 15px;
-      padding: 10px 15px 5px 30px;
-      ul {
-        background: #fff asset($baseUrlAssets, $carpetaImages, "pattern.png")
-          repeat-x left bottom;
-        height: 17px;
-        margin-top: 3px;
-        li {
-          display: inline;
-          float: left;
-          padding-right: 4px;
-        }
-      }
-    }
-  }
+  // .contenedor-pestanas {
+  //   .navegacion {
+  //     ul {
+        
+  //       margin-bottom: 35px;
+  //       background: #f9f9f9 asset($baseUrlAssets, $carpetaImages, "pattern.png")
+  //         repeat-x left bottom;
+  //       height: 25px;
+  //       margin-top: 3px;
+  //       margin: 5px 20px 35px;
+  //       li {
+  //         position: relative;
+  //         top: 5px;
+  //         background: transparent;
+  //         border: 0;
+  //         margin-right: 10px;
+  //         line-height: 5px;
+  //         min-width: 80px;
+  //         font-size: 12px;
+  //         text-align: center;
+  //         &.ui-state-active {
+  //           border:0;
+  //           background: transparent;
+  //           border-bottom: 1px solid #8ea22d;
+            
+  //           a{
+  //             color: #808080 !important;
+  //           }
+            
+  //         }
+  //         a {
+  //           color:#808080 !important;
+  //         }
+  //         span {
+  //           color: #b0b0b0 !important;
+  //         }
+  //       }
+        
+  //     }
+  //   }
+  // }
+
+  // .contenedor-pestanas {
+  //   .navegacion {
+  //     background: #fff;
+  //     font-size: 10px;
+  //     height: 15px;
+  //     padding: 10px 15px 5px 30px;
+  //     ul {
+  //       background: #fff asset($baseUrlAssets, $carpetaImages, "pattern.png")
+  //         repeat-x left bottom;
+  //       height: 17px;
+  //       margin-top: 3px;
+  //       li {
+  //         display: inline;
+  //         float: left;
+  //         padding-right: 4px;
+  //       }
+  //     }
+  //   }
+  // }
 }
