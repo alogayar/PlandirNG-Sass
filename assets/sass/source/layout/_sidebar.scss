@@ -130,8 +130,10 @@
 
 
 $widthMenuExpanded: 200px;
-$widthMenuCollapsed: 30px;
+$widthMenuCollapsed: 45px;
 $zindexMenu: 2000;
+$sidebarBgColor: #8ea22d;
+$sidebarHoverBgColor: #4d4d4d;
 
 
 /* Estilos para menu lateral */
@@ -141,14 +143,109 @@ $zindexMenu: 2000;
 .menu-expanded {
   width: $widthMenuExpanded;
 }
+.separator {
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+  height: 2px;
+}
 #sidebar {
-  background: #8ea22d;
+  color: #fff;
+  background: $sidebarBgColor;
   position: fixed;
-  height: 100vh;
-  width: $widthMenuExpanded;
+  height: 100vh;  
   top: 35px;
   left: 0;
-  z-index: 2000;
+  z-index: $zindexMenu;
+
+  #profile {
+    
+    padding: 10px;
+    text-align: center;
+    background: #ccc;
+    .usuario {   
+      font-size: 13px;   
+      padding: 10px;
+      overflow: hidden;
+    }
+    .foto {
+      padding: 10px;  
+      margin: 0 auto;
+       
+      width: 100%;
+
+      img {
+        border-radius: 50%;
+        width: 40%;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+      }
+
+    }
+
+
+
+  }
+
+  #menu-items {
+    .modulos {
+      letter-spacing: .5px;
+      font-weight: 700;
+      font-size: 11px;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 5px;
+      text-shadow: 1px 1px #000;
+      color: #f1f1f1;
+
+    }
+    .ui-tieredmenu {
+      width: 100%;
+    }
+    .ui-tieredmenu ul{
+      
+    }
+
+    overflow: hidden;
+    li.ui-menuitem {
+      width: $widthMenuExpanded;
+      a.ui-menuitem-link{
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        &:hover {
+          background: red;
+        }
+
+      }
+      span.ui-menuitem-icon {
+        color:#f8f8f8;
+        display: inline-block;
+        font-size: 16px;
+        padding: 10px;
+        vertical-align: middle;
+        overflow: hidden;        
+      span.ui-menuitem-text{
+        color:#f8f8f8;
+        font-size: 14px;
+        vertical-align: middle;
+        overflow: hidden;
+        display: inline-block;
+
+      }
+
+      }
+    }
+
+
+
+
+
+    /* Todos enlaces menu */
+    a.ui-menuitem-link {
+     
+    }
+  }
+
+
+
 }
 
 @keyframes submenu {
