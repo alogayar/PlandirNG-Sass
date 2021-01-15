@@ -159,14 +159,15 @@ body {
     padding: 0;
     border: 0 none;
     //Header section.
-    .ui-panel-titlebar {
-      border: $panelHeaderBorder;
+    .ui-panel-titlebar {      
       padding: $panelHeaderPadding;
       background-color: $panelHeaderBgColor;
       color: $panelHeaderTextColor;
+      border-bottom: 2px solid $verdeCorporativo;
     }
     .ui-panel-titlebar-icon {
       color: $panelHeaderIconColor;
+      vertical-align: middle;
     }
     //Content of panel.
     .ui-panel-content {
@@ -175,14 +176,14 @@ body {
       background-color: #ffffff;
       color: $panelContentTextColor;
       border-top: 0 none;
-      font-size: 13px;
+      font-size: 12px;
     }
   }
   //Title text of panel.
   .ui-panel-title {
     vertical-align: middle;
-    font-weight: 600;
-    font-size: 13px;
+    font-weight: 300;
+    font-size: 12px;
   }
   // ui-panel-titlebar-toggler	Toggle icon.
 }

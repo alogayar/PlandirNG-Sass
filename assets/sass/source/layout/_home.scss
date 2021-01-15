@@ -1,10 +1,10 @@
 .grid {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 210px 1fr;
   grid-template-rows: 35px 1fr 1fr;
   grid-template-areas:
     "header header"
-    "sidebar content"    
+    "sidebar content"
     "footer footer";
 
   .header {
@@ -25,12 +25,12 @@
     width: 95%;
     max-width: 1900px;
     margin: auto;
-  }
+  }  
 
   // .contenedor-pestanas {
   //   .navegacion {
   //     ul {
-        
+
   //       margin-bottom: 35px;
   //       background: #f9f9f9 asset($baseUrlAssets, $carpetaImages, "pattern.png")
   //         repeat-x left bottom;
@@ -51,11 +51,11 @@
   //           border:0;
   //           background: transparent;
   //           border-bottom: 1px solid #8ea22d;
-            
+
   //           a{
   //             color: #808080 !important;
   //           }
-            
+
   //         }
   //         a {
   //           color:#808080 !important;
@@ -64,7 +64,7 @@
   //           color: #b0b0b0 !important;
   //         }
   //       }
-        
+
   //     }
   //   }
   // }
@@ -88,4 +88,10 @@
   //     }
   //   }
   // }
+}
+
+.body-collapsed {
+  .grid {
+    grid-template-columns: 50px 1fr;
+  }
 }
