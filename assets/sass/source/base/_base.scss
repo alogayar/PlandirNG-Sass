@@ -9,15 +9,17 @@
 }
 
 body {
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  background: #ebebeb;
+  font-family: $fontFamily !important;
+  font-size: $fontSize !important;
+  background: #ebebeb !important;
 
   .ui-widget {
     font-family: $fontFamily;
     font-size: $fontSize;
     text-decoration: none;
+    
   }
+  
   .ui-widget-overlay {
     background-color: rgba(0, 0, 0, 0.4);
   }

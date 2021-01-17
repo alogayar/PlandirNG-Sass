@@ -1,278 +1,575 @@
-body {
-  .ui-widget-content {
-    p {
-      line-height: 1.5;
-      margin: 0;
-    }
+body .ui-tabview.ui-tabview-top,
+body .ui-tabview.ui-tabview-bottom,
+body .ui-tabview.ui-tabview-left,
+body .ui-tabview.ui-tabview-right {
+  border: 0 none;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav {
+  padding: 0;
+  //background: transparent;
+  background: $tabsNavBgColor;
+  border: 0 none;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
+  //border: 1px solid #191919;
+  //background-color: #191919;
+  -moz-transition: background-color 0.2s, box-shadow 0.2s;
+  -o-transition: background-color 0.2s, box-shadow 0.2s;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  border: $panelHeaderBorder;
+  background-color: $panelHeaderBgColor;
+  //height: 32px;
+}
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li a,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li a {
+  float: none;
+  display: inline-block;
+  //color: #dedede;
+  //padding: 0.571em 1em;
+  font-weight: 700;
+  color: $panelHeaderTextColor;
+  padding: $panelHeaderPadding;
+}
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a .ui-tabview-left-icon,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a .ui-tabview-left-icon,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li a .ui-tabview-left-icon,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li a .ui-tabview-left-icon {
+  margin-right: 0.5em;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a .ui-tabview-right-icon,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a .ui-tabview-right-icon,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li a .ui-tabview-right-icon,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li a .ui-tabview-right-icon {
+  margin-left: 0.5em;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li .ui-tabview-close,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li .ui-tabview-close,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li .ui-tabview-close,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li .ui-tabview-close {
+  //color: #888888;
+  //margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  color: $panelHeaderIconColor;
+  margin: 0 $inlineSpacing + 0.3 0 -1 * $inlineSpacing + 0.3;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li .ui-tabview-close:focus,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li .ui-tabview-close:focus,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li .ui-tabview-close:focus,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li .ui-tabview-close:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  -webkit-box-shadow: 0 0 0 0.2em #ffe8b3;
+  -moz-box-shadow: 0 0 0 0.2em #ffe8b3;
+  box-shadow: 0 0 0 0.2em #ffe8b3;
+}
+body
+  .ui-tabview.ui-tabview-top
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover,
+body
+  .ui-tabview.ui-tabview-bottom
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover,
+body
+  .ui-tabview.ui-tabview-left
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover,
+body
+  .ui-tabview.ui-tabview-right
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover {
+  //background-color: #191919;
+  //border: 1px solid #191919;
+  background-color: $panelHeaderHoverBgColor;
+  border: $panelHeaderHoverBorder;
+}
+body
+  .ui-tabview.ui-tabview-top
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover
+  a,
+body
+  .ui-tabview.ui-tabview-bottom
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover
+  a,
+body
+  .ui-tabview.ui-tabview-left
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover
+  a,
+body
+  .ui-tabview.ui-tabview-right
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover
+  a {
+  color: #ffb300;
+}
+body
+  .ui-tabview.ui-tabview-top
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover
+  .ui-tabview-close,
+body
+  .ui-tabview.ui-tabview-bottom
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover
+  .ui-tabview-close,
+body
+  .ui-tabview.ui-tabview-left
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover
+  .ui-tabview-close,
+body
+  .ui-tabview.ui-tabview-right
+  .ui-tabview-nav
+  li:not(.ui-state-active):not(.ui-state-disabled):hover
+  .ui-tabview-close {
+  color: #ffb300;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active {
+  //background-color: #FFB300;
+  //border: 1px solid #FFB300;
+  background-color: $panelHeaderActiveBgColor;
+  border: $panelHeaderActiveBorder;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active a,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active a,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active a {
+  color: #212121;
+}
+body
+  .ui-tabview.ui-tabview-top
+  .ui-tabview-nav
+  li.ui-state-active
+  .ui-tabview-close,
+body
+  .ui-tabview.ui-tabview-bottom
+  .ui-tabview-nav
+  li.ui-state-active
+  .ui-tabview-close,
+body
+  .ui-tabview.ui-tabview-left
+  .ui-tabview-nav
+  li.ui-state-active
+  .ui-tabview-close,
+body
+  .ui-tabview.ui-tabview-right
+  .ui-tabview-nav
+  li.ui-state-active
+  .ui-tabview-close {
+  color: #212121;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover {
+  border: 1px solid #ff8f00;
+  background-color: #ff8f00;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a {
+  color: #212121;
+}
+body
+  .ui-tabview.ui-tabview-top
+  .ui-tabview-nav
+  li.ui-state-active:hover
+  a
+  .ui-tabview-left-icon,
+body
+  .ui-tabview.ui-tabview-top
+  .ui-tabview-nav
+  li.ui-state-active:hover
+  a
+  .ui-tabview-right-icon,
+body
+  .ui-tabview.ui-tabview-bottom
+  .ui-tabview-nav
+  li.ui-state-active:hover
+  a
+  .ui-tabview-left-icon,
+body
+  .ui-tabview.ui-tabview-bottom
+  .ui-tabview-nav
+  li.ui-state-active:hover
+  a
+  .ui-tabview-right-icon,
+body
+  .ui-tabview.ui-tabview-left
+  .ui-tabview-nav
+  li.ui-state-active:hover
+  a
+  .ui-tabview-left-icon,
+body
+  .ui-tabview.ui-tabview-left
+  .ui-tabview-nav
+  li.ui-state-active:hover
+  a
+  .ui-tabview-right-icon,
+body
+  .ui-tabview.ui-tabview-right
+  .ui-tabview-nav
+  li.ui-state-active:hover
+  a
+  .ui-tabview-left-icon,
+body
+  .ui-tabview.ui-tabview-right
+  .ui-tabview-nav
+  li.ui-state-active:hover
+  a
+  .ui-tabview-right-icon {
+  color: #212121;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-tabview-selected a,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-tabview-selected a,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-tabview-selected a,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-tabview-selected a {
+  cursor: pointer;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li:focus,
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:focus,
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li:focus,
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  -webkit-box-shadow: 0 0 0 0.2em #ffe8b3;
+  -moz-box-shadow: 0 0 0 0.2em #ffe8b3;
+  box-shadow: 0 0 0 0.2em #ffe8b3;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav {
+  margin-bottom: -1px;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li {
+  margin-right: 2px;
+}
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav {
+  margin-top: -1px;
+}
+body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li {
+  margin-right: 2px;
+}
+body .ui-tabview.ui-tabview-left .ui-tabview-nav {
+  margin-right: -px;
+}
+body .ui-tabview.ui-tabview-left .ui-tabview-nav li {
+  margin-bottom: 2px;
+}
+body .ui-tabview.ui-tabview-right .ui-tabview-nav {
+  margin-right: -1px;
+}
+body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
+  margin-bottom: 2px;
+}
+body .ui-tabview .ui-tabview-panels {
+  background-color: #ebebeb;
+  padding: 0.571em 1em;
+  border: 1px solid #191919;
+  color: #dedede;
+}
+body .ui-tabview .ui-tabview-panels .ui-tabview-panel {
+  padding: 0;
+  background: #ebebeb;
+}
+
+// body {
+//   .ui-widget-content {
+//     p {
+//       line-height: 1.5;
+//       margin: 0;
+//     }
+//   }
+
+//   .ui-tabview {
+//     &.ui-tabview-top,
+//     &.ui-tabview-bottom,
+//     &.ui-tabview-left,
+//     &.ui-tabview-right {
+//       border: 0 none;
+
+//       .ui-tabview-nav {
+//         padding: 0;
+//         background: $tabsNavBgColor;
+
+//         li {
+//           border: $panelHeaderBorder;
+//           background-color: $panelHeaderBgColor;
+//           height: 32px;
+
+//           a {
+//             float: none;
+//             display: inline-block;
+//             color: $panelHeaderTextColor;
+//             padding: $panelHeaderPadding;
+
+//             .ui-tabview-left-icon {
+//               color: $panelHeaderIconColor;
+//               margin-right: $inlineSpacing;
+//             }
+
+//             .ui-tabview-right-icon {
+//               color: $panelHeaderIconColor;
+//               margin-left: $inlineSpacing;
+//             }
+//           }
+
+//           .ui-tabview-close {
+//             color: $panelHeaderIconColor;
+//             margin: 0 $inlineSpacing + 0.3 0 -1 * $inlineSpacing + 0.3;
+//           }
+
+//           &:not(.ui-state-active):not(.ui-state-disabled):hover {
+//             background-color: $panelHeaderHoverBgColor;
+//             border: $panelHeaderHoverBorder;
+
+//             a {
+//               color: $panelHeaderHoverTextColor;
+
+//               .ui-tabview-left-icon,
+//               .ui-tabview-right-icon {
+//                 color: $panelHeaderIconHoverColor;
+//               }
+//             }
+
+//             .ui-tabview-close {
+//               color: $panelHeaderHoverTextColor;
+//             }
+//           }
+
+//           &.ui-state-active {
+//             background-color: $panelHeaderActiveBgColor;
+//             border: $panelHeaderActiveBorder;
+
+//             a {
+//               color: $panelHeaderActiveTextColor;
+
+//               .ui-tabview-left-icon,
+//               .ui-tabview-right-icon {
+//                 color: $panelHeaderActiveIconColor;
+//               }
+//             }
+
+//             .ui-tabview-close {
+//               color: $panelHeaderActiveIconColor;
+//             }
+
+//             &:hover {
+//               border: $panelHeaderActiveHoverBorder;
+//               background-color: $panelHeaderActiveHoverBgColor;
+
+//               a {
+//                 color: $panelHeaderActiveHoverTextColor;
+
+//                 .ui-tabview-left-icon,
+//                 .ui-tabview-right-icon {
+//                   color: $panelHeaderActiveHoverIconColor;
+//                 }
+//               }
+//             }
+//           }
+
+//           &.ui-tabview-selected {
+//             a {
+//               cursor: pointer;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     &.ui-tabview-top {
+//       .ui-tabview-nav {
+//         margin-bottom: -1px;
+
+//         li {
+//           margin-right: $tabHeaderSpacing;
+//         }
+//       }
+//     }
+
+//     &.ui-tabview-bottom {
+//       .ui-tabview-nav {
+//         margin-top: -1px;
+
+//         li {
+//           margin-right: $tabHeaderSpacing;
+//         }
+//       }
+//     }
+
+//     &.ui-tabview-left {
+//       .ui-tabview-nav {
+//         margin-right: -px;
+
+//         li {
+//           margin-bottom: $tabHeaderSpacing;
+//         }
+//       }
+//     }
+
+//     &.ui-tabview-right {
+//       .ui-tabview-nav {
+//         margin-right: -1px;
+
+//         li {
+//           margin-bottom: $tabHeaderSpacing;
+//         }
+//       }
+//     }
+
+//     .ui-tabview-panels {
+//       background-color: $panelContentBgColor;
+//       padding: $panelContentPadding;
+//       //border: $panelContentBorder;
+//       color: $panelContentTextColor;
+
+//       .ui-tabview-panel {
+//         padding: 0;
+//         background-color: $panelContentBgColor;
+//         border: 0;
+//       }
+//     }
+//   }
+
+//   //Container element.
+.ui-panel {
+  padding: 0 !important;
+  //border: 0 none;
+  background: #ffffff;
+  //Header section.
+  .ui-panel-titlebar {
+    padding: $panelHeaderPadding;
+    background-color: $panelHeaderBgColor;
+    color: $panelHeaderTextColor;
+    border-bottom: 2px solid $verdeCorporativo;
   }
-
-  .ui-tabview {
-    &.ui-tabview-top,
-    &.ui-tabview-bottom,
-    &.ui-tabview-left,
-    &.ui-tabview-right {
-      border: 0 none;
-
-      .ui-tabview-nav {
-        padding: 0;
-        background: $tabsNavBgColor;
-
-        li {
-          border: $panelHeaderBorder;
-          background-color: $panelHeaderBgColor;
-
-          a {
-            float: none;
-            display: inline-block;
-            color: $panelHeaderTextColor;
-            padding: $panelHeaderPadding;
-
-            .ui-tabview-left-icon {
-              color: $panelHeaderIconColor;
-              margin-right: $inlineSpacing;
-            }
-
-            .ui-tabview-right-icon {
-              color: $panelHeaderIconColor;
-              margin-left: $inlineSpacing;
-            }
-          }
-
-          .ui-tabview-close {
-            color: $panelHeaderIconColor;
-            margin: 0 $inlineSpacing + 0.3 0 -1 * $inlineSpacing + 0.3;
-          }
-
-          &:not(.ui-state-active):not(.ui-state-disabled):hover {
-            background-color: $panelHeaderHoverBgColor;
-            border: $panelHeaderHoverBorder;
-
-            a {
-              color: $panelHeaderHoverTextColor;
-
-              .ui-tabview-left-icon,
-              .ui-tabview-right-icon {
-                color: $panelHeaderIconHoverColor;
-              }
-            }
-
-            .ui-tabview-close {
-              color: $panelHeaderHoverTextColor;
-            }
-          }
-
-          &.ui-state-active {
-            background-color: $panelHeaderActiveBgColor;
-            border: $panelHeaderActiveBorder;
-
-            a {
-              color: $panelHeaderActiveTextColor;
-
-              .ui-tabview-left-icon,
-              .ui-tabview-right-icon {
-                color: $panelHeaderActiveIconColor;
-              }
-            }
-
-            .ui-tabview-close {
-              color: $panelHeaderActiveIconColor;
-            }
-
-            &:hover {
-              border: $panelHeaderActiveHoverBorder;
-              background-color: $panelHeaderActiveHoverBgColor;
-
-              a {
-                color: $panelHeaderActiveHoverTextColor;
-
-                .ui-tabview-left-icon,
-                .ui-tabview-right-icon {
-                  color: $panelHeaderActiveHoverIconColor;
-                }
-              }
-            }
-          }
-
-          &.ui-tabview-selected {
-            a {
-              cursor: pointer;
-            }
-          }
-        }
-      }
-    }
-
-    &.ui-tabview-top {
-      .ui-tabview-nav {
-        margin-bottom: -1px;
-
-        li {
-          margin-right: $tabHeaderSpacing;
-        }
-      }
-    }
-
-    &.ui-tabview-bottom {
-      .ui-tabview-nav {
-        margin-top: -1px;
-
-        li {
-          margin-right: $tabHeaderSpacing;
-        }
-      }
-    }
-
-    &.ui-tabview-left {
-      .ui-tabview-nav {
-        margin-right: -px;
-
-        li {
-          margin-bottom: $tabHeaderSpacing;
-        }
-      }
-    }
-
-    &.ui-tabview-right {
-      .ui-tabview-nav {
-        margin-right: -1px;
-
-        li {
-          margin-bottom: $tabHeaderSpacing;
-        }
-      }
-    }
-
-    .ui-tabview-panels {
-      background-color: $panelContentBgColor;
-      padding: $panelContentPadding;
-      border: $panelContentBorder;
-      color: $panelContentTextColor;
-
-      .ui-tabview-panel {
-        padding: 0;
-      }
-    }
-  }
-
-  //Container element.
-  .ui-panel {
-    padding: 0;
-    border: 0 none;
-    //Header section.
-    .ui-panel-titlebar {      
-      padding: $panelHeaderPadding;
-      background-color: $panelHeaderBgColor;
-      color: $panelHeaderTextColor;
-      border-bottom: 2px solid $verdeCorporativo;
-    }
-    .ui-panel-titlebar-icon {
-      color: $panelHeaderIconColor;
-      vertical-align: middle;
-    }
-    //Content of panel.
-    .ui-panel-content {
-      padding: $panelHeaderPadding;
-      border: $panelHeaderBorder;
-      background-color: #ffffff;
-      color: $panelContentTextColor;
-      border-top: 0 none;
-      font-size: 12px;
-    }
-  }
-  //Title text of panel.
-  .ui-panel-title {
+  .ui-panel-titlebar-icon {
+    color: $panelHeaderIconColor;
     vertical-align: middle;
-    font-weight: 300;
+  }
+  //Content of panel.
+  .ui-panel-content {
+    padding: $panelHeaderPadding;
+    //border: $panelHeaderBorder;
+    border-bottom: 1px solid #ddd !important;
+    border-left: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important;
+    background-color: #ffffff;
+    color: $panelContentTextColor;
+    //border-top: 0 none;
     font-size: 12px;
   }
-  // ui-panel-titlebar-toggler	Toggle icon.
 }
-
-.container-fluid {
-  #primarytabs {
-    .ui-tabview-nav {
-      margin-bottom: -1px;
-      position: fixed;
-      top: 35px;
-      z-index: 60;
-    }
-  }
-  // .ui-tabview .ui-tabview-nav {
-  //   margin-bottom: -1px;
-  //   position: fixed;
-  //   top: 35px;
-  //   z-index: 60;
-  // }
-  .ui-tabview.ui-tabview-top .ui-tabview-nav li,
-  body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li,
-  body .ui-tabview.ui-tabview-left .ui-tabview-nav li,
-  body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
-    border: 1px solid #c8c8c8;
-    background-color: #6e6e6e;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
-    border-bottom: 0;
-  }
+//Title text of panel.
+.ui-panel-title {
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
 }
+// ui-panel-titlebar-toggler	Toggle icon.
 
-// body .ui-panel {
-//   padding: 0;
-//   border: 0 none;
+// .container-fluid {
+//   #primarytabs {
+//     .ui-tabview-nav {
+//       margin-bottom: -1px;
+//       position: fixed;
+//       top: 35px;
+//       z-index: 60;
+//     }
+//   }
+//   // .ui-tabview .ui-tabview-nav {
+//   //   margin-bottom: -1px;
+//   //   position: fixed;
+//   //   top: 35px;
+//   //   z-index: 60;
+//   // }
+//   .ui-tabview.ui-tabview-top .ui-tabview-nav li,
+//   body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li,
+//   body .ui-tabview.ui-tabview-left .ui-tabview-nav li,
+//   body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
+//     border: 1px solid #c8c8c8;
+//     background-color: #6e6e6e;
+//     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+//     border-bottom: 0;
+//   }
 // }
-// body .ui-panel .ui-panel-titlebar {
-//   border: 1px solid #c8c8c8;
-//   padding: 0.571em 1em;
-//   background-color: #f4f4f4;
-//   color: #333333;
-//   -moz-border-radius-topleft: 3px;
-//   -webkit-border-top-left-radius: 3px;
-//   border-top-left-radius: 3px;
-//   -moz-border-radius-topright: 3px;
-//   -webkit-border-top-right-radius: 3px;
-//   border-top-right-radius: 3px;
-//   -moz-border-radius-bottomleft: 0;
-//   -webkit-border-bottom-left-radius: 0;
-//   border-bottom-left-radius: 0;
-//   -moz-border-radius-bottomright: 0;
-//   -webkit-border-bottom-right-radius: 0;
-//   border-bottom-right-radius: 0;
-// }
-// body .ui-panel .ui-panel-titlebar .ui-panel-title {
-//   vertical-align: middle;
-//   font-weight: 700;
-// }
-// body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon {
-//   margin: 0;
-//   position: relative;
-//   font-size: 14px;
-//   color: #848484;
-//   border: 1px solid transparent;
-//   line-height: 1;
-//   -moz-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
-//   -o-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
-//   -webkit-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
-//   transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
-// }
-// body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:hover {
-//   color: #333333;
-// }
-// body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:focus {
-//   outline: 0 none;
-//   outline-offset: 0;
-//   @include shadow($shadowVerde);
-// }
-// body .ui-panel .ui-panel-content {
-//   padding: 0.571em 1em;
-//   border: 1px solid #c8c8c8;
-//   background-color: #ffffff;
-//   color: #333333;
-//   padding: 0.571em 1em;
-//   border-top: 0 none;
-// }
-// body .ui-panel .ui-panel-footer {
-//   padding: 0.571em 1em;
-//   border: 1px solid #c8c8c8;
-//   background-color: #ffffff;
-//   color: #333333;
-//   border-top: 0 none;
-//   margin: 0;
-// }
+
+// // body .ui-panel {
+// //   padding: 0;
+// //   border: 0 none;
+// // }
+// // body .ui-panel .ui-panel-titlebar {
+// //   border: 1px solid #c8c8c8;
+// //   padding: 0.571em 1em;
+// //   background-color: #f4f4f4;
+// //   color: #333333;
+// //   -moz-border-radius-topleft: 3px;
+// //   -webkit-border-top-left-radius: 3px;
+// //   border-top-left-radius: 3px;
+// //   -moz-border-radius-topright: 3px;
+// //   -webkit-border-top-right-radius: 3px;
+// //   border-top-right-radius: 3px;
+// //   -moz-border-radius-bottomleft: 0;
+// //   -webkit-border-bottom-left-radius: 0;
+// //   border-bottom-left-radius: 0;
+// //   -moz-border-radius-bottomright: 0;
+// //   -webkit-border-bottom-right-radius: 0;
+// //   border-bottom-right-radius: 0;
+// // }
+// // body .ui-panel .ui-panel-titlebar .ui-panel-title {
+// //   vertical-align: middle;
+// //   font-weight: 700;
+// // }
+// // body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon {
+// //   margin: 0;
+// //   position: relative;
+// //   font-size: 14px;
+// //   color: #848484;
+// //   border: 1px solid transparent;
+// //   line-height: 1;
+// //   -moz-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+// //   -o-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+// //   -webkit-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+// //   transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+// // }
+// // body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:hover {
+// //   color: #333333;
+// // }
+// // body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:focus {
+// //   outline: 0 none;
+// //   outline-offset: 0;
+// //   @include shadow($shadowVerde);
+// // }
+// // body .ui-panel .ui-panel-content {
+// //   padding: 0.571em 1em;
+// //   border: 1px solid #c8c8c8;
+// //   background-color: #ffffff;
+// //   color: #333333;
+// //   padding: 0.571em 1em;
+// //   border-top: 0 none;
+// // }
+// // body .ui-panel .ui-panel-footer {
+// //   padding: 0.571em 1em;
+// //   border: 1px solid #c8c8c8;
+// //   background-color: #ffffff;
+// //   color: #333333;
+// //   border-top: 0 none;
+// //   margin: 0;
+// // }

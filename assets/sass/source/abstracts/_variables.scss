@@ -240,8 +240,9 @@ $tabsNavBgColor: transparent;
 $tabHeaderSpacing: 2px;
 //panel common (e.g. accordion, panel, tabview)
 $panelHeaderBorder: 1px solid #c8c8c8;
-$panelHeaderBgColor: #6e6e6e;
+$panelHeaderBgColor: #4d4d4d;
 $panelHeaderTextColor: #f5f5f5;
+$panelHeaderHeigth: 28px;
 
 $panelHeaderIconColor: #ffffff;
 $panelHeaderIconHoverColor: #333333;
@@ -250,7 +251,7 @@ $panelHeaderIconTransition: color $transitionDuration,
 $panelHeaderFontWeight: 300;
 $panelHeaderPadding: 0.200em 1em;
 $panelContentBorder: 1px solid #c8c8c8;
-$panelContentBgColor: #ffffff;
+$panelContentBgColor: #ebebeb;
 $panelContentTextColor: $textColor;
 $panelContentPadding: 0.571em 1em;
 $panelFooterBorder: 1px solid #c8c8c8;

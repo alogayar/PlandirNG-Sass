@@ -25,7 +25,41 @@
     width: 95%;
     max-width: 1900px;
     margin: auto;
-  }  
+  }
+
+  $zindexTabs: 1000;
+
+  /* Sistema de pestañas del home */
+  #pestanas {
+    #navegacion {
+      ul.ui-tabview-nav {
+        position: fixed;
+        top: -1px;
+        z-index: $zindexTabs;
+        max-width: 675px;        
+        li.ui-state-active {
+          height: 32px;
+          border-radius: 0;
+          width: 100px;
+          text-align: center;
+
+          box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.35);
+          a[role=tab]{
+            padding: 0;
+            text-align: center;
+            margin: auto 0;
+            line-height: 29px;
+
+          }
+        }
+      }
+      .ui-tabview-panels {
+        
+        border: 0;
+      }
+
+    }
+  }
 
   // .contenedor-pestanas {
   //   .navegacion {
