@@ -300,14 +300,29 @@ $sidebarFontSize: 12px;
         }
       }
     }
+    li.ui-menuitem-active{
+      background: #4d4d4d;
+      ul.ui-submenu-list{
+        display: block;
+      }
+
+    }
+    /* Submenu */
     .ui-submenu {
       ul.ui-submenu-list {
-        width: auto;
+        top: 0 !important;
+        left: 0 !important;
+        display: none;
+        width: $widthMenuExpanded;
         background: #4d4d4d;
+        border: 0;        
+        position: relative;
         .ui-menuitem {
-          width: auto;
+          width: $widthMenuExpanded;
           .ui-menuitem-link {
-            white-space: nowrap;
+            .ui-menuitem-text {
+              font-size: 11px;
+            }
           }
           .ui-menuitem-link:hover {
             background: #808080;
