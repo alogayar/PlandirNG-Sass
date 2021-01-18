@@ -1,14 +1,18 @@
 body {
   .ui-table {
     position: relative;
+    border: 1px solid rgba(221,221,221,.78);
+    border-collapse: separate !important;
 
     .ui-table-caption {
       padding: 0.25em 0.5em;
       text-align: center;
       font-weight: $tableCaptionFontWeight;
       background-color: $tableCaptionBgColor;
-      color: $tableCaptionTextColor;
-      border: $tableHeaderCellBorder;
+      //color: $tableCaptionTextColor;
+      color: #ECF0F1;
+      //border: $tableHeaderCellBorder;
+      border-bottom: 2px solid #ddd;
       padding: $tableHeaderCellPadding;
       text-align: center;
       border-bottom: 0 none;

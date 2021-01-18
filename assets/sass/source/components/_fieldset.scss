@@ -3,14 +3,23 @@ body {
     border: 1px solid #c8c8c8;
     background-color: #fffefa;
     color: #333333;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
+
+    p-header {
+      background: #4d4d4d;
+    color: #f4f4f4;
+    padding: 3px 50px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #8ea22d;
+    }
   }
 
   .ui-fieldset-legend {
     padding: 0.5em 1em;
-    font-size: $fontSize+3;
-    color: $verdeCorporativo;
+    font-size: $fontSize+1;
+    color: $verdeCorporativo;    
     width: auto;
   }
 }

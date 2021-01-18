@@ -24,8 +24,11 @@ body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
   -webkit-transition: background-color 0.2s, box-shadow 0.2s;
   transition: background-color 0.2s, box-shadow 0.2s;
   border: $panelHeaderBorder;
-  background-color: $panelHeaderBgColor;
-  //height: 32px;
+  background-color: #dcdcdc;  
+  text-align: center;  
+  white-space: nowrap;
+  width: auto;
+  border-radius: 0;
 }
 
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li a,
@@ -34,11 +37,11 @@ body .ui-tabview.ui-tabview-left .ui-tabview-nav li a,
 body .ui-tabview.ui-tabview-right .ui-tabview-nav li a {
   float: none;
   display: inline-block;
-  //color: #dedede;
-  //padding: 0.571em 1em;
-  font-weight: 700;
-  color: $panelHeaderTextColor;
-  padding: $panelHeaderPadding;
+  //color: #dedede;  
+  //padding: $panelHeaderPadding;
+  font-weight: $panelHeaderFontWeight;
+  //color: $panelHeaderTextColor;  
+  color: #4d4d4d;  
 }
 
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li a .ui-tabview-left-icon,
@@ -60,7 +63,7 @@ body .ui-tabview.ui-tabview-right .ui-tabview-nav li .ui-tabview-close {
   //color: #888888;
   //margin: 0 0.5em 0 0;
   vertical-align: middle;
-  color: $panelHeaderIconColor;
+  color: $panelHeaderBgColor;
   margin: 0 $inlineSpacing + 0.3 0 -1 * $inlineSpacing + 0.3;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li .ui-tabview-close:focus,
@@ -93,6 +96,7 @@ body
   //border: 1px solid #191919;
   background-color: $panelHeaderHoverBgColor;
   border: $panelHeaderHoverBorder;
+  
 }
 body
   .ui-tabview.ui-tabview-top
@@ -114,7 +118,7 @@ body
   .ui-tabview-nav
   li:not(.ui-state-active):not(.ui-state-disabled):hover
   a {
-  color: #ffb300;
+  color: $verdeCorporativo;
 }
 body
   .ui-tabview.ui-tabview-top
@@ -136,7 +140,7 @@ body
   .ui-tabview-nav
   li:not(.ui-state-active):not(.ui-state-disabled):hover
   .ui-tabview-close {
-  color: #ffb300;
+  color: $verdeCorporativo;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active,
 body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active,
@@ -145,13 +149,15 @@ body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active {
   //background-color: #FFB300;
   //border: 1px solid #FFB300;
   background-color: $panelHeaderActiveBgColor;
-  border: $panelHeaderActiveBorder;
+  border: $panelHeaderActiveBorder;  
+  
+
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a,
 body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active a,
 body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active a,
 body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active a {
-  color: #212121;
+  color: $panelHeaderTextColor;
 }
 body
   .ui-tabview.ui-tabview-top
@@ -173,20 +179,21 @@ body
   .ui-tabview-nav
   li.ui-state-active
   .ui-tabview-close {
-  color: #212121;
+  color: $panelHeaderTextColor;
+  
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover,
 body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover,
 body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover,
 body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover {
-  border: 1px solid #ff8f00;
-  background-color: #ff8f00;
+  border: 1px solid $verdeCorporativo;
+  background-color: $verdeCorporativo;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a,
 body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a,
 body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a,
 body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a {
-  color: #212121;
+  color: $panelHeaderTextColor;
 }
 body
   .ui-tabview.ui-tabview-top
@@ -236,7 +243,7 @@ body
   li.ui-state-active:hover
   a
   .ui-tabview-right-icon {
-  color: #212121;
+  color: #fff;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-tabview-selected a,
 body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-tabview-selected a,
@@ -455,13 +462,13 @@ body .ui-tabview .ui-tabview-panels .ui-tabview-panel {
   background: #ffffff;
   //Header section.
   .ui-panel-titlebar {
-    padding: $panelHeaderPadding;
+    padding: $panelHeaderPadding !important;
     background-color: $panelHeaderBgColor;
     color: $panelHeaderTextColor;
     border-bottom: 2px solid $verdeCorporativo;
   }
   .ui-panel-titlebar-icon {
-    color: $panelHeaderIconColor;
+    color: $panelHeaderTextColor;
     vertical-align: middle;
   }
   //Content of panel.

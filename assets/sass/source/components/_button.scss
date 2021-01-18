@@ -10,7 +10,7 @@
   padding: 0 5px;
   @include border-radius(5px);
   color: $buttonTextColor;
-  font-size: $fontSize;
+  font-size: $fontSize+1;
 }
 
 body {
