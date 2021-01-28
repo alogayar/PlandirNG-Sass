@@ -1,100 +1,100 @@
-// body {
-//   .ui-table {
-//     position: relative;
-//     border: 1px solid rgba(221,221,221,.78);
-//     border-collapse: separate !important;
+body {
+  .ui-table {
+    position: relative;
+    border: 1px solid rgba(221,221,221,.78);
+    border-collapse: separate !important;
 
-//     .ui-table-caption {
-//       padding: 0.25em 0.5em;
-//       text-align: center;
-//       font-weight: $tableCaptionFontWeight;
-//       background-color: $tableCaptionBgColor;
-//       //color: $tableCaptionTextColor;
-//       color: #ECF0F1;
-//       //border: $tableHeaderCellBorder;
-//       border-bottom: 2px solid #ddd;
-//       padding: $tableHeaderCellPadding;
-//       text-align: center;
-//       border-bottom: 0 none;
-//     }
+    .ui-table-caption {
+      padding: 0.25em 0.5em;
+      text-align: center;
+      font-weight: $tableCaptionFontWeight;
+      background-color: $tableCaptionBgColor;
+      //color: $tableCaptionTextColor;
+      color: #ECF0F1;
+      //border: $tableHeaderCellBorder;
+      border-bottom: 2px solid #ddd;
+      padding: $tableHeaderCellPadding;
+      text-align: center;
+      border-bottom: 0 none;
+    }
 
-//     .ui-table-summary {
-//       border-top: 0 none;
-//       font-weight: $tableSummaryFontWeight;
-//     }
+    .ui-table-summary {
+      border-top: 0 none;
+      font-weight: $tableSummaryFontWeight;
+    }
 
-//     .ui-table-scrollable-wrapper {
-//       position: relative;
+    .ui-table-scrollable-wrapper {
+      position: relative;
 
-//       .ui-table-scrollable-view {
-//         position: relative;
-//         .ui-table-scrollable-header {
-//           .ui-table-scrollable-header {
-//             overflow: hidden;
-//             border: 0 none;
-//             width: 1539px;
-//             .ui-table-scrollable-header-box {
-//               margin-right: 17px;
-//               margin-left: 0px;
-//             }
-//           }
-//         }
-//       }
-//     }
+      .ui-table-scrollable-view {
+        position: relative;
+        .ui-table-scrollable-header {
+          .ui-table-scrollable-header {
+            overflow: hidden;
+            border: 0 none;
+            width: 1539px;
+            .ui-table-scrollable-header-box {
+              margin-right: 17px;
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+    }
 
-//     .ui-table-thead > tr > th {
-//       font-size: $tableHeaderCellFontSize;
-//       padding: $tableHeaderCellPadding;
-//       border: $tableHeaderCellBorder;
-//       font-weight: $tableHeaderCellFontWeight;
-//       color: $tableHeaderCellTextColor;
-//       background-color: $tableHeaderCellBgColor;
-//       &:hover {
-//         background-color: $tableHeaderCellHoverBgColor;
-//         color: $tableHeaderCellHoverTextColor;
-//       }
-//     }
+    .ui-table-thead > tr > th {
+      font-size: $tableHeaderCellFontSize;
+      padding: $tableHeaderCellPadding;
+      border: $tableHeaderCellBorder;
+      font-weight: $tableHeaderCellFontWeight;
+      color: $tableHeaderCellTextColor;
+      background-color: $tableHeaderCellBgColor;
+      &:hover {
+        background-color: $tableHeaderCellHoverBgColor;
+        color: $tableHeaderCellHoverTextColor;
+      }
+    }
 
-//     /* Body Table */
-//     .ui-table-scrollable-body {
-//       overflow: auto;
-//       position: relative;
-//     }
+    /* Body Table */
+    .ui-table-scrollable-body {
+      overflow: auto;
+      position: relative;
+    }
 
-//     .ui-table-tbody > tr {
-//       background-color: $tableBodyRowBgColor;
-//       color: $tableBodyRowTextColor;
-//     }
+    .ui-table-tbody > tr {
+      background-color: $tableBodyRowBgColor;
+      color: $tableBodyRowTextColor;
+    }
 
-//     .ui-table-tbody > tr > td {
-//       background-color: inherit;
-//       border: $tableBodyCellBorder;
-//       padding: $tableBodyCellPadding;
-//       font-size: $tableBodyCellfontSize;
-//       //   width: 9em;
-//       //   text-align: center;
-//     }
+    .ui-table-tbody > tr > td {
+      background-color: inherit;
+      border: $tableBodyCellBorder;
+      padding: $tableBodyCellPadding;
+      font-size: $tableBodyCellfontSize;
+      //   width: 9em;
+      //   text-align: center;
+    }
 
-//     .ui-table-tbody > tr:nth-child(even) {
-//       background-color: $tableBodyRowEvenBgColor;
-//     }
+    .ui-table-tbody > tr:nth-child(even) {
+      background-color: $tableBodyRowEvenBgColor;
+    }
 
-//     .ui-table-tbody > tr.ui-selectable-row:hover {
-//       background-color: $tableBodyRowHoverBgColor;
-//     }
+    .ui-table-tbody > tr.ui-selectable-row:hover {
+      background-color: $tableBodyRowHoverBgColor;
+    }
 
-//     .ui-table-tbody > tr.ui-selectable-row.ui-state-highlight {
-//       cursor: pointer;
-//       background-color: $tableRowBgColorSelected;
-//       color: $tableBodyRowHoverTextColor;
-//     }
-//   }
-//   table {
-//     border-collapse: collapse;
-//     table-layout: fixed;
-//   }
+    .ui-table-tbody > tr.ui-selectable-row.ui-state-highlight {
+      cursor: pointer;
+      background-color: $tableRowBgColorSelected;
+      color: $tableBodyRowHoverTextColor;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
 
   
-// }
+}
 
 

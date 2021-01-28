@@ -155,7 +155,7 @@ $sidebarFontSize: 12px;
         box-shadow: none !important;
       }
     }
-    .buscador {
+    .buscador-menu {
       display: none;
     }
   }
@@ -228,7 +228,7 @@ $sidebarFontSize: 12px;
       overflow: hidden;
     }
 
-    .buscador {
+    .buscador-menu {
       .ui-inputtext {
         font-size: $sidebarFontSize;
         color: #67757c;
@@ -237,7 +237,7 @@ $sidebarFontSize: 12px;
         border: 1.5px solid #808080; 
         border-radius: 7px;
       }
-      i {
+      i { 
         font-size: 14px;
         margin-left: 12px;
         vertical-align: middle;
