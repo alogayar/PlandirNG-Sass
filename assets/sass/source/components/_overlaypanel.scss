@@ -6,6 +6,7 @@ body .ui-overlaypanel {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
+    z-index: $zindexOverlayPanel;
   }
   body .ui-overlaypanel .ui-overlaypanel-content {
     padding: 0.571em 1em;

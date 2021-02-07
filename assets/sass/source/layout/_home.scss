@@ -4,7 +4,7 @@
   grid-template-rows: 35px 1fr;
   grid-template-areas:
     "header header"
-    "sidebar content";    
+    "sidebar content";
 
   .header {
     grid-area: header;
@@ -23,11 +23,9 @@
   /* Contenedor Principal */
   .contenedor {
     width: 95%;
-    max-width: 1900px;
+    max-width: 1900vw;
     margin: auto;
   }
-
-  $zindexTabs: 1000;
 
   /* Sistema de pestañas del home */
   #pestanas {
@@ -35,7 +33,7 @@
       ul.ui-tabview-nav {
         position: fixed;
         top: -1px;
-        z-index: $zindexTabs;
+        z-index: $zindexTabsNavegacion;
         max-width: 675px;
 
         li.ui-state-active {
@@ -47,68 +45,10 @@
       }
     }
   }
-
-  // .contenedor-pestanas {
-  //   .navegacion {
-  //     ul {
-
-  //       margin-bottom: 35px;
-  //       background: #f9f9f9 asset($baseUrlAssets, $carpetaImages, "pattern.png")
-  //         repeat-x left bottom;
-  //       height: 25px;
-  //       margin-top: 3px;
-  //       margin: 5px 20px 35px;
-  //       li {
-  //         position: relative;
-  //         top: 5px;
-  //         background: transparent;
-  //         border: 0;
-  //         margin-right: 10px;
-  //         line-height: 5px;
-  //         min-width: 80px;
-  //         font-size: 12px;
-  //         text-align: center;
-  //         &.ui-state-active {
-  //           border:0;
-  //           background: transparent;
-  //           border-bottom: 1px solid #8ea22d;
-
-  //           a{
-  //             color: #808080 !important;
-  //           }
-
-  //         }
-  //         a {
-  //           color:#808080 !important;
-  //         }
-  //         span {
-  //           color: #b0b0b0 !important;
-  //         }
-  //       }
-
-  //     }
-  //   }
-  // }
-
-  // .contenedor-pestanas {
-  //   .navegacion {
-  //     background: #fff;
-  //     font-size: 10px;
-  //     height: 15px;
-  //     padding: 10px 15px 5px 30px;
-  //     ul {
-  //       background: #fff asset($baseUrlAssets, $carpetaImages, "pattern.png")
-  //         repeat-x left bottom;
-  //       height: 17px;
-  //       margin-top: 3px;
-  //       li {
-  //         display: inline;
-  //         float: left;
-  //         padding-right: 4px;
-  //       }
-  //     }
-  //   }
-  // }
+  #secondarytabs {
+    border: 2px solid red;
+    font-size: 30px;
+  }
 }
 
 .body-collapsed {
@@ -119,9 +59,7 @@
     #navegacion {
       ul.ui-tabview-nav {
         left: 213px;
-        
+      }
     }
   }
-}
-
 }

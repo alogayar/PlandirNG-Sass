@@ -1,139 +1,15 @@
-.sidebar {
-  position: fixed;
-  width: 100%;
-  top: 45px;
-  z-index: 2000;
-
-  .contenedor-menu {
-    background: #f6f6f6;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
-
-    .contenedor-menu-enlaces {
-      /* Barra de Menu */
-      .ui-tieredmenu {
-        width: 100%;
-        ul[role="menubar"] {
-          padding: 5px 0;
-          list-style-type: none;
-          /* Elemento del Menu */
-          .ui-menuitem {
-            padding: 5px 10px;
-            font-size: 13px;
-            color: #333;
-            border: 1px solid transparent;
-            text-transform: uppercase;
-            white-space: pre;
-            cursor: pointer;
-            &:hover {
-              transition: border 0.5s;
-              border: 1px solid rgba(#8ea22d, 0.7);
-              border-radius: 3px;
-            }
-            /* Enlace Menu */
-            .ui-menuitem-link {
-              .ui-menuitem-icon {
-                width: 15px;
-              }
-            }
-
-            /* Submenu */
-            p-tieredmenusub {
-              position: relative;
-              .ui-submenu-list {
-                background: #f6f6f6;
-                position: absolute;
-                width: auto;
-                top: 12px !important;
-                left: -9px !important;
-                z-index: -1 !important;
-                border: 0;
-                grid-template-columns: auto auto;
-                grid-template-rows: 1fr;
-                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-                padding: 10px 10px;
-                animation-name: submenu;
-                animation-duration: 0.3s;
-                animation-timing-function: ease;
-                animation-iteration-count: 1;
-              }
-            }
-          }
-          .ui-menuitem-active {
-            .ui-submenu {
-              .ui-submenu-list {
-                display: grid;
-
-                .ui-menuitem-active {
-                  &:hover {
-                    border: 1px solid transparent;
-                    text-decoration: underline;
-
-                    .ui-menuitem-link {
-                      color: #8ea22d !important;
-                      .ui-menuitem-text {
-                        color: #8ea22d !important;
-                      }
-                    }
-                    .ui-menuitem-icon {
-                      color: #8ea22d;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        .ui-menuitem-icon {
-          margin-right: 0.55em;
-        }
-      }
-    }
-  }
-}
-.sidebar.lateral {
-  .contenedor-menu {
-    background: #f8f8f8;
-    width: 200px;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    border-left: 1px solid rgba(120, 130, 140, 0.13);
-    .contenedor-menu-enlaces {
-      width: 100%;
-      .ui-tieredmenu {
-        display: block;
-        width: 100%;
-        ul {
-          width: 100%;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          position: fixed;
-          left: 0;
-          margin: 0 auto;
-        }
-        .ui-menuitem-link {
-          .ui-menuitem-icon {
-            display: inline;
-            padding-right: 10px;
-          }
-        }
-      }
-    }
-  }
-}
 
 $widthMenuExpanded: 212px;
 $widthMenuCollapsed: 45px;
-$zindexMenu: 1000;
+
 $sidebarBgColor: #8ea22d;
 $sidebarHoverBgColor: #4d4d4d;
 $sidebarFontSize: 12px;
-
+/*****************************/
 /* Estilos para menu lateral */
+/*****************************/
+
+//Menu contraido
 .menu-collapsed {
   width: $widthMenuCollapsed;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);  
@@ -176,6 +52,7 @@ $sidebarFontSize: 12px;
     }
   }
 }
+//Menu expandido
 .menu-expanded {
   width: $widthMenuExpanded;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -195,7 +72,7 @@ $sidebarFontSize: 12px;
   height: 100vh;
   top: 35px;
   left: 0;
-  z-index: $zindexMenu;
+  z-index: $zindexSidebar;
 
   #profile {
     padding: 10px;
@@ -260,8 +137,8 @@ $sidebarFontSize: 12px;
   }
 
   #menu-items {
-     height: 100vh;
-     overflow-y: auto;
+     /*height: 100vh;
+     overflow-y: auto;*/
     .modulos {
       letter-spacing: 0.5px;
       font-weight: 700;
@@ -358,20 +235,4 @@ $sidebarFontSize: 12px;
 
 
 
-}
-
-@keyframes submenu {
-  0% {
-    opacity: 0;
-    top: -36px;
-    transform: translateY(-50%);
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    top: 12px;
-    transform: translateY(0%);
-  }
 }
